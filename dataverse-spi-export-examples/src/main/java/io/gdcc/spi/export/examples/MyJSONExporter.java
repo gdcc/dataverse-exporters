@@ -8,10 +8,10 @@ import io.gdcc.spi.export.Exporter;
 import java.io.OutputStream;
 import java.util.Locale;
 
-import javax.json.Json;
-import javax.json.JsonObject;
-import javax.json.JsonObjectBuilder;
-import javax.ws.rs.core.MediaType;
+import jakarta.json.Json;
+import jakarta.json.JsonObject;
+import jakarta.json.JsonObjectBuilder;
+import jakarta.ws.rs.core.MediaType;
 
 /**
  * An example exporter that exports dataset metadata as a JSON object. This
