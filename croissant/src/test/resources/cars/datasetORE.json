@@ -1,0 +1,92 @@
+{
+    "dcterms:modified": "2024-03-13",
+    "dcterms:creator": "Root",
+    "@type": "ore:ResourceMap",
+    "schema:additionalType": "Dataverse OREMap Format v1.0.0",
+    "dvcore:generatedBy": {
+        "@type": "schema:SoftwareApplication",
+        "schema:name": "Dataverse",
+        "schema:version": "6.1 build pdurbin",
+        "schema:url": "https://github.com/iqss/dataverse"
+    },
+    "@id": "http://localhost:8080/api/datasets/export?exporter=OAI_ORE&persistentId=https://doi.org/10.5072/FK2/EKY1NP",
+    "ore:describes": {
+        "author": {
+            "citation:authorName": "Admin, Dataverse",
+            "citation:authorAffiliation": "Dataverse.org"
+        },
+        "citation:datasetContact": {
+            "citation:datasetContactName": "Admin, Dataverse",
+            "citation:datasetContactAffiliation": "Dataverse.org",
+            "citation:datasetContactEmail": "dataverse@mailinator.com"
+        },
+        "citation:dsDescription": {
+            "citation:dsDescriptionValue": "qqq"
+        },
+        "title": "Cars",
+        "subject": "Other",
+        "dateOfDeposit": "2024-03-13",
+        "citation:depositor": "Admin, Dataverse",
+        "@id": "https://doi.org/10.5072/FK2/EKY1NP",
+        "@type": [
+            "ore:Aggregation",
+            "schema:Dataset"
+        ],
+        "schema:version": "1.0",
+        "schema:name": "Cars",
+        "schema:dateModified": "2024-03-13 21:16:24.475",
+        "schema:datePublished": "2024-03-13",
+        "schema:creativeWorkStatus": "RELEASED",
+        "schema:license": "http://creativecommons.org/publicdomain/zero/1.0",
+        "dvcore:fileTermsOfAccess": {
+            "dvcore:fileRequestAccess": true
+        },
+        "schema:includedInDataCatalog": "Root",
+        "schema:isPartOf": {
+            "schema:name": "Cars",
+            "@id": "http://localhost:8080/dataverse/cars",
+            "schema:description": "Data about cars.",
+            "schema:isPartOf": {
+                "schema:name": "Root",
+                "@id": "http://localhost:8080/dataverse/root",
+                "schema:description": "The root dataverse."
+            }
+        },
+        "ore:aggregates": [
+            {
+                "schema:description": "",
+                "schema:name": "stata13-auto.dta",
+                "dvcore:restricted": false,
+                "schema:version": 3,
+                "dvcore:datasetVersionId": 14,
+                "@id": "http://localhost:8080/file.xhtml?fileId=21",
+                "schema:sameAs": "http://localhost:8080/api/access/datafile/21?format=original",
+                "@type": "ore:AggregatedResource",
+                "schema:fileFormat": "application/x-stata-13",
+                "dvcore:filesize": 6443,
+                "dvcore:storageIdentifier": "local://18e39ac54dc-9e74659afe34",
+                "dvcore:currentIngestedName": "stata13-auto.tab",
+                "dvcore:UNF": "UNF:6:RPd9EWHSZwqUvRZuKTJMqg==",
+                "dvcore:rootDataFileId": -1,
+                "dvcore:checksum": {
+                    "@type": "MD5",
+                    "@value": "7b1201ce6b469796837a835377338c5a"
+                }
+            }
+        ],
+        "schema:hasPart": [
+            "http://localhost:8080/file.xhtml?fileId=21"
+        ]
+    },
+    "@context": {
+        "author": "http://purl.org/dc/terms/creator",
+        "citation": "https://dataverse.org/schema/citation/",
+        "dateOfDeposit": "http://purl.org/dc/terms/dateSubmitted",
+        "dcterms": "http://purl.org/dc/terms/",
+        "dvcore": "https://dataverse.org/schema/core#",
+        "ore": "http://www.openarchives.org/ore/terms/",
+        "schema": "http://schema.org/",
+        "subject": "http://purl.org/dc/terms/subject",
+        "title": "http://purl.org/dc/terms/title"
+    }
+}

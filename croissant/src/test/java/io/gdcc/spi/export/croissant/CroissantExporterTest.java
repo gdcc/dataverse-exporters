@@ -12,9 +12,13 @@ import jakarta.json.stream.JsonGenerator;
 import java.io.ByteArrayOutputStream;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.IOException;
 import java.io.OutputStream;
 import java.io.StringReader;
 import java.io.StringWriter;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.logging.Level;
@@ -37,7 +41,7 @@ public class CroissantExporterTest {
             @Override
             public JsonObject getDatasetJson() {
                 JsonObjectBuilder job = Json.createObjectBuilder();
-                String pathToJsonFile = "src/test/resources/earthquakes.json";
+                String pathToJsonFile = "src/test/resources/cars/datasetJson.json";
 
                 try (JsonReader jsonReader = Json.createReader(new FileReader(pathToJsonFile))) {
                     JsonObject jsonObject = jsonReader.readObject();
@@ -61,22 +65,66 @@ public class CroissantExporterTest {
 
             @Override
             public JsonObject getDatasetORE() {
-                return Json.createObjectBuilder().build();
+                JsonObjectBuilder job = Json.createObjectBuilder();
+                String pathToJsonFile = "src/test/resources/cars/datasetORE.json";
+
+                try (JsonReader jsonReader = Json.createReader(new FileReader(pathToJsonFile))) {
+                    JsonObject jsonObject = jsonReader.readObject();
+                    // FIXME: just a proof of concept to get the PID/DOI
+                    job.add("citeAs", jsonObject
+                            .getJsonObject("ore:describes")
+                            .getString("@id")
+                    );
+                } catch (FileNotFoundException ex) {
+                    Logger.getLogger(CroissantExporterTest.class.getName()).log(Level.SEVERE, null, ex);
+                }
+
+                return Json.createObjectBuilder()
+                        .addAll(job)
+                        .build();
             }
 
             @Override
             public JsonArray getDatasetFileDetails() {
-                return Json.createArrayBuilder().build();
+                String pathToJsonFile = "src/test/resources/cars/datasetFileDetails.json";
+
+                JsonArray jsonArray = null;
+
+                try (JsonReader jsonReader = Json.createReader(new FileReader(pathToJsonFile))) {
+                    jsonArray = jsonReader.readArray();
+                } catch (FileNotFoundException ex) {
+                    Logger.getLogger(CroissantExporterTest.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                return jsonArray;
+
             }
 
             @Override
             public JsonObject getDatasetSchemaDotOrg() {
-                return Json.createObjectBuilder().build();
+                JsonObjectBuilder job = Json.createObjectBuilder();
+                String pathToJsonFile = "src/test/resources/cars/datasetSchemaDotOrg.json";
+
+                try (JsonReader jsonReader = Json.createReader(new FileReader(pathToJsonFile))) {
+                    JsonObject jsonObject = jsonReader.readObject();
+                    job.add("dateModified", jsonObject
+                            .getString("dateModified")
+                    );
+                } catch (FileNotFoundException ex) {
+                    Logger.getLogger(CroissantExporterTest.class.getName()).log(Level.SEVERE, null, ex);
+                }
+
+                return Json.createObjectBuilder()
+                        .addAll(job)
+                        .build();
             }
 
             @Override
             public String getDataCiteXml() {
-                return null;
+                try {
+                    return Files.readString(Paths.get("src/test/resources/cars/dataCiteXml.xml"), StandardCharsets.UTF_8);
+                } catch (IOException ex) {
+                    return null;
+                }
             }
         };
     }
@@ -147,7 +195,14 @@ public class CroissantExporterTest {
                     "subField": "ml:subField",
                     "transform": "ml:transform"
                 },
-                "name": "Replication Data for: initial study on predicting earthquakes using machine learning"
+                "name": "Cars",
+                "citeAs": "https://doi.org/10.5072/FK2/EKY1NP",
+                "distribution": [
+                    {
+                        "contentUrl": "stata13-auto.tab"
+                    }
+                ],
+                "dateModified": "2024-03-13"
             }
             """;
         assertEquals(prettyPrint(expected), prettyPrint(outputStream.toString()));

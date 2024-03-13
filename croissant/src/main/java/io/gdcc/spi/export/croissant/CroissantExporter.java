@@ -8,6 +8,7 @@ import java.io.OutputStream;
 import java.util.Locale;
 
 import jakarta.json.Json;
+import jakarta.json.JsonArray;
 import jakarta.json.JsonObject;
 import jakarta.json.JsonObjectBuilder;
 import jakarta.json.JsonReader;
@@ -122,9 +123,26 @@ public class CroissantExporter implements Exporter {
                 job.add("@context", contextObject.getJsonObject("@context"));
             }
 
-            JsonObject dsJson = dataProvider.getDatasetJson();
+            JsonObject datasetJson = dataProvider.getDatasetJson();
             // TODO: Add much more than just the name/title
-            job.add("name", dsJson.getString("name"));
+            job.add("name", datasetJson.getString("name"));
+
+            JsonObject datasetORE = dataProvider.getDatasetORE();
+            // TODO: Ok for this to be a URL? https://doi.org/10.5072/FK2/EKY1NP
+            // Or should it start with 10? 10.5072/FK2/EKY1NP
+            job.add("citeAs", datasetORE.getString("citeAs"));
+
+            JsonArray datasetFileDetails = dataProvider.getDatasetFileDetails();
+            // TODO: get more than the first file!
+            JsonObject firstFile = datasetFileDetails.getJsonObject(0);
+            job.add("distribution", Json.createArrayBuilder().add(Json.createObjectBuilder()
+                    .add("contentUrl", firstFile.getString("filename"))));
+
+            JsonObject datasetSchemaDotOrg = dataProvider.getDatasetSchemaDotOrg();
+            job.add("dateModified", datasetSchemaDotOrg.getString("dateModified"));
+
+            // TODO: Do we need DataCite XML?
+            String dataCiteXml = dataProvider.getDataCiteXml();
 
             // Write the output format to the output stream.
             outputStream.write(job.build().toString().getBytes("UTF8"));

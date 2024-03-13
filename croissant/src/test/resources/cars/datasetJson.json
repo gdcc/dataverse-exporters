@@ -1,0 +1,163 @@
+{
+    "id": 20,
+    "identifier": "FK2/EKY1NP",
+    "persistentUrl": "https://doi.org/10.5072/FK2/EKY1NP",
+    "protocol": "doi",
+    "authority": "10.5072",
+    "publisher": "Root",
+    "publicationDate": "2024-03-13",
+    "storageIdentifier": "local://10.5072/FK2/EKY1NP",
+    "datasetVersion": {
+        "id": 14,
+        "datasetId": 20,
+        "datasetPersistentId": "doi:10.5072/FK2/EKY1NP",
+        "storageIdentifier": "local://10.5072/FK2/EKY1NP",
+        "versionNumber": 1,
+        "versionMinorNumber": 0,
+        "versionState": "RELEASED",
+        "UNF": "UNF:6:RPd9EWHSZwqUvRZuKTJMqg==",
+        "lastUpdateTime": "2024-03-13T21:16:24Z",
+        "releaseTime": "2024-03-13T21:16:24Z",
+        "createTime": "2024-03-13T21:16:18Z",
+        "publicationDate": "2024-03-13",
+        "citationDate": "2024-03-13",
+        "license": {
+            "name": "CC0 1.0",
+            "uri": "http://creativecommons.org/publicdomain/zero/1.0",
+            "iconUri": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+        },
+        "fileAccessRequest": true,
+        "metadataBlocks": {
+            "citation": {
+                "displayName": "Citation Metadata",
+                "name": "citation",
+                "fields": [
+                    {
+                        "typeName": "title",
+                        "multiple": false,
+                        "typeClass": "primitive",
+                        "value": "Cars"
+                    },
+                    {
+                        "typeName": "author",
+                        "multiple": true,
+                        "typeClass": "compound",
+                        "value": [
+                            {
+                                "authorName": {
+                                    "typeName": "authorName",
+                                    "multiple": false,
+                                    "typeClass": "primitive",
+                                    "value": "Admin, Dataverse"
+                                },
+                                "authorAffiliation": {
+                                    "typeName": "authorAffiliation",
+                                    "multiple": false,
+                                    "typeClass": "primitive",
+                                    "value": "Dataverse.org"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "typeName": "datasetContact",
+                        "multiple": true,
+                        "typeClass": "compound",
+                        "value": [
+                            {
+                                "datasetContactName": {
+                                    "typeName": "datasetContactName",
+                                    "multiple": false,
+                                    "typeClass": "primitive",
+                                    "value": "Admin, Dataverse"
+                                },
+                                "datasetContactAffiliation": {
+                                    "typeName": "datasetContactAffiliation",
+                                    "multiple": false,
+                                    "typeClass": "primitive",
+                                    "value": "Dataverse.org"
+                                },
+                                "datasetContactEmail": {
+                                    "typeName": "datasetContactEmail",
+                                    "multiple": false,
+                                    "typeClass": "primitive",
+                                    "value": "dataverse@mailinator.com"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "typeName": "dsDescription",
+                        "multiple": true,
+                        "typeClass": "compound",
+                        "value": [
+                            {
+                                "dsDescriptionValue": {
+                                    "typeName": "dsDescriptionValue",
+                                    "multiple": false,
+                                    "typeClass": "primitive",
+                                    "value": "qqq"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "typeName": "subject",
+                        "multiple": true,
+                        "typeClass": "controlledVocabulary",
+                        "value": [
+                            "Other"
+                        ]
+                    },
+                    {
+                        "typeName": "depositor",
+                        "multiple": false,
+                        "typeClass": "primitive",
+                        "value": "Admin, Dataverse"
+                    },
+                    {
+                        "typeName": "dateOfDeposit",
+                        "multiple": false,
+                        "typeClass": "primitive",
+                        "value": "2024-03-13"
+                    }
+                ]
+            }
+        },
+        "files": [
+            {
+                "description": "",
+                "label": "stata13-auto.tab",
+                "restricted": false,
+                "version": 3,
+                "datasetVersionId": 14,
+                "dataFile": {
+                    "id": 21,
+                    "persistentId": "",
+                    "filename": "stata13-auto.tab",
+                    "contentType": "text/tab-separated-values",
+                    "friendlyType": "Tab-Delimited",
+                    "filesize": 4026,
+                    "description": "",
+                    "storageIdentifier": "local://18e39ac54dc-9e74659afe34",
+                    "originalFileFormat": "application/x-stata-13",
+                    "originalFormatLabel": "Stata 13 Binary",
+                    "originalFileSize": 6443,
+                    "originalFileName": "stata13-auto.dta",
+                    "UNF": "UNF:6:RPd9EWHSZwqUvRZuKTJMqg==",
+                    "rootDataFileId": -1,
+                    "md5": "7b1201ce6b469796837a835377338c5a",
+                    "checksum": {
+                        "type": "MD5",
+                        "value": "7b1201ce6b469796837a835377338c5a"
+                    },
+                    "tabularData": true,
+                    "creationDate": "2024-03-13",
+                    "publicationDate": "2024-03-13",
+                    "fileAccessRequest": true
+                }
+            }
+        ],
+        "citation": "Admin, Dataverse, 2024, \"Cars\", https://doi.org/10.5072/FK2/EKY1NP, Root, V1, UNF:6:RPd9EWHSZwqUvRZuKTJMqg== [fileUNF]"
+    }
+}
