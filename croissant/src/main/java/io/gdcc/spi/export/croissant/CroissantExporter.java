@@ -133,6 +133,8 @@ public class CroissantExporter implements Exporter {
                 job.add("@context", contextObject.getJsonObject("@context"));
             }
 
+            job.add("@type", "sc:Dataset");
+
             JsonObject datasetJson = dataProvider.getDatasetJson();
             // TODO: Add much more than just the name/title
             job.add("name", datasetJson.getString("name"));

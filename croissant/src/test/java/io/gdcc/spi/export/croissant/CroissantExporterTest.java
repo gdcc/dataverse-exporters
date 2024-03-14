@@ -206,6 +206,7 @@ public class CroissantExporterTest {
                     "transform": "cr:transform",
                     "wd": "https://www.wikidata.org/wiki/"
                 },
+                "@type": "sc:Dataset",
                 "name": "Cars",
                 "citeAs": "https://doi.org/10.5072/FK2/EKY1NP",
                 "distribution": [
