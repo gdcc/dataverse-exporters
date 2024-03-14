@@ -161,13 +161,18 @@ public class CroissantExporter implements Exporter {
             JsonArrayBuilder distribution = Json.createArrayBuilder();
             JsonArray datasetFileDetails = dataProvider.getDatasetFileDetails();
             for (JsonValue jsonValue : datasetFileDetails) {
+
                 JsonObject fileDetails = jsonValue.asJsonObject();
+                JsonObject checksum = fileDetails.getJsonObject("checksum");
+                String checksumType = checksum.getString("type").toLowerCase();
+                String checksumValue = checksum.getString("value");
+
                 distribution.add(
                         Json.createObjectBuilder()
                                 .add("@type", "sc:FileObject")
                                 .add("name", fileDetails.getString("filename"))
-                                .add("contentUrl", fileDetails.getString("filename")
-                                )
+                                .add("contentUrl", fileDetails.getString("filename"))
+                                .add(checksumType, checksumValue)
                 );
             }
             job.add("distribution", distribution);

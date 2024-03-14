@@ -174,6 +174,7 @@ public class CroissantExporterTest {
                     {
                         "@type": "sc:FileObject",
                         "name": "stata13-auto.tab",
+                        "md5": "7b1201ce6b469796837a835377338c5a",
                         "contentUrl": "stata13-auto.tab"
                     }
                 ],
