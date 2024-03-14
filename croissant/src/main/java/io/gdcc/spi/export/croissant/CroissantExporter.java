@@ -9,9 +9,11 @@ import java.util.Locale;
 
 import jakarta.json.Json;
 import jakarta.json.JsonArray;
+import jakarta.json.JsonArrayBuilder;
 import jakarta.json.JsonObject;
 import jakarta.json.JsonObjectBuilder;
 import jakarta.json.JsonReader;
+import jakarta.json.JsonValue;
 import jakarta.ws.rs.core.MediaType;
 import java.io.StringReader;
 
@@ -156,15 +158,19 @@ public class CroissantExporter implements Exporter {
                     .getString("@id")
             );
 
+            JsonArrayBuilder distribution = Json.createArrayBuilder();
             JsonArray datasetFileDetails = dataProvider.getDatasetFileDetails();
-            // TODO: get more than the first file!
-            JsonObject firstFile = datasetFileDetails.getJsonObject(0);
-            job.add("distribution", Json.createArrayBuilder()
-                    .add(Json.createObjectBuilder()
-                            .add("@type", "sc:FileObject")
-                            .add("name", firstFile.getString("filename"))
-                            .add("contentUrl", firstFile.getString("filename"))
-            ));
+            for (JsonValue jsonValue : datasetFileDetails) {
+                JsonObject fileDetails = jsonValue.asJsonObject();
+                distribution.add(
+                        Json.createObjectBuilder()
+                                .add("@type", "sc:FileObject")
+                                .add("name", fileDetails.getString("filename"))
+                                .add("contentUrl", fileDetails.getString("filename")
+                                )
+                );
+            }
+            job.add("distribution", distribution);
 
             JsonObject datasetSchemaDotOrg = dataProvider.getDatasetSchemaDotOrg();
             job.add("dateModified", datasetSchemaDotOrg.getString("dateModified"));
