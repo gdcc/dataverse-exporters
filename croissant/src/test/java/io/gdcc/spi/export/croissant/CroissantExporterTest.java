@@ -26,6 +26,7 @@ import java.util.logging.Logger;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+import org.skyscreamer.jsonassert.JSONAssert;
 
 public class CroissantExporterTest {
 
@@ -205,7 +206,8 @@ public class CroissantExporterTest {
                 "dateModified": "2024-03-13"
             }
             """;
-        assertEquals(prettyPrint(expected), prettyPrint(outputStream.toString()));
+        String actual = outputStream.toString();
+        JSONAssert.assertEquals(expected, actual, true);
 
     }
 
