@@ -134,6 +134,7 @@ public class CroissantExporter implements Exporter {
             }
 
             job.add("@type", "sc:Dataset");
+            job.add("conformsTo", "http://mlcommons.org/croissant/1.0");
 
             JsonObject datasetJson = dataProvider.getDatasetJson();
             // TODO: Get title more easily elsewhere? https://github.com/IQSS/dataverse/issues/2110
@@ -158,8 +159,12 @@ public class CroissantExporter implements Exporter {
             JsonArray datasetFileDetails = dataProvider.getDatasetFileDetails();
             // TODO: get more than the first file!
             JsonObject firstFile = datasetFileDetails.getJsonObject(0);
-            job.add("distribution", Json.createArrayBuilder().add(Json.createObjectBuilder()
-                    .add("contentUrl", firstFile.getString("filename"))));
+            job.add("distribution", Json.createArrayBuilder()
+                    .add(Json.createObjectBuilder()
+                            .add("@type", "sc:FileObject")
+                            .add("name", firstFile.getString("filename"))
+                            .add("contentUrl", firstFile.getString("filename"))
+            ));
 
             JsonObject datasetSchemaDotOrg = dataProvider.getDatasetSchemaDotOrg();
             job.add("dateModified", datasetSchemaDotOrg.getString("dateModified"));

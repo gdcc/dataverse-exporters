@@ -166,11 +166,14 @@ public class CroissantExporterTest {
                     "transform": "cr:transform",
                     "wd": "https://www.wikidata.org/wiki/"
                 },
+                "conformsTo": "http://mlcommons.org/croissant/1.0",
                 "@type": "sc:Dataset",
                 "name": "Cars",
                 "citeAs": "https://doi.org/10.5072/FK2/EKY1NP",
                 "distribution": [
                     {
+                        "@type": "sc:FileObject",
+                        "name": "stata13-auto.tab",
                         "contentUrl": "stata13-auto.tab"
                     }
                 ],
