@@ -41,82 +41,42 @@ public class CroissantExporterTest {
         dataProvider = new ExportDataProvider() {
             @Override
             public JsonObject getDatasetJson() {
-                JsonObjectBuilder job = Json.createObjectBuilder();
                 String pathToJsonFile = "src/test/resources/cars/datasetJson.json";
-
                 try (JsonReader jsonReader = Json.createReader(new FileReader(pathToJsonFile))) {
-                    JsonObject jsonObject = jsonReader.readObject();
-                    // FIXME: just a proof of concept to get the dataset title
-                    job.add("name", jsonObject
-                            .getJsonObject("datasetVersion")
-                            .getJsonObject("metadataBlocks")
-                            .getJsonObject("citation")
-                            .getJsonArray("fields")
-                            .getJsonObject(0)
-                            .getString("value")
-                    );
+                    return jsonReader.readObject();
                 } catch (FileNotFoundException ex) {
-                    Logger.getLogger(CroissantExporterTest.class.getName()).log(Level.SEVERE, null, ex);
+                    return null;
                 }
-
-                return Json.createObjectBuilder()
-                        .addAll(job)
-                        .build();
             }
 
             @Override
             public JsonObject getDatasetORE() {
-                JsonObjectBuilder job = Json.createObjectBuilder();
                 String pathToJsonFile = "src/test/resources/cars/datasetORE.json";
-
                 try (JsonReader jsonReader = Json.createReader(new FileReader(pathToJsonFile))) {
-                    JsonObject jsonObject = jsonReader.readObject();
-                    // FIXME: just a proof of concept to get the PID/DOI
-                    job.add("citeAs", jsonObject
-                            .getJsonObject("ore:describes")
-                            .getString("@id")
-                    );
+                    return jsonReader.readObject();
                 } catch (FileNotFoundException ex) {
-                    Logger.getLogger(CroissantExporterTest.class.getName()).log(Level.SEVERE, null, ex);
+                    return null;
                 }
-
-                return Json.createObjectBuilder()
-                        .addAll(job)
-                        .build();
             }
 
             @Override
             public JsonArray getDatasetFileDetails() {
                 String pathToJsonFile = "src/test/resources/cars/datasetFileDetails.json";
-
-                JsonArray jsonArray = null;
-
                 try (JsonReader jsonReader = Json.createReader(new FileReader(pathToJsonFile))) {
-                    jsonArray = jsonReader.readArray();
+                    return jsonReader.readArray();
                 } catch (FileNotFoundException ex) {
-                    Logger.getLogger(CroissantExporterTest.class.getName()).log(Level.SEVERE, null, ex);
+                    return null;
                 }
-                return jsonArray;
-
             }
 
             @Override
             public JsonObject getDatasetSchemaDotOrg() {
-                JsonObjectBuilder job = Json.createObjectBuilder();
                 String pathToJsonFile = "src/test/resources/cars/datasetSchemaDotOrg.json";
-
                 try (JsonReader jsonReader = Json.createReader(new FileReader(pathToJsonFile))) {
-                    JsonObject jsonObject = jsonReader.readObject();
-                    job.add("dateModified", jsonObject
-                            .getString("dateModified")
-                    );
+                    return jsonReader.readObject();
                 } catch (FileNotFoundException ex) {
-                    Logger.getLogger(CroissantExporterTest.class.getName()).log(Level.SEVERE, null, ex);
+                    return null;
                 }
-
-                return Json.createObjectBuilder()
-                        .addAll(job)
-                        .build();
             }
 
             @Override

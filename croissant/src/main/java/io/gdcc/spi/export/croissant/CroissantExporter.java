@@ -136,13 +136,24 @@ public class CroissantExporter implements Exporter {
             job.add("@type", "sc:Dataset");
 
             JsonObject datasetJson = dataProvider.getDatasetJson();
-            // TODO: Add much more than just the name/title
-            job.add("name", datasetJson.getString("name"));
+            // TODO: Get title more easily elsewhere? https://github.com/IQSS/dataverse/issues/2110
+            job.add("name", datasetJson
+                    .getJsonObject("datasetVersion")
+                    .getJsonObject("metadataBlocks")
+                    .getJsonObject("citation")
+                    .getJsonArray("fields")
+                    // FIXME: brittle to assume title is element zero
+                    .getJsonObject(0)
+                    .getString("value")
+            );
 
             JsonObject datasetORE = dataProvider.getDatasetORE();
             // TODO: Ok for this to be a URL? https://doi.org/10.5072/FK2/EKY1NP
             // Or should it start with 10? 10.5072/FK2/EKY1NP
-            job.add("citeAs", datasetORE.getString("citeAs"));
+            job.add("citeAs", datasetORE
+                    .getJsonObject("ore:describes")
+                    .getString("@id")
+            );
 
             JsonArray datasetFileDetails = dataProvider.getDatasetFileDetails();
             // TODO: get more than the first file!
