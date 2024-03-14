@@ -84,37 +84,47 @@ public class CroissantExporter implements Exporter {
             String contextString = """
             {
                 "@context": {
-                "@language": "en",
-                "@vocab": "https://schema.org/",
-                "column": "ml:column",
-                "data": {
-                  "@id": "ml:data",
-                  "@type": "@json"
-                },
-                "dataType": {
-                  "@id": "ml:dataType",
-                  "@type": "@vocab"
-                },
-                "extract": "ml:extract",
-                "field": "ml:field",
-                "fileProperty": "ml:fileProperty",
-                "format": "ml:format",
-                "includes": "ml:includes",
-                "isEnumeration": "ml:isEnumeration",
-                "jsonPath": "ml:jsonPath",
-                "ml": "http://mlcommons.org/schema/",
-                "parentField": "ml:parentField",
-                "path": "ml:path",
-                "recordSet": "ml:recordSet",
-                "references": "ml:references",
-                "regex": "ml:regex",
-                "repeated": "ml:repeated",
-                "replace": "ml:replace",
-                "sc": "https://schema.org/",
-                "separator": "ml:separator",
-                "source": "ml:source",
-                "subField": "ml:subField",
-                "transform": "ml:transform"
+                    "@language": "en",
+                    "@vocab": "https://schema.org/",
+                    "citeAs": "cr:citeAs",
+                    "column": "cr:column",
+                    "conformsTo": "dct:conformsTo",
+                    "cr": "http://mlcommons.org/croissant/",
+                    "data": {
+                      "@id": "cr:data",
+                      "@type": "@json"
+                    },
+                    "dataBiases": "cr:dataBiases",
+                    "dataCollection": "cr:dataCollection",
+                    "dataType": {
+                      "@id": "cr:dataType",
+                      "@type": "@vocab"
+                    },
+                    "extract": "cr:extract",
+                    "field": "cr:field",
+                    "fileProperty": "cr:fileProperty",
+                    "fileObject": "cr:fileObject",
+                    "fileSet": "cr:fileSet",
+                    "format": "cr:format",
+                    "includes": "cr:includes",
+                    "isEnumeration": "cr:isEnumeration",
+                    "jsonPath": "cr:jsonPath",
+                    "key": "cr:key",
+                    "md5": "cr:md5",
+                    "parentField": "cr:parentField",
+                    "path": "cr:path",
+                    "personalSensitiveInformation": "cr:personalSensitiveInformation",
+                    "recordSet": "cr:recordSet",
+                    "references": "cr:references",
+                    "regex": "cr:regex",
+                    "repeated": "cr:repeated",
+                    "replace": "cr:replace",
+                    "sc": "https://schema.org/",
+                    "separator": "cr:separator",
+                    "source": "cr:source",
+                    "subField": "cr:subField",
+                    "transform": "cr:transform",
+                    "wd": "https://www.wikidata.org/wiki/"
                 }
             }
             """;
