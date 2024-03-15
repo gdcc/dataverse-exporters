@@ -156,6 +156,7 @@ public class CroissantExporter implements Exporter {
             // Versions should be strings. And besides, 1.0.1 is not a float.
             // The expected error if you use "1.0" as a string is this:
             //  -  [Metadata(Cars)] Version doesn't follow MAJOR.MINOR.PATCH: 1.0. For more information refer to: https://semver.org/spec/v2.0.0.html
+            // See also https://github.com/mlcommons/croissant/issues/609
 //            job.add("version", Float.parseFloat(datasetORE
 //                    .getJsonObject("ore:describes")
 //                    .getString("schema:version"))
