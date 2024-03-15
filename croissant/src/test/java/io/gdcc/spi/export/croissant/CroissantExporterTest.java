@@ -169,6 +169,7 @@ public class CroissantExporterTest {
                 "@type": "sc:Dataset",
                 "conformsTo": "http://mlcommons.org/croissant/1.0",
                 "name": "Cars",
+                "version": "1.0",
                 "citeAs": "https://doi.org/10.5072/FK2/EKY1NP",
                 "distribution": [
                     {
@@ -179,6 +180,7 @@ public class CroissantExporterTest {
                     }
                 ],
                 "license": "http://creativecommons.org/publicdomain/zero/1.0",
+                "datePublished": "2024-03-13",
                 "dateModified": "2024-03-13"
             }
             """;

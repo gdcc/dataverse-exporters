@@ -151,6 +151,10 @@ public class CroissantExporter implements Exporter {
             );
 
             JsonObject datasetORE = dataProvider.getDatasetORE();
+            job.add("version", datasetORE
+                    .getJsonObject("ore:describes")
+                    .getString("schema:version")
+            );
             // TODO: Ok for this to be a URL? https://doi.org/10.5072/FK2/EKY1NP
             // Or should it start with 10? 10.5072/FK2/EKY1NP
             job.add("citeAs", datasetORE
@@ -179,6 +183,7 @@ public class CroissantExporter implements Exporter {
 
             JsonObject datasetSchemaDotOrg = dataProvider.getDatasetSchemaDotOrg();
             job.add("license", datasetSchemaDotOrg.getString("license"));
+            job.add("datePublished", datasetSchemaDotOrg.getString("datePublished"));
             job.add("dateModified", datasetSchemaDotOrg.getString("dateModified"));
 
             // TODO: Do we need DataCite XML?
