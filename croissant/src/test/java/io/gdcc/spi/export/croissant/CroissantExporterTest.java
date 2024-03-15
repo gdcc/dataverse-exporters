@@ -178,6 +178,7 @@ public class CroissantExporterTest {
                         "contentUrl": "stata13-auto.tab"
                     }
                 ],
+                "license": "http://creativecommons.org/publicdomain/zero/1.0",
                 "dateModified": "2024-03-13"
             }
             """;
