@@ -174,9 +174,11 @@ public class CroissantExporterTest {
                 "distribution": [
                     {
                         "@type": "sc:FileObject",
-                        "name": "stata13-auto.tab",
+                        "name": "stata13-auto.dta",
+                        "encodingFormat": "application/x-stata-13",
                         "md5": "7b1201ce6b469796837a835377338c5a",
-                        "contentUrl": "stata13-auto.tab"
+                        "sha256": "see md5",
+                        "contentUrl": "stata13-auto.dta"
                     }
                 ],
                 "license": "http://creativecommons.org/publicdomain/zero/1.0",
@@ -187,7 +189,7 @@ public class CroissantExporterTest {
         String actual = outputStream.toString();
         Files.writeString(Paths.get("src/test/resources/cars/croissant.json"), prettyPrint(actual), StandardCharsets.UTF_8);
         JSONAssert.assertEquals(expected, actual, true);
-//        assertEquals(prettyPrint(expected), prettyPrint(outputStream.toString()));
+        assertEquals(prettyPrint(expected), prettyPrint(outputStream.toString()));
 
     }
 

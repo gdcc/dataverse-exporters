@@ -174,9 +174,12 @@ public class CroissantExporter implements Exporter {
                 distribution.add(
                         Json.createObjectBuilder()
                                 .add("@type", "sc:FileObject")
-                                .add("name", fileDetails.getString("filename"))
+                                .add("name", fileDetails.getString("originalFileName"))
+                                .add("encodingFormat", fileDetails.getString("originalFileFormat"))
                                 .add(checksumType, checksumValue)
-                                .add("contentUrl", fileDetails.getString("filename"))
+                                // Not having sha256 is a validation error!
+                                .add("sha256", "see md5")
+                                .add("contentUrl", fileDetails.getString("originalFileName"))
                 );
             }
             job.add("distribution", distribution);
