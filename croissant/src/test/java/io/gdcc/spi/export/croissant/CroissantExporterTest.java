@@ -140,6 +140,7 @@ public class CroissantExporterTest {
                       "@id": "cr:dataType",
                       "@type": "@vocab"
                     },
+                    "dct": "http://purl.org/dc/terms/",
                     "extract": "cr:extract",
                     "field": "cr:field",
                     "fileProperty": "cr:fileProperty",
@@ -173,7 +174,7 @@ public class CroissantExporterTest {
                 "citeAs": "https://doi.org/10.5072/FK2/EKY1NP",
                 "distribution": [
                     {
-                        "@type": "sc:FileObject",
+                        "@type": "cr:FileObject",
                         "name": "stata13-auto.dta",
                         "encodingFormat": "application/x-stata-13",
                         "md5": "7b1201ce6b469796837a835377338c5a",

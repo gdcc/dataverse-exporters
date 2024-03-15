@@ -102,6 +102,7 @@ public class CroissantExporter implements Exporter {
                       "@id": "cr:dataType",
                       "@type": "@vocab"
                     },
+                    "dct": "http://purl.org/dc/terms/",
                     "extract": "cr:extract",
                     "field": "cr:field",
                     "fileProperty": "cr:fileProperty",
@@ -173,7 +174,7 @@ public class CroissantExporter implements Exporter {
 
                 distribution.add(
                         Json.createObjectBuilder()
-                                .add("@type", "sc:FileObject")
+                                .add("@type", "cr:FileObject")
                                 .add("name", fileDetails.getString("originalFileName"))
                                 .add("encodingFormat", fileDetails.getString("originalFileFormat"))
                                 .add(checksumType, checksumValue)
