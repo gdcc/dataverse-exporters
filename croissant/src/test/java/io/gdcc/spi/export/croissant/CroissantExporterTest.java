@@ -166,8 +166,8 @@ public class CroissantExporterTest {
                     "transform": "cr:transform",
                     "wd": "https://www.wikidata.org/wiki/"
                 },
-                "conformsTo": "http://mlcommons.org/croissant/1.0",
                 "@type": "sc:Dataset",
+                "conformsTo": "http://mlcommons.org/croissant/1.0",
                 "name": "Cars",
                 "citeAs": "https://doi.org/10.5072/FK2/EKY1NP",
                 "distribution": [
@@ -185,6 +185,7 @@ public class CroissantExporterTest {
         String actual = outputStream.toString();
         Files.writeString(Paths.get("src/test/resources/cars/croissant.json"), prettyPrint(actual), StandardCharsets.UTF_8);
         JSONAssert.assertEquals(expected, actual, true);
+//        assertEquals(prettyPrint(expected), prettyPrint(outputStream.toString()));
 
     }
 

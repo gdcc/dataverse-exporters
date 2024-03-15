@@ -171,8 +171,8 @@ public class CroissantExporter implements Exporter {
                         Json.createObjectBuilder()
                                 .add("@type", "sc:FileObject")
                                 .add("name", fileDetails.getString("filename"))
-                                .add("contentUrl", fileDetails.getString("filename"))
                                 .add(checksumType, checksumValue)
+                                .add("contentUrl", fileDetails.getString("filename"))
                 );
             }
             job.add("distribution", distribution);
