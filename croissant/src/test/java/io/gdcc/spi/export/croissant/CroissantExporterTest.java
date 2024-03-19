@@ -175,6 +175,7 @@ public class CroissantExporterTest {
                 "distribution": [
                     {
                         "@type": "cr:FileObject",
+                        "@id": "stata13-auto.dta",
                         "name": "stata13-auto.dta",
                         "encodingFormat": "application/x-stata-13",
                         "md5": "7b1201ce6b469796837a835377338c5a",
@@ -182,6 +183,212 @@ public class CroissantExporterTest {
                         "contentUrl": "stata13-auto.dta"
                     }
                 ],
+                "recordSet": [
+                    {
+                      "@type": "cr:RecordSet",
+                      "field": [
+                        {
+                          "@type": "cr:Field",
+                          "name": "make",
+                          "description": "Make and Model",
+                          "dataType": "sc:Text",
+                          "source": {
+                            "@id": "105",
+                            "fileObject": {
+                              "@id": "stata13-auto.dta"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "@type": "cr:RecordSet",
+                      "field": [
+                        {
+                          "@type": "cr:Field",
+                          "name": "price",
+                          "description": "Price",
+                          "dataType": "sc:Integer",
+                          "source": {
+                            "@id": "102",
+                            "fileObject": {
+                              "@id": "stata13-auto.dta"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "@type": "cr:RecordSet",
+                      "field": [
+                        {
+                          "@type": "cr:Field",
+                          "name": "mpg",
+                          "description": "Mileage (mpg)",
+                          "dataType": "sc:Integer",
+                          "source": {
+                            "@id": "103",
+                            "fileObject": {
+                              "@id": "stata13-auto.dta"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "@type": "cr:RecordSet",
+                      "field": [
+                        {
+                          "@type": "cr:Field",
+                          "name": "rep78",
+                          "description": "Repair Record 1978",
+                          "dataType": "sc:Integer",
+                          "source": {
+                            "@id": "107",
+                            "fileObject": {
+                              "@id": "stata13-auto.dta"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "@type": "cr:RecordSet",
+                      "field": [
+                        {
+                          "@type": "cr:Field",
+                          "name": "headroom",
+                          "description": "Headroom (in.)",
+                          "dataType": "sc:Integer",
+                          "source": {
+                            "@id": "101",
+                            "fileObject": {
+                              "@id": "stata13-auto.dta"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "@type": "cr:RecordSet",
+                      "field": [
+                        {
+                          "@type": "cr:Field",
+                          "name": "trunk",
+                          "description": "Trunk space (cu. ft.)",
+                          "dataType": "sc:Integer",
+                          "source": {
+                            "@id": "106",
+                            "fileObject": {
+                              "@id": "stata13-auto.dta"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "@type": "cr:RecordSet",
+                      "field": [
+                        {
+                          "@type": "cr:Field",
+                          "name": "weight",
+                          "description": "Weight (lbs.)",
+                          "dataType": "sc:Integer",
+                          "source": {
+                            "@id": "99",
+                            "fileObject": {
+                              "@id": "stata13-auto.dta"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "@type": "cr:RecordSet",
+                      "field": [
+                        {
+                          "@type": "cr:Field",
+                          "name": "length",
+                          "description": "Length (in.)",
+                          "dataType": "sc:Integer",
+                          "source": {
+                            "@id": "96",
+                            "fileObject": {
+                              "@id": "stata13-auto.dta"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "@type": "cr:RecordSet",
+                      "field": [
+                        {
+                          "@type": "cr:Field",
+                          "name": "turn",
+                          "description": "Turn Circle (ft.) ",
+                          "dataType": "sc:Integer",
+                          "source": {
+                            "@id": "104",
+                            "fileObject": {
+                              "@id": "stata13-auto.dta"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "@type": "cr:RecordSet",
+                      "field": [
+                        {
+                          "@type": "cr:Field",
+                          "name": "displacement",
+                          "description": "Displacement (cu. in.)",
+                          "dataType": "sc:Integer",
+                          "source": {
+                            "@id": "97",
+                            "fileObject": {
+                              "@id": "stata13-auto.dta"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "@type": "cr:RecordSet",
+                      "field": [
+                        {
+                          "@type": "cr:Field",
+                          "name": "gear_ratio",
+                          "description": "Gear Ratio",
+                          "dataType": "sc:Integer",
+                          "source": {
+                            "@id": "100",
+                            "fileObject": {
+                              "@id": "stata13-auto.dta"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "@type": "cr:RecordSet",
+                      "field": [
+                        {
+                          "@type": "cr:Field",
+                          "name": "foreign",
+                          "description": "Car type",
+                          "dataType": "sc:Integer",
+                          "source": {
+                            "@id": "98",
+                            "fileObject": {
+                              "@id": "stata13-auto.dta"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ],
                 "license": "http://creativecommons.org/publicdomain/zero/1.0",
                 "datePublished": "2024-03-13",
                 "dateModified": "2024-03-13"

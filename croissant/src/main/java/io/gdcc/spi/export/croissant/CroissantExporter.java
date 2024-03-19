@@ -173,10 +173,12 @@ public class CroissantExporter implements Exporter {
             );
 
             JsonArrayBuilder distribution = Json.createArrayBuilder();
+            JsonArrayBuilder recordSet = Json.createArrayBuilder();
             JsonArray datasetFileDetails = dataProvider.getDatasetFileDetails();
             for (JsonValue jsonValue : datasetFileDetails) {
 
                 JsonObject fileDetails = jsonValue.asJsonObject();
+                String filename = fileDetails.getString("originalFileName");
                 JsonObject checksum = fileDetails.getJsonObject("checksum");
                 String checksumType = checksum.getString("type").toLowerCase();
                 String checksumValue = checksum.getString("value");
@@ -184,6 +186,7 @@ public class CroissantExporter implements Exporter {
                 distribution.add(
                         Json.createObjectBuilder()
                                 .add("@type", "cr:FileObject")
+                                .add("@id", filename)
                                 .add("name", fileDetails.getString("originalFileName"))
                                 .add("encodingFormat", fileDetails.getString("originalFileFormat"))
                                 .add(checksumType, checksumValue)
@@ -191,8 +194,58 @@ public class CroissantExporter implements Exporter {
                                 .add("sha256", "see md5")
                                 .add("contentUrl", fileDetails.getString("originalFileName"))
                 );
+                int fileIndex = 0;
+                JsonArray dataTables = fileDetails.getJsonArray("dataTables");
+                for (JsonValue dataTableValue : dataTables) {
+                    JsonObject dataTableObject = dataTableValue.asJsonObject();
+                    // Unused
+                    int varQuantity = dataTableObject.getInt("varQuantity");
+                    // Unused
+                    int caseQuantity = dataTableObject.getInt("caseQuantity");
+                    JsonArray dataVariables = dataTableObject.getJsonArray("dataVariables");
+                    JsonArrayBuilder fieldSetArray = Json.createArrayBuilder();
+                    for (JsonValue dataVariableValue : dataVariables) {
+                        JsonObjectBuilder fieldSetObject = Json.createObjectBuilder();
+                        fieldSetObject.add("@type", "cr:RecordSet");
+                        JsonObject dataVariableObject = dataVariableValue.asJsonObject();
+                        // TODO: should this be an integer?
+                        Integer variableId = dataVariableObject.getInt("id");
+                        String variableName = dataVariableObject.getString("name");
+                        String variableDescription = dataVariableObject.getString("label");
+                        String variableFormatType = dataVariableObject.getString("variableFormatType");
+                        String dataType = null;
+                        switch (variableFormatType) {
+                            case "CHARACTER":
+                                dataType = "sc:Text";
+                                break;
+                            case "NUMERIC":
+                                // TODO: Integer? What about other numeric types?
+                                dataType = "sc:Integer";
+                                break;
+                            default:
+                                break;
+                        }
+                        fieldSetArray.add(
+                                Json.createObjectBuilder()
+                                        .add("@type", "cr:Field")
+                                        .add("name", variableName)
+                                        .add("description", variableDescription)
+                                        .add("dataType", dataType)
+                                        .add("source", Json.createObjectBuilder()
+                                                .add("@id", variableId.toString())
+                                                .add("fileObject", Json.createObjectBuilder()
+                                                        .add("@id", filename)
+                                                )
+                                        )
+                        );
+                        fieldSetObject.add("field", fieldSetArray);
+                        recordSet.add(fieldSetObject);
+                    }
+                    fileIndex++;
+                }
             }
             job.add("distribution", distribution);
+            job.add("recordSet", recordSet);
 
             JsonObject datasetSchemaDotOrg = dataProvider.getDatasetSchemaDotOrg();
             job.add("license", datasetSchemaDotOrg.getString("license"));
