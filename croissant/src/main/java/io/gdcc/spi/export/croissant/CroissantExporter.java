@@ -180,6 +180,7 @@ public class CroissantExporter implements Exporter {
                 JsonObject fileDetails = jsonValue.asJsonObject();
                 String filename = fileDetails.getString("originalFileName");
                 JsonObject checksum = fileDetails.getJsonObject("checksum");
+                // Out of the box the checksum type will be md5
                 String checksumType = checksum.getString("type").toLowerCase();
                 String checksumValue = checksum.getString("value");
 
@@ -190,8 +191,6 @@ public class CroissantExporter implements Exporter {
                                 .add("name", fileDetails.getString("originalFileName"))
                                 .add("encodingFormat", fileDetails.getString("originalFileFormat"))
                                 .add(checksumType, checksumValue)
-                                // Not having sha256 is a validation error!
-                                .add("sha256", "see md5")
                                 .add("contentUrl", fileDetails.getString("originalFileName"))
                 );
                 int fileIndex = 0;
