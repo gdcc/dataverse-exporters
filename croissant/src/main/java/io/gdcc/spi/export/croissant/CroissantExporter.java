@@ -249,6 +249,7 @@ public class CroissantExporter implements Exporter {
 
             JsonObject datasetSchemaDotOrg = dataProvider.getDatasetSchemaDotOrg();
             job.add("creator", datasetSchemaDotOrg.getJsonArray("creator"));
+            job.add("keywords", datasetSchemaDotOrg.getJsonArray("keywords"));
             job.add("license", datasetSchemaDotOrg.getString("license"));
             job.add("datePublished", datasetSchemaDotOrg.getString("datePublished"));
             job.add("dateModified", datasetSchemaDotOrg.getString("dateModified"));

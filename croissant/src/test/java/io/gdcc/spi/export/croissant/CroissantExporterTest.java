@@ -401,6 +401,9 @@ public class CroissantExporterTest {
                         "name": "Admin, Dataverse"
                     }
                 ],
+                "keywords": [
+                    "Other"
+                ],
                 "license": "http://creativecommons.org/publicdomain/zero/1.0",
                 "datePublished": "2024-03-13",
                 "dateModified": "2024-03-13",
