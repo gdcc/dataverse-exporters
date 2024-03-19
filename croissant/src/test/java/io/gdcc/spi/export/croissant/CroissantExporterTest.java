@@ -403,7 +403,16 @@ public class CroissantExporterTest {
                 ],
                 "license": "http://creativecommons.org/publicdomain/zero/1.0",
                 "datePublished": "2024-03-13",
-                "dateModified": "2024-03-13"
+                "dateModified": "2024-03-13",
+                "includedInDataCatalog": {
+                    "@type": "DataCatalog",
+                    "name": "Root",
+                    "url": "http://localhost:8080"
+                },                 
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "Root"
+                }
             }
             """;
         String actual = outputStream.toString();

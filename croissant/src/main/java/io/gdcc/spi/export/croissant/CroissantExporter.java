@@ -252,6 +252,8 @@ public class CroissantExporter implements Exporter {
             job.add("license", datasetSchemaDotOrg.getString("license"));
             job.add("datePublished", datasetSchemaDotOrg.getString("datePublished"));
             job.add("dateModified", datasetSchemaDotOrg.getString("dateModified"));
+            job.add("includedInDataCatalog", datasetSchemaDotOrg.getJsonObject("includedInDataCatalog"));
+            job.add("publisher", datasetSchemaDotOrg.getJsonObject("publisher"));
 
             // TODO: Do we need DataCite XML?
             String dataCiteXml = dataProvider.getDataCiteXml();
