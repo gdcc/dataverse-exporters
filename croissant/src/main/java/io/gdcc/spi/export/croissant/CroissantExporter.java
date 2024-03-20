@@ -171,10 +171,14 @@ public class CroissantExporter implements Exporter {
                     .getJsonObject("ore:describes")
                     .getString("@id")
             );
+            JsonArray oreFiles = datasetORE
+                    .getJsonObject("ore:describes")
+                    .getJsonArray("ore:aggregates");
 
             JsonArrayBuilder distribution = Json.createArrayBuilder();
             JsonArrayBuilder recordSet = Json.createArrayBuilder();
             JsonArray datasetFileDetails = dataProvider.getDatasetFileDetails();
+            int fileCounter = 0;
             for (JsonValue jsonValue : datasetFileDetails) {
 
                 JsonObject fileDetails = jsonValue.asJsonObject();
@@ -183,6 +187,7 @@ public class CroissantExporter implements Exporter {
                 // Out of the box the checksum type will be md5
                 String checksumType = checksum.getString("type").toLowerCase();
                 String checksumValue = checksum.getString("value");
+                String contentUrl = oreFiles.getJsonObject(fileCounter).getString("schema:sameAs");
 
                 distribution.add(
                         Json.createObjectBuilder()
@@ -191,7 +196,7 @@ public class CroissantExporter implements Exporter {
                                 .add("name", fileDetails.getString("originalFileName"))
                                 .add("encodingFormat", fileDetails.getString("originalFileFormat"))
                                 .add(checksumType, checksumValue)
-                                .add("contentUrl", fileDetails.getString("originalFileName"))
+                                .add("contentUrl", contentUrl)
                 );
                 int fileIndex = 0;
                 JsonArray dataTables = fileDetails.getJsonArray("dataTables");
@@ -242,6 +247,7 @@ public class CroissantExporter implements Exporter {
                     }
                     fileIndex++;
                 }
+                fileCounter++;
             }
             job.add("distribution", distribution);
             job.add("recordSet", recordSet);
