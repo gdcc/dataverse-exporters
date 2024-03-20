@@ -10,6 +10,7 @@ import java.util.Locale;
 import jakarta.json.Json;
 import jakarta.json.JsonArray;
 import jakarta.json.JsonArrayBuilder;
+import jakarta.json.JsonNumber;
 import jakarta.json.JsonObject;
 import jakarta.json.JsonObjectBuilder;
 import jakarta.json.JsonReader;
@@ -182,7 +183,19 @@ public class CroissantExporter implements Exporter {
             for (JsonValue jsonValue : datasetFileDetails) {
 
                 JsonObject fileDetails = jsonValue.asJsonObject();
-                String filename = fileDetails.getString("originalFileName");
+                String filename = fileDetails.getString("originalFileName", null);
+                if (filename == null) {
+                    filename = fileDetails.getString("filename");
+                }
+                String fileFormat = fileDetails.getString("originalFileFormat", null);
+                if (fileFormat == null) {
+                    fileFormat = fileDetails.getString("contentType");
+                }
+                JsonNumber fileSize = fileDetails.getJsonNumber("originalFileSize");
+                if (fileSize == null) {
+                    fileSize = fileDetails.getJsonNumber("filesize");
+                }
+                String fileSizeInBytes = fileSize.toString() + " B";
                 JsonObject checksum = fileDetails.getJsonObject("checksum");
                 // Out of the box the checksum type will be md5
                 String checksumType = checksum.getString("type").toLowerCase();
@@ -193,14 +206,17 @@ public class CroissantExporter implements Exporter {
                         Json.createObjectBuilder()
                                 .add("@type", "cr:FileObject")
                                 .add("@id", filename)
-                                .add("name", fileDetails.getString("originalFileName"))
-                                .add("encodingFormat", fileDetails.getString("originalFileFormat"))
+                                .add("name", filename)
+                                .add("encodingFormat", fileFormat)
                                 .add(checksumType, checksumValue)
-                                .add("contentSize", fileDetails.getJsonNumber("originalFileSize").toString() + " B")
+                                .add("contentSize", fileSizeInBytes)
                                 .add("contentUrl", contentUrl)
                 );
                 int fileIndex = 0;
                 JsonArray dataTables = fileDetails.getJsonArray("dataTables");
+                if (dataTables == null) {
+                    dataTables = JsonArray.EMPTY_JSON_ARRAY;
+                }
                 for (JsonValue dataTableValue : dataTables) {
                     JsonObject dataTableObject = dataTableValue.asJsonObject();
                     // Unused

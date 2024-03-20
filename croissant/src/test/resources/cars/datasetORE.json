@@ -1,5 +1,5 @@
 {
-    "dcterms:modified": "2024-03-13",
+    "dcterms:modified": "2024-03-20",
     "dcterms:creator": "Root",
     "@type": "ore:ResourceMap",
     "schema:additionalType": "Dataverse OREMap Format v1.0.0",
@@ -9,33 +9,33 @@
         "schema:version": "6.1 build pdurbin",
         "schema:url": "https://github.com/iqss/dataverse"
     },
-    "@id": "http://localhost:8080/api/datasets/export?exporter=OAI_ORE&persistentId=https://doi.org/10.5072/FK2/EKY1NP",
+    "@id": "http://localhost:8080/api/datasets/export?exporter=OAI_ORE&persistentId=https://doi.org/10.5072/FK2/6ZUDGC",
     "ore:describes": {
-        "author": {
-            "citation:authorName": "Admin, Dataverse",
-            "citation:authorAffiliation": "Dataverse.org"
+        "citation:dsDescription": {
+            "citation:dsDescriptionValue": "This dataset is about cars."
         },
         "citation:datasetContact": {
-            "citation:datasetContactName": "Admin, Dataverse",
-            "citation:datasetContactAffiliation": "Dataverse.org",
+            "citation:datasetContactName": "Durbin, Philip",
+            "citation:datasetContactAffiliation": "Harvard",
             "citation:datasetContactEmail": "dataverse@mailinator.com"
         },
-        "citation:dsDescription": {
-            "citation:dsDescriptionValue": "qqq"
+        "author": {
+            "citation:authorName": "Durbin, Philip",
+            "citation:authorAffiliation": "Harvard"
         },
-        "title": "Cars",
         "subject": "Other",
         "dateOfDeposit": "2024-03-13",
-        "citation:depositor": "Admin, Dataverse",
-        "@id": "https://doi.org/10.5072/FK2/EKY1NP",
+        "citation:depositor": "Durbin, Philip",
+        "title": "Cars",
+        "@id": "https://doi.org/10.5072/FK2/6ZUDGC",
         "@type": [
             "ore:Aggregation",
             "schema:Dataset"
         ],
         "schema:version": "1.0",
         "schema:name": "Cars",
-        "schema:dateModified": "2024-03-13 21:16:24.475",
-        "schema:datePublished": "2024-03-13",
+        "schema:dateModified": "Wed Mar 20 14:02:13 UTC 2024",
+        "schema:datePublished": "2024-03-20",
         "schema:creativeWorkStatus": "RELEASED",
         "schema:license": "http://creativecommons.org/publicdomain/zero/1.0",
         "dvcore:fileTermsOfAccess": {
@@ -55,16 +55,55 @@
         "ore:aggregates": [
             {
                 "schema:description": "",
+                "schema:name": "compute.py",
+                "dvcore:restricted": false,
+                "dvcore:directoryLabel": "code",
+                "schema:version": 2,
+                "dvcore:datasetVersionId": 1,
+                "@id": "http://localhost:8080/file.xhtml?fileId=4",
+                "schema:sameAs": "http://localhost:8080/api/access/datafile/4",
+                "@type": "ore:AggregatedResource",
+                "schema:fileFormat": "text/x-python",
+                "dvcore:filesize": 15,
+                "dvcore:storageIdentifier": "local://18e5c2b4bbb-3e5d7cdd36eb",
+                "dvcore:rootDataFileId": -1,
+                "dvcore:checksum": {
+                    "@type": "MD5",
+                    "@value": "d84985e94dde671f318076bd7a137f15"
+                }
+            },
+            {
+                "schema:description": "",
+                "schema:name": "README.md",
+                "dvcore:restricted": false,
+                "dvcore:directoryLabel": "doc",
+                "schema:version": 2,
+                "dvcore:datasetVersionId": 1,
+                "@id": "http://localhost:8080/file.xhtml?fileId=5",
+                "schema:sameAs": "http://localhost:8080/api/access/datafile/5",
+                "@type": "ore:AggregatedResource",
+                "schema:fileFormat": "text/markdown",
+                "dvcore:filesize": 28,
+                "dvcore:storageIdentifier": "local://18e5c2b4e7f-215de2f460f1",
+                "dvcore:rootDataFileId": -1,
+                "dvcore:checksum": {
+                    "@type": "MD5",
+                    "@value": "a2e484d07ee5590cc32182dc2c6ccc83"
+                }
+            },
+            {
+                "schema:description": "",
                 "schema:name": "stata13-auto.dta",
                 "dvcore:restricted": false,
-                "schema:version": 3,
-                "dvcore:datasetVersionId": 14,
-                "@id": "http://localhost:8080/file.xhtml?fileId=21",
-                "schema:sameAs": "http://localhost:8080/api/access/datafile/21?format=original",
+                "dvcore:directoryLabel": "data",
+                "schema:version": 4,
+                "dvcore:datasetVersionId": 1,
+                "@id": "http://localhost:8080/file.xhtml?fileId=6",
+                "schema:sameAs": "http://localhost:8080/api/access/datafile/6?format=original",
                 "@type": "ore:AggregatedResource",
                 "schema:fileFormat": "application/x-stata-13",
                 "dvcore:filesize": 6443,
-                "dvcore:storageIdentifier": "local://18e39ac54dc-9e74659afe34",
+                "dvcore:storageIdentifier": "local://18e5c2b505c-9712a34b0fe9",
                 "dvcore:currentIngestedName": "stata13-auto.tab",
                 "dvcore:UNF": "UNF:6:RPd9EWHSZwqUvRZuKTJMqg==",
                 "dvcore:rootDataFileId": -1,
@@ -75,7 +114,9 @@
             }
         ],
         "schema:hasPart": [
-            "http://localhost:8080/file.xhtml?fileId=21"
+            "http://localhost:8080/file.xhtml?fileId=4",
+            "http://localhost:8080/file.xhtml?fileId=5",
+            "http://localhost:8080/file.xhtml?fileId=6"
         ]
     },
     "@context": {

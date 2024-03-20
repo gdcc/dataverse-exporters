@@ -1,26 +1,26 @@
 {
-    "id": 20,
-    "identifier": "FK2/EKY1NP",
-    "persistentUrl": "https://doi.org/10.5072/FK2/EKY1NP",
+    "id": 3,
+    "identifier": "FK2/6ZUDGC",
+    "persistentUrl": "https://doi.org/10.5072/FK2/6ZUDGC",
     "protocol": "doi",
     "authority": "10.5072",
     "publisher": "Root",
-    "publicationDate": "2024-03-13",
-    "storageIdentifier": "local://10.5072/FK2/EKY1NP",
+    "publicationDate": "2024-03-20",
+    "storageIdentifier": "local://10.5072/FK2/6ZUDGC",
     "datasetVersion": {
-        "id": 14,
-        "datasetId": 20,
-        "datasetPersistentId": "doi:10.5072/FK2/EKY1NP",
-        "storageIdentifier": "local://10.5072/FK2/EKY1NP",
+        "id": 1,
+        "datasetId": 3,
+        "datasetPersistentId": "doi:10.5072/FK2/6ZUDGC",
+        "storageIdentifier": "local://10.5072/FK2/6ZUDGC",
         "versionNumber": 1,
         "versionMinorNumber": 0,
         "versionState": "RELEASED",
         "UNF": "UNF:6:RPd9EWHSZwqUvRZuKTJMqg==",
-        "lastUpdateTime": "2024-03-13T21:16:24Z",
-        "releaseTime": "2024-03-13T21:16:24Z",
-        "createTime": "2024-03-13T21:16:18Z",
-        "publicationDate": "2024-03-13",
-        "citationDate": "2024-03-13",
+        "lastUpdateTime": "2024-03-20T14:02:13Z",
+        "releaseTime": "2024-03-20T14:02:13Z",
+        "createTime": "2024-03-20T14:02:04Z",
+        "publicationDate": "2024-03-20",
+        "citationDate": "2024-03-20",
         "license": {
             "name": "CC0 1.0",
             "uri": "http://creativecommons.org/publicdomain/zero/1.0",
@@ -48,13 +48,13 @@
                                     "typeName": "authorName",
                                     "multiple": false,
                                     "typeClass": "primitive",
-                                    "value": "Admin, Dataverse"
+                                    "value": "Durbin, Philip"
                                 },
                                 "authorAffiliation": {
                                     "typeName": "authorAffiliation",
                                     "multiple": false,
                                     "typeClass": "primitive",
-                                    "value": "Dataverse.org"
+                                    "value": "Harvard"
                                 }
                             }
                         ]
@@ -69,13 +69,13 @@
                                     "typeName": "datasetContactName",
                                     "multiple": false,
                                     "typeClass": "primitive",
-                                    "value": "Admin, Dataverse"
+                                    "value": "Durbin, Philip"
                                 },
                                 "datasetContactAffiliation": {
                                     "typeName": "datasetContactAffiliation",
                                     "multiple": false,
                                     "typeClass": "primitive",
-                                    "value": "Dataverse.org"
+                                    "value": "Harvard"
                                 },
                                 "datasetContactEmail": {
                                     "typeName": "datasetContactEmail",
@@ -96,7 +96,7 @@
                                     "typeName": "dsDescriptionValue",
                                     "multiple": false,
                                     "typeClass": "primitive",
-                                    "value": "qqq"
+                                    "value": "This dataset is about cars."
                                 }
                             }
                         ]
@@ -113,7 +113,7 @@
                         "typeName": "depositor",
                         "multiple": false,
                         "typeClass": "primitive",
-                        "value": "Admin, Dataverse"
+                        "value": "Durbin, Philip"
                     },
                     {
                         "typeName": "dateOfDeposit",
@@ -127,19 +127,76 @@
         "files": [
             {
                 "description": "",
+                "label": "compute.py",
+                "restricted": false,
+                "directoryLabel": "code",
+                "version": 2,
+                "datasetVersionId": 1,
+                "dataFile": {
+                    "id": 4,
+                    "persistentId": "",
+                    "filename": "compute.py",
+                    "contentType": "text/x-python",
+                    "friendlyType": "Python Source Code",
+                    "filesize": 15,
+                    "description": "",
+                    "storageIdentifier": "local://18e5c2b4bbb-3e5d7cdd36eb",
+                    "rootDataFileId": -1,
+                    "md5": "d84985e94dde671f318076bd7a137f15",
+                    "checksum": {
+                        "type": "MD5",
+                        "value": "d84985e94dde671f318076bd7a137f15"
+                    },
+                    "tabularData": false,
+                    "creationDate": "2024-03-20",
+                    "publicationDate": "2024-03-20",
+                    "fileAccessRequest": true
+                }
+            },
+            {
+                "description": "",
+                "label": "README.md",
+                "restricted": false,
+                "directoryLabel": "doc",
+                "version": 2,
+                "datasetVersionId": 1,
+                "dataFile": {
+                    "id": 5,
+                    "persistentId": "",
+                    "filename": "README.md",
+                    "contentType": "text/markdown",
+                    "friendlyType": "Markdown Text",
+                    "filesize": 28,
+                    "description": "",
+                    "storageIdentifier": "local://18e5c2b4e7f-215de2f460f1",
+                    "rootDataFileId": -1,
+                    "md5": "a2e484d07ee5590cc32182dc2c6ccc83",
+                    "checksum": {
+                        "type": "MD5",
+                        "value": "a2e484d07ee5590cc32182dc2c6ccc83"
+                    },
+                    "tabularData": false,
+                    "creationDate": "2024-03-20",
+                    "publicationDate": "2024-03-20",
+                    "fileAccessRequest": true
+                }
+            },
+            {
+                "description": "",
                 "label": "stata13-auto.tab",
                 "restricted": false,
-                "version": 3,
-                "datasetVersionId": 14,
+                "directoryLabel": "data",
+                "version": 4,
+                "datasetVersionId": 1,
                 "dataFile": {
-                    "id": 21,
+                    "id": 6,
                     "persistentId": "",
                     "filename": "stata13-auto.tab",
                     "contentType": "text/tab-separated-values",
                     "friendlyType": "Tab-Delimited",
                     "filesize": 4026,
                     "description": "",
-                    "storageIdentifier": "local://18e39ac54dc-9e74659afe34",
+                    "storageIdentifier": "local://18e5c2b505c-9712a34b0fe9",
                     "originalFileFormat": "application/x-stata-13",
                     "originalFormatLabel": "Stata 13 Binary",
                     "originalFileSize": 6443,
@@ -152,12 +209,12 @@
                         "value": "7b1201ce6b469796837a835377338c5a"
                     },
                     "tabularData": true,
-                    "creationDate": "2024-03-13",
-                    "publicationDate": "2024-03-13",
+                    "creationDate": "2024-03-20",
+                    "publicationDate": "2024-03-20",
                     "fileAccessRequest": true
                 }
             }
         ],
-        "citation": "Admin, Dataverse, 2024, \"Cars\", https://doi.org/10.5072/FK2/EKY1NP, Root, V1, UNF:6:RPd9EWHSZwqUvRZuKTJMqg== [fileUNF]"
+        "citation": "Durbin, Philip, 2024, \"Cars\", https://doi.org/10.5072/FK2/6ZUDGC, Root, V1, UNF:6:RPd9EWHSZwqUvRZuKTJMqg== [fileUNF]"
     }
 }

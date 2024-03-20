@@ -4,7 +4,6 @@ import io.gdcc.spi.export.ExportDataProvider;
 import jakarta.json.Json;
 import jakarta.json.JsonArray;
 import jakarta.json.JsonObject;
-import jakarta.json.JsonObjectBuilder;
 import jakarta.json.JsonReader;
 import jakarta.json.JsonWriter;
 import jakarta.json.JsonWriterFactory;
@@ -21,8 +20,6 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
@@ -171,8 +168,26 @@ public class CroissantExporterTest {
                 "conformsTo": "http://mlcommons.org/croissant/1.0",
                 "name": "Cars",
                 "version": "1.0",
-                "citeAs": "https://doi.org/10.5072/FK2/EKY1NP",
+                "citeAs": "https://doi.org/10.5072/FK2/6ZUDGC",
                 "distribution": [
+                    {
+                        "@type": "cr:FileObject",
+                        "@id": "compute.py",
+                        "name": "compute.py",
+                        "encodingFormat": "text/x-python",
+                        "md5": "d84985e94dde671f318076bd7a137f15",
+                        "contentSize": "15 B",
+                        "contentUrl": "http://localhost:8080/api/access/datafile/4"
+                    },
+                    {
+                        "@type": "cr:FileObject",
+                        "@id": "README.md",
+                        "name": "README.md",
+                        "encodingFormat": "text/markdown",
+                        "md5": "a2e484d07ee5590cc32182dc2c6ccc83",
+                        "contentSize": "28 B",
+                        "contentUrl": "http://localhost:8080/api/access/datafile/5"
+                    },
                     {
                         "@type": "cr:FileObject",
                         "@id": "stata13-auto.dta",
@@ -180,7 +195,7 @@ public class CroissantExporterTest {
                         "encodingFormat": "application/x-stata-13",
                         "md5": "7b1201ce6b469796837a835377338c5a",
                         "contentSize": "6443 B",
-                        "contentUrl": "http://localhost:8080/api/access/datafile/21?format=original"
+                        "contentUrl": "http://localhost:8080/api/access/datafile/6?format=original"
                     }
                 ],
                 "recordSet": [
@@ -193,7 +208,7 @@ public class CroissantExporterTest {
                           "description": "Make and Model",
                           "dataType": "sc:Text",
                           "source": {
-                            "@id": "105",
+                            "@id": "11",
                             "fileObject": {
                               "@id": "stata13-auto.dta"
                             }
@@ -210,7 +225,7 @@ public class CroissantExporterTest {
                           "description": "Price",
                           "dataType": "sc:Integer",
                           "source": {
-                            "@id": "102",
+                            "@id": "5",
                             "fileObject": {
                               "@id": "stata13-auto.dta"
                             }
@@ -227,7 +242,7 @@ public class CroissantExporterTest {
                           "description": "Mileage (mpg)",
                           "dataType": "sc:Integer",
                           "source": {
-                            "@id": "103",
+                            "@id": "6",
                             "fileObject": {
                               "@id": "stata13-auto.dta"
                             }
@@ -244,7 +259,7 @@ public class CroissantExporterTest {
                           "description": "Repair Record 1978",
                           "dataType": "sc:Integer",
                           "source": {
-                            "@id": "107",
+                            "@id": "4",
                             "fileObject": {
                               "@id": "stata13-auto.dta"
                             }
@@ -261,7 +276,7 @@ public class CroissantExporterTest {
                           "description": "Headroom (in.)",
                           "dataType": "sc:Integer",
                           "source": {
-                            "@id": "101",
+                            "@id": "7",
                             "fileObject": {
                               "@id": "stata13-auto.dta"
                             }
@@ -278,7 +293,7 @@ public class CroissantExporterTest {
                           "description": "Trunk space (cu. ft.)",
                           "dataType": "sc:Integer",
                           "source": {
-                            "@id": "106",
+                            "@id": "9",
                             "fileObject": {
                               "@id": "stata13-auto.dta"
                             }
@@ -295,7 +310,7 @@ public class CroissantExporterTest {
                           "description": "Weight (lbs.)",
                           "dataType": "sc:Integer",
                           "source": {
-                            "@id": "99",
+                            "@id": "10",
                             "fileObject": {
                               "@id": "stata13-auto.dta"
                             }
@@ -312,7 +327,7 @@ public class CroissantExporterTest {
                           "description": "Length (in.)",
                           "dataType": "sc:Integer",
                           "source": {
-                            "@id": "96",
+                            "@id": "3",
                             "fileObject": {
                               "@id": "stata13-auto.dta"
                             }
@@ -329,7 +344,7 @@ public class CroissantExporterTest {
                           "description": "Turn Circle (ft.) ",
                           "dataType": "sc:Integer",
                           "source": {
-                            "@id": "104",
+                            "@id": "2",
                             "fileObject": {
                               "@id": "stata13-auto.dta"
                             }
@@ -346,7 +361,7 @@ public class CroissantExporterTest {
                           "description": "Displacement (cu. in.)",
                           "dataType": "sc:Integer",
                           "source": {
-                            "@id": "97",
+                            "@id": "1",
                             "fileObject": {
                               "@id": "stata13-auto.dta"
                             }
@@ -363,7 +378,7 @@ public class CroissantExporterTest {
                           "description": "Gear Ratio",
                           "dataType": "sc:Integer",
                           "source": {
-                            "@id": "100",
+                            "@id": "8",
                             "fileObject": {
                               "@id": "stata13-auto.dta"
                             }
@@ -380,7 +395,7 @@ public class CroissantExporterTest {
                           "description": "Car type",
                           "dataType": "sc:Integer",
                           "source": {
-                            "@id": "98",
+                            "@id": "12",
                             "fileObject": {
                               "@id": "stata13-auto.dta"
                             }
@@ -392,21 +407,21 @@ public class CroissantExporterTest {
                 "creator": [
                     {
                         "@type": "Person",
-                        "givenName": "Dataverse",
-                        "familyName": "Admin",
+                        "givenName": "Philip",
+                        "familyName": "Durbin",
                         "affiliation": {
                             "@type": "Organization",
-                            "name": "Dataverse.org"
+                            "name": "Harvard"
                         },
-                        "name": "Admin, Dataverse"
+                        "name": "Durbin, Philip"
                     }
                 ],
                 "keywords": [
                     "Other"
                 ],
                 "license": "http://creativecommons.org/publicdomain/zero/1.0",
-                "datePublished": "2024-03-13",
-                "dateModified": "2024-03-13",
+                "datePublished": "2024-03-20",
+                "dateModified": "2024-03-20",
                 "includedInDataCatalog": {
                     "@type": "DataCatalog",
                     "name": "Root",

@@ -1,37 +1,37 @@
 {
     "@context": "http://schema.org",
     "@type": "Dataset",
-    "@id": "https://doi.org/10.5072/FK2/EKY1NP",
-    "identifier": "https://doi.org/10.5072/FK2/EKY1NP",
+    "@id": "https://doi.org/10.5072/FK2/6ZUDGC",
+    "identifier": "https://doi.org/10.5072/FK2/6ZUDGC",
     "name": "Cars",
     "creator": [
         {
             "@type": "Person",
-            "givenName": "Dataverse",
-            "familyName": "Admin",
+            "givenName": "Philip",
+            "familyName": "Durbin",
             "affiliation": {
                 "@type": "Organization",
-                "name": "Dataverse.org"
+                "name": "Harvard"
             },
-            "name": "Admin, Dataverse"
+            "name": "Durbin, Philip"
         }
     ],
     "author": [
         {
             "@type": "Person",
-            "givenName": "Dataverse",
-            "familyName": "Admin",
+            "givenName": "Philip",
+            "familyName": "Durbin",
             "affiliation": {
                 "@type": "Organization",
-                "name": "Dataverse.org"
+                "name": "Harvard"
             },
-            "name": "Admin, Dataverse"
+            "name": "Durbin, Philip"
         }
     ],
-    "datePublished": "2024-03-13",
-    "dateModified": "2024-03-13",
+    "datePublished": "2024-03-20",
+    "dateModified": "2024-03-20",
     "version": "1",
-    "description": "qqq",
+    "description": "This dataset is about cars.",
     "keywords": [
         "Other"
     ],
@@ -52,11 +52,27 @@
     "distribution": [
         {
             "@type": "DataDownload",
+            "name": "compute.py",
+            "encodingFormat": "text/x-python",
+            "contentSize": 15,
+            "description": "",
+            "contentUrl": "http://localhost:8080/api/access/datafile/4"
+        },
+        {
+            "@type": "DataDownload",
             "name": "stata13-auto.tab",
             "encodingFormat": "text/tab-separated-values",
             "contentSize": 4026,
             "description": "",
-            "contentUrl": "http://localhost:8080/api/access/datafile/21"
+            "contentUrl": "http://localhost:8080/api/access/datafile/6"
+        },
+        {
+            "@type": "DataDownload",
+            "name": "README.md",
+            "encodingFormat": "text/markdown",
+            "contentSize": 28,
+            "description": "",
+            "contentUrl": "http://localhost:8080/api/access/datafile/5"
         }
     ]
 }
