@@ -179,6 +179,7 @@ public class CroissantExporterTest {
                         "name": "stata13-auto.dta",
                         "encodingFormat": "application/x-stata-13",
                         "md5": "7b1201ce6b469796837a835377338c5a",
+                        "contentSize": "6443 B",
                         "contentUrl": "http://localhost:8080/api/access/datafile/21?format=original"
                     }
                 ],

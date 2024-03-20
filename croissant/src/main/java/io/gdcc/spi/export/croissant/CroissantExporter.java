@@ -196,6 +196,7 @@ public class CroissantExporter implements Exporter {
                                 .add("name", fileDetails.getString("originalFileName"))
                                 .add("encodingFormat", fileDetails.getString("originalFileFormat"))
                                 .add(checksumType, checksumValue)
+                                .add("contentSize", fileDetails.getJsonNumber("originalFileSize").toString() + " B")
                                 .add("contentUrl", contentUrl)
                 );
                 int fileIndex = 0;
