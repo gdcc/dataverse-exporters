@@ -53,7 +53,6 @@ public class DdiPdfExportUtil {
     private static final Logger logger = Logger.getLogger(DdiPdfExportUtil.class.getCanonicalName());
     public static void datasetPdfDDI(InputStream datafile, OutputStream outputStream) throws XMLStreamException {
         try {
-            //String sysId = DdiPdfExportUtil.class.getClassLoader().getResource("/ddi-to-fo.xsl").toURI().toString();
             InputStream  styleSheetInput = DdiPdfExportUtil.class.getResourceAsStream("ddi-to-fo.xsl");
 
             final FopFactory fopFactory = FopFactory.newInstance(new File(".").toURI());
@@ -64,12 +63,19 @@ public class DdiPdfExportUtil {
                 // Setup XSLT
                 TransformerFactory factory = TransformerFactory.newInstance();
                 Source mySrc = new StreamSource(styleSheetInput);
-                //mySrc.setSystemId(sysId);
                 factory.setURIResolver(new FileResolver());
                 Transformer transformer = factory.newTransformer(mySrc);
                 
                 // Set the value of a <param> in the stylesheet
-                transformer.setParameter("versionParam", "2.0");
+                String localeEnvVar = System.getenv().get("LANG");
+                if (localeEnvVar != null) {
+                    if (localeEnvVar.indexOf('.') > 0) {
+                        localeEnvVar = localeEnvVar.substring(0, localeEnvVar.indexOf('.'));
+                    }
+                } else {
+                    localeEnvVar = "en";
+                }
+                transformer.setParameter("language-code", localeEnvVar);
 
                 // Setup input for XSLT transformation
                 Source src = new StreamSource(datafile);
