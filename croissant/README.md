@@ -12,6 +12,17 @@ mvn test
 ./validate.sh
 ```
 
+Note that [mlcroissant][] is changing! Sometimes in backward-incompatible ways! If you upgrade, you may see an error like this:
+
+```
+WARNING: The JSON-LD `@context` is not standard. Refer to the official @context (e.g., from the example datasets in https://github.com/mlcommons/croissant/tree/main/datasets/1.0).
+```
+
+As the error indicates, go to https://github.com/mlcommons/croissant/tree/main/datasets/1.0 and find a dataset such as "titantic" and copy the latest `@context` from there. Note that this may be different (but more up to date) than the version in the spec at https://mlcommons.github.io/croissant/docs/croissant-spec.html#appendix-1-json-ld-context
+
+In short, we are trusting the output of `mlcroissant validate --jsonld` over the spec.
+
+[mlcroissant]: https://pypi.org/project/mlcroissant/
 ## To build the Croissant jar
 
 ```    
