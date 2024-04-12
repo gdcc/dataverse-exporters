@@ -169,7 +169,7 @@ public class CroissantExporterTest {
                 "@type": "sc:Dataset",
                 "conformsTo": "http://mlcommons.org/croissant/1.0",
                 "name": "Cars",
-                "version": "1.0",
+                "version": "1.0.0",
                 "citeAs": "https://doi.org/10.5072/FK2/6ZUDGC",
                 "distribution": [
                     {
