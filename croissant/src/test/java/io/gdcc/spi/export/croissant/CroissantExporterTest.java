@@ -170,7 +170,7 @@ public class CroissantExporterTest {
                 "conformsTo": "http://mlcommons.org/croissant/1.0",
                 "name": "Cars",
                 "version": "1.0.0",
-                "citeAs": "https://doi.org/10.5072/FK2/6ZUDGC",
+                "citeAs": "@data{FK2/6ZUDGC_2024,author = {Durbin, Philip},publisher = {Root},title = {Cars},year = {2024},url = {https://doi.org/10.5072/FK2/6ZUDGC}}",
                 "distribution": [
                     {
                         "@type": "cr:FileObject",

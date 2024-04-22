@@ -17,6 +17,8 @@ import jakarta.json.JsonReader;
 import jakarta.json.JsonValue;
 import jakarta.ws.rs.core.MediaType;
 import java.io.StringReader;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * https://github.com/mlcommons/croissant
@@ -199,12 +201,15 @@ public class CroissantExporter implements Exporter {
                     .getJsonObject("ore:describes")
                     .getString("schema:version") + ".0"
             );
-            // TODO: Ok for this to be a URL? https://doi.org/10.5072/FK2/EKY1NP
-            // Or should it start with 10? 10.5072/FK2/EKY1NP
-            job.add("citeAs", datasetORE
-                    .getJsonObject("ore:describes")
-                    .getString("@id")
-            );
+            /**
+             * We have been told that it's fine and appropriate to put the
+             * citation to the dataset itself into "citeAs". However, the spec
+             * says "citeAs" is "A citation for a publication that describes the
+             * dataset" so we have asked for clarification here:
+             * https://github.com/mlcommons/croissant/issues/638
+             */
+            JsonObject datasetSchemaDotOrg = dataProvider.getDatasetSchemaDotOrg();
+            job.add("citeAs", getBibtex(datasetORE, datasetJson, datasetSchemaDotOrg));
             JsonArray oreFiles = datasetORE
                     .getJsonObject("ore:describes")
                     .getJsonArray("ore:aggregates");
@@ -302,7 +307,6 @@ public class CroissantExporter implements Exporter {
             job.add("distribution", distribution);
             job.add("recordSet", recordSet);
 
-            JsonObject datasetSchemaDotOrg = dataProvider.getDatasetSchemaDotOrg();
             job.add("creator", datasetSchemaDotOrg.getJsonArray("creator"));
             job.add("keywords", datasetSchemaDotOrg.getJsonArray("keywords"));
             job.add("license", datasetSchemaDotOrg.getString("license"));
@@ -323,6 +327,59 @@ public class CroissantExporter implements Exporter {
             // If anything goes wrong, an Exporter should throw an ExportException.
             throw new ExportException("Unknown exception caught during export: " + ex);
         }
+    }
+
+    /*
+    Here's how a BibTeX export looks in Dataverse:
+    @data{DVN/TJCLKP_2017,
+    author = {Durbin, Philip},
+    publisher = {Harvard Dataverse},
+    title = {{Open Source at Harvard}},
+    UNF = {UNF:6:e9+1ZqpZtjCuBzTDSrsHgA==},
+    year = {2017},
+    version = {DRAFT VERSION},
+    doi = {10.7910/DVN/TJCLKP},
+    url = {https://doi.org/10.7910/DVN/TJCLKP}
+    }
+     */
+    /**
+     *
+     * The code is inspired by DataCitation.java upstream. However, Croissant
+     * does not want newlines, so we omit them. Some notes about this example:
+     *
+     * - DVN/TJCLKP_2017 seems strange as an identifier. This is probably a bug
+     * upstream.
+     *
+     * - "DRAFT VERSION" is an artifact from a bug that was probably fixed in
+     * https://github.com/IQSS/dataverse/pull/9705
+     */
+    private String getBibtex(JsonObject datasetORE, JsonObject datasetJson, JsonObject datasetSchemaDotOrg) {
+        String identifier = datasetJson.getString("identifier");
+
+        JsonObject oreDescribes = datasetORE.getJsonObject("ore:describes");
+        String publicationYear = oreDescribes.getString("schema:datePublished").substring(0, 4);
+
+        JsonArray creatorArray = datasetSchemaDotOrg.getJsonArray("creator");
+        List<String> creators = new ArrayList<>();
+        for (JsonValue creator : creatorArray) {
+            creators.add(creator.asJsonObject().getString("name"));
+        }
+        String creatorsFormatted = String.join(" and ", creators);
+
+        String publisher = datasetSchemaDotOrg.getJsonObject("publisher").getString("name");
+        String title = datasetSchemaDotOrg.getString("name");
+
+        String pidAsUrl = oreDescribes.getString("@id");
+
+        StringBuilder sb = new StringBuilder();
+        sb.append("@data{").append(identifier).append("_").append(publicationYear).append(",");
+        sb.append("author = {").append(creatorsFormatted).append("},");
+        sb.append("publisher = {").append(publisher).append("},");
+        sb.append("title = {").append(title).append("},");
+        sb.append("year = {").append(publicationYear).append("},");
+        sb.append("url = {").append(pidAsUrl).append("}");
+        sb.append("}");
+        return sb.toString();
     }
 
 }
