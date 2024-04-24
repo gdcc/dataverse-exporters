@@ -239,6 +239,19 @@ public class CroissantExporter implements Exporter {
                 String checksumType = checksum.getString("type").toLowerCase();
                 String checksumValue = checksum.getString("value");
                 String contentUrl = oreFiles.getJsonObject(fileCounter).getString("schema:sameAs");
+                /**
+                 * TODO: directoryLabel is unused right now because we're not
+                 * sure where to put it. The spec and examples show it in
+                 * contentUrl but we use this field already. We have asked for
+                 * clarification in
+                 * https://github.com/mlcommons/croissant/issues/639
+                 *
+                 * It's suboptimal that the directoryLabel isn't already
+                 * included in dataProvider.getDatasetFileDetails(). If it gets
+                 * added as part of the following issue, we can get it from
+                 * there: https://github.com/IQSS/dataverse/issues/10523
+                 */
+                String directoryLabel = oreFiles.getJsonObject(fileCounter).getString("dvcore:directoryLabel");
 
                 distribution.add(
                         Json.createObjectBuilder()
