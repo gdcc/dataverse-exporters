@@ -1,12 +1,52 @@
 # Croissant Exporter for Dataverse
 
-## To run tests
+[Croissant][] is a high-level format for machine learning datasets. See the [Croissant writeup] in the guides for how this format is used in Dataverse and how to enable it.
+
+[Croissant]: https://github.com/mlcommons/croissant
+[Croissant writeup]: https://dataverse-guide--10533.org.readthedocs.build/en/10533/installation/advanced.html#croissant-croissant
+
+## Differences between Schema.org JSON-LD and Croissant
+
+- In Dataverse's implementation of Schema.org JSON-LD, we duplicated some fields. In Croissant, "author" has been dropped in favor of "creator" and "provider" has been dropped in favor of "publisher".
+
+## Open questions
+
+Croissant is a new format and there are a number of open questions about it. (Developers may find additional open question in the code flagged with "TODO".)
+
+### Can file paths be included?
+
+We opened https://github.com/mlcommons/croissant/issues/639 about this. It's not clear where to put file paths (called `directoryLabel` in Dataverse code).
+
+### Can ingested files have multiple URLs to download various formats?
+
+We opened https://github.com/mlcommons/croissant/issues/641 about this. Perhaps there should be a FileObject for each format offered?
+
+### What if the Croissant file is huge, due to many files (distribution) and columns (recordSet)?
+
+There is a concern that this will cause a performance problem.
+
+### Can summary statistics go into Croissant?
+
+No, but we opened https://github.com/mlcommons/croissant/issues/640 about this. See also "potential areas of work" in the [Croissant Task Force Minutes] for 2024-04-01. 
+
+## Developer documentation
+
+The rest of this documentation is for developers of the Dataverse Croissant exporter, including how to build and test it.
+
+### The Croissant spec and task force
+
+You can find the Croissant [spec] on the [Croissant] website. Consider joining the Croissant Task Force to ask questions (see [Croissant Task Force Minutes] for previous meetings). Don't be shy about opening issues at https://github.com/mlcommons/croissant/issues
+
+[spec]: https://mlcommons.github.io/croissant/docs/croissant-spec.html
+[Croissant Task Force Minutes]: https://docs.google.com/document/d/1OINP9AmphhAa3J9sw87QtpY9Hb4_Ym9Zxf1_ycF1_04/edit?usp=sharing
+
+### To run tests
 
 ```    
 mvn test
 ```
 
-## To validate
+### To validate
 
 ```
 ./validate.sh
@@ -23,13 +63,14 @@ As the error indicates, go to https://github.com/mlcommons/croissant/tree/main/d
 In short, we are trusting the output of `mlcroissant validate --jsonld` over the spec.
 
 [mlcroissant]: https://pypi.org/project/mlcroissant/
-## To build the Croissant jar
+
+### To build the Croissant jar
 
 ```    
 mvn package
 ```
 
-## To use the Croissant jar in Docker
+### To use the Croissant jar in Docker
 
 Under "environment" in the compose file, add the following.
 
@@ -53,7 +94,7 @@ curl http://localhost:8080/api/admin/metadata/reExportAll
 curl http://localhost:8080/api/admin/metadata/:persistentId/reExportDataset?persistentId=doi:10.5072/FK2/DZRHUP
 ```
 
-## To use the Croissant jar in non-Docker
+### To use the Croissant jar in non-Docker
 
 Same as above but use a JVM option in domain.xml such as the example below.
 
