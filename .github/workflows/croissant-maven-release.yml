@@ -6,6 +6,11 @@ on:
             - croissant
         paths:
             - "croissant/**"
+    pull_request:
+        branches:
+            - main
+        paths:
+            - "croissant/**"
     workflow_dispatch:
 
 jobs:
