@@ -1,6 +1,12 @@
 name: Croissant Release to Maven Central Repository
 
-on: workflow_dispatch
+on:
+    push:
+        branches:
+            - croissant
+        paths:
+            - "croissant/**"
+    workflow_dispatch:
 
 jobs:
     # Note: Pushing packages to Maven Central requires access to secrets, which pull requests from remote forks
