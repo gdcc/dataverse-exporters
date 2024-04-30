@@ -66,6 +66,13 @@
         </repository>
     </distributionManagement>
 
+    <scm>
+        <connection>scm:git:https://github.com/gdcc/dataverse-exporters.git</connection>
+        <developerConnection>scm:git:git@github.com:gdcc/dataverse-exporters.git</developerConnection>
+        <url>https://github.com/gdcc/dataverse-exporters/tree/main/${project.artifactId}</url>
+        <tag>HEAD</tag>
+    </scm>
+
     <build>
         <plugins>
             <plugin>
