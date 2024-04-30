@@ -3,13 +3,11 @@ on:
     push:
         branches:
             - main
-            - croissant
         paths:
             - "croissant/**"
     pull_request:
         branches:
             - main
-            - croissant
         paths:
             - "croissant/**"
 jobs:
