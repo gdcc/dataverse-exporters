@@ -145,18 +145,13 @@ public class CroissantExporter implements Exporter {
             job.add("conformsTo", "http://mlcommons.org/croissant/1.0");
 
             JsonObject datasetJson = dataProvider.getDatasetJson();
-            // TODO: Get title more easily elsewhere? https://github.com/IQSS/dataverse/issues/2110
-            job.add("name", datasetJson
-                    .getJsonObject("datasetVersion")
-                    .getJsonObject("metadataBlocks")
-                    .getJsonObject("citation")
-                    .getJsonArray("fields")
-                    // FIXME: brittle to assume title is element zero
-                    .getJsonObject(0)
-                    .getString("value")
-            );
 
             JsonObject datasetORE = dataProvider.getDatasetORE();
+            JsonObject describes = datasetORE.getJsonObject("ore:describes");
+            job.add("name", describes
+                    .getString("title")
+            );
+
             /**
              * We append ".0" to our version string to make the Croissant
              * validator happy and to comply with the Croissant spec but we
@@ -197,7 +192,6 @@ public class CroissantExporter implements Exporter {
              * represent a version and they're what SemVer uses, even allowing
              * "-alpha", etc.
              */
-            JsonObject describes = datasetORE.getJsonObject("ore:describes");
             job.add("version", describes
                     .getString("schema:version") + ".0"
             );
