@@ -23,7 +23,27 @@ We opened https://github.com/mlcommons/croissant/issues/641 about this. Perhaps 
 
 ### What if the Croissant file is huge, due to many files (distribution) and columns (recordSet)?
 
-There is a concern that this will cause a performance problem.
+As of [croissant-0.0.2-20240501.010936-8.jar](https://s01.oss.sonatype.org/content/groups/staging/io/gdcc/croissant/0.0.2-SNAPSHOT/croissant-0.0.2-20240501.010936-8.jar), large number of files are definitely a performance problem.
+
+`time curl 'https://beta.dataverse.org/api/datasets/export?exporter=croissant&persistentId=doi%3A10.5072/FK2/F1MCGB'` took 45 seconds...
+
+```
+real    0m44.743s
+user    0m0.019s
+sys     0m0.022s
+```
+
+... and the only information in the file was `{"status":"ERROR","message":"Export Failed"}`.
+
+The error was:
+
+```
+[2024-05-01T14:08:09.304+0000] [Payara 6.2023.7] [WARNING] [] [edu.harvard.iq.dataverse.export.ExportService] [tid: _ThreadID=88 _ThreadName=http-thread-pool::jk-connector(3)] [timeMillis: 1714572489304] [levelValue: 900] [[
+  Exception thrown while creating export_croissant.cached : Unknown exception caught during export: java.lang.NullPointerException: Cannot invoke "jakarta.json.JsonString.getString()" because the return value of "org.eclipse.parsson.JsonObjectBuilderImpl$JsonObjectImpl.getJsonString(String)" is null]]
+
+[2024-05-01T14:08:09.347+0000] [Payara 6.2023.7] [WARNING] [] [edu.harvard.iq.dataverse.api.Datasets] [tid: _ThreadID=88 _ThreadName=http-thread-pool::jk-connector(3)] [timeMillis: 1714572489347] [levelValue: 900] [[
+  Failed to export the dataset as croissant]]
+```
 
 ### Can summary statistics go into Croissant?
 
