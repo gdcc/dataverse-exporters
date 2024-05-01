@@ -30,6 +30,8 @@ public class CroissantExporterTest {
     static CroissantExporter exporter;
     static OutputStream outputStreamMinimal;
     static ExportDataProvider dataProviderMinimal;
+    static OutputStream outputStreamMax;
+    static ExportDataProvider dataProviderMax;
     static OutputStream outputStreamCars;
     static ExportDataProvider dataProviderCars;
 
@@ -83,6 +85,58 @@ public class CroissantExporterTest {
             public String getDataCiteXml() {
                 try {
                     return Files.readString(Paths.get("src/test/resources/minimal/dataCiteXml.xml"), StandardCharsets.UTF_8);
+                } catch (IOException ex) {
+                    return null;
+                }
+            }
+        };
+
+        outputStreamMax = new ByteArrayOutputStream();
+        dataProviderMax = new ExportDataProvider() {
+            @Override
+            public JsonObject getDatasetJson() {
+                String pathToJsonFile = "src/test/resources/max/datasetJson.json";
+                try (JsonReader jsonReader = Json.createReader(new FileReader(pathToJsonFile))) {
+                    return jsonReader.readObject();
+                } catch (FileNotFoundException ex) {
+                    return null;
+                }
+            }
+
+            @Override
+            public JsonObject getDatasetORE() {
+                String pathToJsonFile = "src/test/resources/max/datasetORE.json";
+                try (JsonReader jsonReader = Json.createReader(new FileReader(pathToJsonFile))) {
+                    return jsonReader.readObject();
+                } catch (FileNotFoundException ex) {
+                    return null;
+                }
+            }
+
+            @Override
+            public JsonArray getDatasetFileDetails() {
+                String pathToJsonFile = "src/test/resources/max/datasetFileDetails.json";
+                try (JsonReader jsonReader = Json.createReader(new FileReader(pathToJsonFile))) {
+                    return jsonReader.readArray();
+                } catch (FileNotFoundException ex) {
+                    return null;
+                }
+            }
+
+            @Override
+            public JsonObject getDatasetSchemaDotOrg() {
+                String pathToJsonFile = "src/test/resources/max/datasetSchemaDotOrg.json";
+                try (JsonReader jsonReader = Json.createReader(new FileReader(pathToJsonFile))) {
+                    return jsonReader.readObject();
+                } catch (FileNotFoundException ex) {
+                    return null;
+                }
+            }
+
+            @Override
+            public String getDataCiteXml() {
+                try {
+                    return Files.readString(Paths.get("src/test/resources/max/dataCiteXml.xml"), StandardCharsets.UTF_8);
                 } catch (IOException ex) {
                     return null;
                 }
@@ -260,6 +314,125 @@ public class CroissantExporterTest {
         Files.writeString(Paths.get("src/test/resources/minimal/croissant.json"), prettyPrint(actual), StandardCharsets.UTF_8);
         JSONAssert.assertEquals(expected, actual, true);
         assertEquals(prettyPrint(expected), prettyPrint(outputStreamMinimal.toString()));
+
+    }
+
+    @Test
+    public void testExportDatasetMax() throws Exception {
+        exporter.exportDataset(dataProviderMax, outputStreamMax);
+        String expected = """
+{
+    "@context": {
+        "@language": "en",
+        "@vocab": "https://schema.org/",
+        "citeAs": "cr:citeAs",
+        "column": "cr:column",
+        "conformsTo": "dct:conformsTo",
+        "cr": "http://mlcommons.org/croissant/",
+        "rai": "http://mlcommons.org/croissant/RAI/",
+        "data": {
+            "@id": "cr:data",
+            "@type": "@json"
+        },
+        "dataType": {
+            "@id": "cr:dataType",
+            "@type": "@vocab"
+        },
+        "dct": "http://purl.org/dc/terms/",
+        "examples": {
+            "@id": "cr:examples",
+            "@type": "@json"
+        },
+        "extract": "cr:extract",
+        "field": "cr:field",
+        "fileProperty": "cr:fileProperty",
+        "fileObject": "cr:fileObject",
+        "fileSet": "cr:fileSet",
+        "format": "cr:format",
+        "includes": "cr:includes",
+        "isLiveDataset": "cr:isLiveDataset",
+        "jsonPath": "cr:jsonPath",
+        "key": "cr:key",
+        "md5": "cr:md5",
+        "parentField": "cr:parentField",
+        "path": "cr:path",
+        "recordSet": "cr:recordSet",
+        "references": "cr:references",
+        "regex": "cr:regex",
+        "repeated": "cr:repeated",
+        "replace": "cr:replace",
+        "sc": "https://schema.org/",
+        "separator": "cr:separator",
+        "source": "cr:source",
+        "subField": "cr:subField",
+        "transform": "cr:transform",
+        "wd": "https://www.wikidata.org/wiki/"
+    },
+    "@type": "sc:Dataset",
+    "conformsTo": "http://mlcommons.org/croissant/1.0",
+    "name": "Max Schema.org",
+    "version": "1.0.0",
+    "citeAs": "@data{FK2/VQTYHD_2024,author = {Durbin, Philip and IQSS},publisher = {Root},title = {Max Schema.org},year = {2024},url = {https://doi.org/10.5072/FK2/VQTYHD}}",
+    "distribution": [
+        {
+            "@type": "cr:FileObject",
+            "@id": "README.md",
+            "name": "README.md",
+            "encodingFormat": "text/markdown",
+            "md5": "ebf050ec8cce5df0a72b100cfc9f442f",
+            "contentSize": "34 B",
+            "contentUrl": "https://beta.dataverse.org/api/access/datafile/26148"
+        }
+    ],
+    "recordSet": [
+    ],
+    "creator": [
+        {
+            "@type": "Person",
+            "givenName": "Philip",
+            "familyName": "Durbin",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "Harvard University"
+            },
+            "sameAs": "https://orcid.org/0000-0002-9528-9470",
+            "@id": "https://orcid.org/0000-0002-9528-9470",
+            "identifier": "https://orcid.org/0000-0002-9528-9470",
+            "name": "Durbin, Philip"
+        },
+        {
+            "@type": "Person",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "Harvard University"
+            },
+            "name": "IQSS"
+        }
+    ],
+    "keywords": [
+        "Social Sciences",
+        "Other",
+        "foo",
+        "bar"
+    ],
+    "license": "http://creativecommons.org/publicdomain/zero/1.0",
+    "datePublished": "2024-05-01",
+    "dateModified": "2024-05-01",
+    "includedInDataCatalog": {
+        "@type": "DataCatalog",
+        "name": "Root",
+        "url": "https://beta.dataverse.org"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Root"
+    }
+}
+""";
+        String actual = outputStreamMax.toString();
+        Files.writeString(Paths.get("src/test/resources/max/croissant.json"), prettyPrint(actual), StandardCharsets.UTF_8);
+        JSONAssert.assertEquals(expected, actual, true);
+        assertEquals(prettyPrint(expected), prettyPrint(outputStreamMax.toString()));
 
     }
 
