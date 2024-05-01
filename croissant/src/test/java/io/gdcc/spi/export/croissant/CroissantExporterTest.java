@@ -394,6 +394,7 @@ public class CroissantExporterTest {
             "encodingFormat": "text/markdown",
             "md5": "ebf050ec8cce5df0a72b100cfc9f442f",
             "contentSize": "34 B",
+            "description": "Additional documentation.",
             "contentUrl": "https://beta.dataverse.org/api/access/datafile/26148"
         }
     ],
@@ -513,6 +514,7 @@ public class CroissantExporterTest {
                         "encodingFormat": "text/x-python",
                         "md5": "d84985e94dde671f318076bd7a137f15",
                         "contentSize": "15 B",
+                        "description": "",
                         "contentUrl": "http://localhost:8080/api/access/datafile/4"
                     },
                     {
@@ -522,6 +524,7 @@ public class CroissantExporterTest {
                         "encodingFormat": "text/markdown",
                         "md5": "a2e484d07ee5590cc32182dc2c6ccc83",
                         "contentSize": "28 B",
+                        "description": "",
                         "contentUrl": "http://localhost:8080/api/access/datafile/5"
                     },
                     {
@@ -531,6 +534,7 @@ public class CroissantExporterTest {
                         "encodingFormat": "application/x-stata-13",
                         "md5": "7b1201ce6b469796837a835377338c5a",
                         "contentSize": "6443 B",
+                        "description": "",
                         "contentUrl": "http://localhost:8080/api/access/datafile/6?format=original"
                     }
                 ],
