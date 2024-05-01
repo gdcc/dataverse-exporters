@@ -373,6 +373,9 @@ public class CroissantExporterTest {
     "name": "Max Schema.org",
     "version": "1.0.0",
     "citeAs": "@data{FK2/VQTYHD_2024,author = {Durbin, Philip and IQSS},publisher = {Root},title = {Max Schema.org},year = {2024},url = {https://doi.org/10.5072/FK2/VQTYHD}}",
+    "spatialCoverage": [
+            "Cambridge, MA, United States, Harvard Square"
+    ],
     "distribution": [
         {
             "@type": "cr:FileObject",

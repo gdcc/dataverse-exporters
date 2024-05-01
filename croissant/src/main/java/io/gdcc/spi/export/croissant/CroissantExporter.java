@@ -204,6 +204,12 @@ public class CroissantExporter implements Exporter {
              */
             JsonObject datasetSchemaDotOrg = dataProvider.getDatasetSchemaDotOrg();
             job.add("citeAs", getBibtex(datasetORE, datasetJson, datasetSchemaDotOrg));
+
+            JsonArray spatialCoverage = datasetSchemaDotOrg.getJsonArray("spatialCoverage");
+            if (spatialCoverage != null) {
+                job.add("spatialCoverage", spatialCoverage);
+            }
+
             JsonArray oreFiles = describes
                     .getJsonArray("ore:aggregates");
 
