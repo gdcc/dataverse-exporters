@@ -197,8 +197,8 @@ public class CroissantExporter implements Exporter {
              * represent a version and they're what SemVer uses, even allowing
              * "-alpha", etc.
              */
-            job.add("version", datasetORE
-                    .getJsonObject("ore:describes")
+            JsonObject describes = datasetORE.getJsonObject("ore:describes");
+            job.add("version", describes
                     .getString("schema:version") + ".0"
             );
             /**
@@ -210,8 +210,7 @@ public class CroissantExporter implements Exporter {
              */
             JsonObject datasetSchemaDotOrg = dataProvider.getDatasetSchemaDotOrg();
             job.add("citeAs", getBibtex(datasetORE, datasetJson, datasetSchemaDotOrg));
-            JsonArray oreFiles = datasetORE
-                    .getJsonObject("ore:describes")
+            JsonArray oreFiles = describes
                     .getJsonArray("ore:aggregates");
 
             JsonArrayBuilder distribution = Json.createArrayBuilder();
