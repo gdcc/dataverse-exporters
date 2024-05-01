@@ -1,3 +1,4 @@
 target
 venv
+src/test/resources/minimal/croissant.json
 src/test/resources/cars/croissant.json

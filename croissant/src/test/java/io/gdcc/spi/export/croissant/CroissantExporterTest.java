@@ -28,14 +28,69 @@ import org.skyscreamer.jsonassert.JSONAssert;
 public class CroissantExporterTest {
 
     static CroissantExporter exporter;
-    static OutputStream outputStream;
-    static ExportDataProvider dataProvider;
+    static OutputStream outputStreamMinimal;
+    static ExportDataProvider dataProviderMinimal;
+    static OutputStream outputStreamCars;
+    static ExportDataProvider dataProviderCars;
 
     @BeforeAll
     public static void setUp() {
         exporter = new CroissantExporter();
-        outputStream = new ByteArrayOutputStream();
-        dataProvider = new ExportDataProvider() {
+
+        outputStreamMinimal = new ByteArrayOutputStream();
+        dataProviderMinimal = new ExportDataProvider() {
+            @Override
+            public JsonObject getDatasetJson() {
+                String pathToJsonFile = "src/test/resources/minimal/datasetJson.json";
+                try (JsonReader jsonReader = Json.createReader(new FileReader(pathToJsonFile))) {
+                    return jsonReader.readObject();
+                } catch (FileNotFoundException ex) {
+                    return null;
+                }
+            }
+
+            @Override
+            public JsonObject getDatasetORE() {
+                String pathToJsonFile = "src/test/resources/minimal/datasetORE.json";
+                try (JsonReader jsonReader = Json.createReader(new FileReader(pathToJsonFile))) {
+                    return jsonReader.readObject();
+                } catch (FileNotFoundException ex) {
+                    return null;
+                }
+            }
+
+            @Override
+            public JsonArray getDatasetFileDetails() {
+                String pathToJsonFile = "src/test/resources/minimal/datasetFileDetails.json";
+                try (JsonReader jsonReader = Json.createReader(new FileReader(pathToJsonFile))) {
+                    return jsonReader.readArray();
+                } catch (FileNotFoundException ex) {
+                    return null;
+                }
+            }
+
+            @Override
+            public JsonObject getDatasetSchemaDotOrg() {
+                String pathToJsonFile = "src/test/resources/minimal/datasetSchemaDotOrg.json";
+                try (JsonReader jsonReader = Json.createReader(new FileReader(pathToJsonFile))) {
+                    return jsonReader.readObject();
+                } catch (FileNotFoundException ex) {
+                    return null;
+                }
+            }
+
+            @Override
+            public String getDataCiteXml() {
+                try {
+                    return Files.readString(Paths.get("src/test/resources/minimal/dataCiteXml.xml"), StandardCharsets.UTF_8);
+                } catch (IOException ex) {
+                    return null;
+                }
+            }
+        };
+
+        outputStreamCars = new ByteArrayOutputStream();
+        dataProviderCars = new ExportDataProvider() {
             @Override
             public JsonObject getDatasetJson() {
                 String pathToJsonFile = "src/test/resources/cars/datasetJson.json";
@@ -85,6 +140,7 @@ public class CroissantExporterTest {
                 }
             }
         };
+
     }
 
     @Test
@@ -116,8 +172,100 @@ public class CroissantExporterTest {
     }
 
     @Test
-    public void testExportDataset() throws Exception {
-        exporter.exportDataset(dataProvider, outputStream);
+    public void testExportDatasetMinimal() throws Exception {
+        exporter.exportDataset(dataProviderMinimal, outputStreamMinimal);
+        String expected = """
+{
+    "@context": {
+        "@language": "en",
+        "@vocab": "https://schema.org/",
+        "citeAs": "cr:citeAs",
+        "column": "cr:column",
+        "conformsTo": "dct:conformsTo",
+        "cr": "http://mlcommons.org/croissant/",
+        "rai": "http://mlcommons.org/croissant/RAI/",
+        "data": {
+            "@id": "cr:data",
+            "@type": "@json"
+        },
+        "dataType": {
+            "@id": "cr:dataType",
+            "@type": "@vocab"
+        },
+        "dct": "http://purl.org/dc/terms/",
+        "examples": {
+            "@id": "cr:examples",
+            "@type": "@json"
+        },
+        "extract": "cr:extract",
+        "field": "cr:field",
+        "fileProperty": "cr:fileProperty",
+        "fileObject": "cr:fileObject",
+        "fileSet": "cr:fileSet",
+        "format": "cr:format",
+        "includes": "cr:includes",
+        "isLiveDataset": "cr:isLiveDataset",
+        "jsonPath": "cr:jsonPath",
+        "key": "cr:key",
+        "md5": "cr:md5",
+        "parentField": "cr:parentField",
+        "path": "cr:path",
+        "recordSet": "cr:recordSet",
+        "references": "cr:references",
+        "regex": "cr:regex",
+        "repeated": "cr:repeated",
+        "replace": "cr:replace",
+        "sc": "https://schema.org/",
+        "separator": "cr:separator",
+        "source": "cr:source",
+        "subField": "cr:subField",
+        "transform": "cr:transform",
+        "wd": "https://www.wikidata.org/wiki/"
+    },
+    "@type": "sc:Dataset",
+    "conformsTo": "http://mlcommons.org/croissant/1.0",
+    "name": "Minimal",
+    "version": "1.0.0",
+    "citeAs": "@data{FK2/4C0JYC_2024,author = {Durbin, Philip},publisher = {Root},title = {Minimal},year = {2024},url = {https://doi.org/10.5072/FK2/4C0JYC}}",
+    "distribution": [
+    ],
+    "recordSet": [
+    ],
+    "creator": [
+        {
+            "@type": "Person",
+            "givenName": "Philip",
+            "familyName": "Durbin",
+            "name": "Durbin, Philip"
+        }
+    ],
+    "keywords": [
+        "Other"
+    ],
+    "license": "http://creativecommons.org/publicdomain/zero/1.0",
+    "datePublished": "2024-05-01",
+    "dateModified": "2024-05-01",
+    "includedInDataCatalog": {
+        "@type": "DataCatalog",
+        "name": "Root",
+        "url": "https://beta.dataverse.org"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Root"
+    }
+}
+""";
+        String actual = outputStreamMinimal.toString();
+        Files.writeString(Paths.get("src/test/resources/minimal/croissant.json"), prettyPrint(actual), StandardCharsets.UTF_8);
+        JSONAssert.assertEquals(expected, actual, true);
+        assertEquals(prettyPrint(expected), prettyPrint(outputStreamMinimal.toString()));
+
+    }
+
+    @Test
+    public void testExportDatasetCars() throws Exception {
+        exporter.exportDataset(dataProviderCars, outputStreamCars);
         String expected = """
             {
                 "@context": {
@@ -435,10 +583,10 @@ public class CroissantExporterTest {
                 }
             }
             """;
-        String actual = outputStream.toString();
+        String actual = outputStreamCars.toString();
         Files.writeString(Paths.get("src/test/resources/cars/croissant.json"), prettyPrint(actual), StandardCharsets.UTF_8);
         JSONAssert.assertEquals(expected, actual, true);
-        assertEquals(prettyPrint(expected), prettyPrint(outputStream.toString()));
+        assertEquals(prettyPrint(expected), prettyPrint(outputStreamCars.toString()));
 
     }
 
