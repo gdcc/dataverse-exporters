@@ -328,6 +328,10 @@ public class CroissantExporter implements Exporter {
 
             job.add("creator", datasetSchemaDotOrg.getJsonArray("creator"));
             job.add("keywords", datasetSchemaDotOrg.getJsonArray("keywords"));
+            JsonArray citation = datasetSchemaDotOrg.getJsonArray("citation");
+            if (citation != null) {
+                job.add("citation", citation);
+            }
             job.add("license", datasetSchemaDotOrg.getString("license"));
             job.add("datePublished", datasetSchemaDotOrg.getString("datePublished"));
             job.add("dateModified", datasetSchemaDotOrg.getString("dateModified"));

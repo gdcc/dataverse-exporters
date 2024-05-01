@@ -429,6 +429,15 @@ public class CroissantExporterTest {
         "foo",
         "bar"
     ],
+    "citation": [
+        {
+            "@type": "CreativeWork",
+            "name": "Tykhonov, V., & Durbin, P. (2024, March 20). Croissant ML standard in the context of Dataverse, EOSC and beyond. Zenodo. https://doi.org/10.5281/zenodo.10843668",
+            "@id": "https://doi.org/10.5281/zenodo.10843668",
+            "identifier": "https://doi.org/10.5281/zenodo.10843668",
+            "url": "https://doi.org/10.5281/zenodo.10843668"
+        }
+    ],
     "license": "http://creativecommons.org/publicdomain/zero/1.0",
     "datePublished": "2024-05-01",
     "dateModified": "2024-05-01",
