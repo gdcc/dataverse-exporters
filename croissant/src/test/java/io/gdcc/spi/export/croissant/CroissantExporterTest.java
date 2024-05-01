@@ -438,6 +438,9 @@ public class CroissantExporterTest {
             "url": "https://doi.org/10.5281/zenodo.10843668"
         }
     ],
+    "temporalCoverage": [
+        "2023-01-01/2023-12-31"
+    ],
     "license": "http://creativecommons.org/publicdomain/zero/1.0",
     "datePublished": "2024-05-01",
     "dateModified": "2024-05-01",
