@@ -243,7 +243,7 @@ public class CroissantExporter implements Exporter {
                 String checksumType = checksum.getString("type").toLowerCase();
                 String checksumValue = checksum.getString("value");
                 String contentUrl = oreFiles.getJsonObject(fileCounter).getString("schema:sameAs");
-                String description = fileDetails.getString("description", null);
+                String description = fileDetails.getString("description", "");
                 /**
                  * TODO: directoryLabel is unused right now because we're not
                  * sure where to put it. The spec and examples show it in
