@@ -256,7 +256,7 @@ public class CroissantExporter implements Exporter {
                  * added as part of the following issue, we can get it from
                  * there: https://github.com/IQSS/dataverse/issues/10523
                  */
-                String directoryLabel = oreFiles.getJsonObject(fileCounter).getString("dvcore:directoryLabel");
+//                String directoryLabel = oreFiles.getJsonObject(fileCounter).getString("dvcore:directoryLabel");
 
                 distribution.add(
                         Json.createObjectBuilder()

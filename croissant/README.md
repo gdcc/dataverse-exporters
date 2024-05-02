@@ -45,6 +45,8 @@ The error was:
   Failed to export the dataset as croissant]]
 ```
 
+The above turned out to be due to `oreFiles.getJsonObject(fileCounter).getString("dvcore:directoryLabel")`.
+
 ### Can summary statistics go into Croissant?
 
 No, but we opened https://github.com/mlcommons/croissant/issues/640 about this. See also "potential areas of work" in the [Croissant Task Force Minutes] for 2024-04-01. 
