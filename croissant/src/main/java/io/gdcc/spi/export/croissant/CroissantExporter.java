@@ -289,7 +289,7 @@ public class CroissantExporter implements Exporter {
                         // TODO: should this be an integer?
                         Integer variableId = dataVariableObject.getInt("id");
                         String variableName = dataVariableObject.getString("name");
-                        String variableDescription = dataVariableObject.getString("label");
+                        String variableDescription = dataVariableObject.getString("label", "");
                         String variableFormatType = dataVariableObject.getString("variableFormatType");
                         String dataType = null;
                         switch (variableFormatType) {
