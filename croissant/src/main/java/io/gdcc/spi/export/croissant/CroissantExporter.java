@@ -333,7 +333,7 @@ public class CroissantExporter implements Exporter {
                 job.add("citation", citation);
             }
             JsonArray temporalCoverage = datasetSchemaDotOrg.getJsonArray("temporalCoverage");
-            if (citation != null) {
+            if (temporalCoverage != null) {
                 job.add("temporalCoverage", temporalCoverage);
             }
             job.add("license", datasetSchemaDotOrg.getString("license"));
