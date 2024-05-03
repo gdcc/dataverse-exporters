@@ -1,0 +1,2179 @@
+{
+  "dcterms:modified": "2024-05-03",
+  "dcterms:creator": "Harvard Dataverse",
+  "@type": "ore:ResourceMap",
+  "schema:additionalType": "Dataverse OREMap Format v1.0.0",
+  "dvcore:generatedBy": {
+    "@type": "schema:SoftwareApplication",
+    "schema:name": "Dataverse",
+    "schema:version": "6.2 build 1603-a218417",
+    "schema:url": "https://github.com/iqss/dataverse"
+  },
+  "@id": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/datasets/export?exporter=OAI_ORE&persistentId=https://doi.org/10.7910/DVN/27626",
+  "ore:describes": {
+    "citation:dsDescription": {
+      "citation:dsDescriptionValue": "Azoulay, Pierre, Furman, Jeffrey L., Krieger, Joshua L., and Murray, Fiona, (2015) \"Retractions.\" Review of Economics and Statistics  97:5, 1118-1136."
+    },
+    "author": [
+      {
+        "citation:authorName": "Azoulay, Pierre",
+        "citation:authorAffiliation": "MIT & NBER"
+      },
+      {
+        "citation:authorName": "Furman, Jeffrey",
+        "citation:authorAffiliation": "Boston University & NBER"
+      },
+      {
+        "citation:authorName": "Krieger, Joshua",
+        "citation:authorAffiliation": "MIT"
+      },
+      {
+        "citation:authorName": "Murray, Fiona",
+        "citation:authorAffiliation": "MIT & NBER"
+      }
+    ],
+    "citation:datasetContact": {
+      "citation:datasetContactName": "Joshua Krieger",
+      "citation:datasetContactAffiliation": "MIT",
+      "citation:datasetContactEmail": "jkrieger@mit.edu"
+    },
+    "citation:series": {
+      "citation:seriesName": "Volume XX, Issue X"
+    },
+    "publication": {
+      "publicationURL": "http://dx.doi.org/10.1162/REST_a_00469"
+    },
+    "subject": "Social Sciences",
+    "title": "Replication data for: Retractions",
+    "dateOfDeposit": "2014-10-17",
+    "@id": "https://doi.org/10.7910/DVN/27626",
+    "@type": [
+      "ore:Aggregation",
+      "schema:Dataset"
+    ],
+    "schema:version": "1.2",
+    "schema:name": "Replication data for: Retractions",
+    "schema:dateModified": "Mon Feb 29 10:59:43 UTC 2016",
+    "schema:datePublished": "2015-01-12",
+    "schema:creativeWorkStatus": "RELEASED",
+    "schema:license": "http://creativecommons.org/publicdomain/zero/1.0",
+    "dvcore:fileTermsOfAccess": {
+      "dvcore:fileRequestAccess": false
+    },
+    "schema:includedInDataCatalog": "Harvard Dataverse",
+    "schema:isPartOf": {
+      "schema:name": "Review of Economics and Statistics Dataverse",
+      "@id": "http://ec2-52-207-99-79.compute-1.amazonaws.com/dataverse/restat",
+      "schema:description": "This page contains replication data and code for the articles published in the Review of Economics and Statistics.\r\n\r\nPlease notice that most articles in volumes previous to volume 92 were not subject to the journal's data availability policy. ",
+      "schema:isPartOf": {
+        "schema:name": "Harvard Dataverse",
+        "@id": "http://ec2-52-207-99-79.compute-1.amazonaws.com/dataverse/harvard",
+        "schema:description": "<span><span><span><h3>Share, archive, and get credit for your data. Find and cite data across all research fields.</h3></span></span></span>"
+      }
+    },
+    "ore:aggregates": [
+      {
+        "schema:description": "",
+        "schema:name": "artcl_aar_interactions_poisson.do",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "do file"
+        ],
+        "@id": "doi:10.7910/DVN/27626/HSULIY",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/HSULIY",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "text/x-stata-syntax; charset=US-ASCII",
+        "dvcore:filesize": 1682,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243697",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "ee0422ad37c5355dba574f26afdc6ca8"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "baseline_stk_cites_strct.gph",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "graphs"
+        ],
+        "@id": "doi:10.7910/DVN/27626/2F0EMR",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/2F0EMR",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "text/plain; charset=US-ASCII",
+        "dvcore:filesize": 11126,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243660",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "50a980d869d91122e1c383775df325d0"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "citations_panel_rltd_patentcites.dta",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "STATA DATA"
+        ],
+        "@id": "doi:10.7910/DVN/27626/UWZBQB",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/UWZBQB&format=original",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "application/x-stata",
+        "dvcore:filesize": 57582167,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243818",
+        "dvcore:currentIngestedName": "citations_panel_rltd_patentcites.tab",
+        "dvcore:UNF": "UNF:5:4Px4xxLazJqQ2U4Vcx+u/g==",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "4eae80b2e06e1a6b214e8a3cabf4b61c"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "corp_ncorp_poisson_regs.do",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "do file"
+        ],
+        "@id": "doi:10.7910/DVN/27626/BZRKUE",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/BZRKUE",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "text/x-stata-syntax; charset=US-ASCII",
+        "dvcore:filesize": 2754,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243698",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "3c1b79649696c435ba8435e355b97a56"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "culpable_author_analyses.do",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "do file"
+        ],
+        "@id": "doi:10.7910/DVN/27626/PL9EBM",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/PL9EBM",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "text/x-stata-syntax; charset=US-ASCII",
+        "dvcore:filesize": 3854,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243699",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "50691df42fe5a60426d930fb4d68f30a"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "data_dictionary.xlsx",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "data dictionary"
+        ],
+        "@id": "doi:10.7910/DVN/27626/HSMBAM",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/HSMBAM",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "dvcore:filesize": 22239,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243683",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "74fb30ed381e144bb19c0fdb2dd3324e"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "desc_stats_entry&funding.do",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "do file"
+        ],
+        "@id": "doi:10.7910/DVN/27626/AWPCNE",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/AWPCNE",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "text/x-stata-syntax; charset=US-ASCII",
+        "dvcore:filesize": 1336,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243700",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "c267366f57394a02ac41c6715bbddfe3"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "desc_stats_pmid_strct.rtf",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "tables"
+        ],
+        "@id": "doi:10.7910/DVN/27626/DGMAOL",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/DGMAOL",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "text/plain; charset=US-ASCII",
+        "dvcore:filesize": 10142,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243671",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "5587b4140b352b4e0d7a7f2db88fd7ad"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "desc_stats_pmra_freq.rtf",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "tables"
+        ],
+        "@id": "doi:10.7910/DVN/27626/E7TF0X",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/E7TF0X",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "text/plain; charset=US-ASCII",
+        "dvcore:filesize": 3847,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243672",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "cd976bc5776a2e1052109fa86337fdde"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "desc_stats_pmra_funding.rtf",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "tables"
+        ],
+        "@id": "doi:10.7910/DVN/27626/3DXNJ7",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/3DXNJ7",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "text/plain; charset=US-ASCII",
+        "dvcore:filesize": 5488,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243673",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "3ff83ecb9dbe9193ff9c5a9f42bee91f"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "desc_stats_related.do",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "do file"
+        ],
+        "@id": "doi:10.7910/DVN/27626/O3BA5C",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/O3BA5C",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "text/x-stata-syntax; charset=US-ASCII",
+        "dvcore:filesize": 2911,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243701",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "6638e28b42e8c6cc89512a38ebe055ef"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "desc_stats_retractions.do",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "do file"
+        ],
+        "@id": "doi:10.7910/DVN/27626/0MDX5T",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/0MDX5T",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "text/x-stata-syntax; charset=US-ASCII",
+        "dvcore:filesize": 1482,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243702",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "70f7c235e8e39f57fa7fd75ead33772f"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "dynamics_poisson.do",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "do file"
+        ],
+        "@id": "doi:10.7910/DVN/27626/UDXW9K",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/UDXW9K",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "text/x-stata-syntax; charset=US-ASCII",
+        "dvcore:filesize": 6239,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243703",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "509931bc000965e4f3329ac221d2e20a"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "dynamics_poisson_freq&funding.do",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "do file"
+        ],
+        "@id": "doi:10.7910/DVN/27626/Z8WCAD",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/Z8WCAD",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "text/x-stata-syntax; charset=US-ASCII",
+        "dvcore:filesize": 5553,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243704",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "2a3723f65dfab633af9a424644a37067"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "MIT-BU Retractions Data_table1data.xlsx",
+        "dvcore:restricted": false,
+        "schema:version": 1,
+        "dvcore:datasetVersionId": 79950,
+        "@id": "doi:10.7910/DVN/27626/CU1VWN",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/CU1VWN",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "dvcore:filesize": 242373,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243684",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "3d5f48b39b4264c83c402c3a6b98b636"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "multi_level_dataset_005_field_vars.dta",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "STATA DATA"
+        ],
+        "@id": "doi:10.7910/DVN/27626/ZHKDI7",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/ZHKDI7&format=original",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "application/x-stata",
+        "dvcore:filesize": 413362677,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243819",
+        "dvcore:currentIngestedName": "multi_level_dataset_005_field_vars.tab",
+        "dvcore:UNF": "UNF:5:EFzgTIdaVc7uD6/LMfO9Gw==",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "7bdc9754d86ec740eef7e6f2b037a1ae"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "nbretractions_strct.gph",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "graphs"
+        ],
+        "@id": "doi:10.7910/DVN/27626/O1BADQ",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/O1BADQ",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "text/plain; charset=US-ASCII",
+        "dvcore:filesize": 6973,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243661",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "06a3eaf92384675f11233d9596ab9c80"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "ols_auposition_earliestpubFX.ster",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "estimates"
+        ],
+        "@id": "doi:10.7910/DVN/27626/9TRUCM",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/9TRUCM",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "application/octet-stream",
+        "dvcore:filesize": 50950,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243620",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "026412fe1f0e3ee7c06cebccc16aab45"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "ols_authors_reappear.rtf",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "tables"
+        ],
+        "@id": "doi:10.7910/DVN/27626/C7R0M4",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/C7R0M4",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "application/octet-stream",
+        "dvcore:filesize": 1823,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243674",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "688f9ed2eb87d5df395fd959f4d6b5ee"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "ols_main_bigfraud_strct.ster",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "estimates"
+        ],
+        "@id": "doi:10.7910/DVN/27626/EQYUY4",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/EQYUY4",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "application/octet-stream",
+        "dvcore:filesize": 50914,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243622",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "70eece562f0ef1e1f30ad766481dd280"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "ols_main_loose_shldrs.ster",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "estimates"
+        ],
+        "@id": "doi:10.7910/DVN/27626/8SAPLS",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/8SAPLS",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "application/octet-stream",
+        "dvcore:filesize": 50926,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243623",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "384d645dad523f539d11b992930cb8c9"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "ols_main_nonmissing.ster",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "estimates"
+        ],
+        "@id": "doi:10.7910/DVN/27626/GOROKY",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/GOROKY",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "application/octet-stream",
+        "dvcore:filesize": 50236,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243624",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "ffbc2473c295aba25daf258e03146d23"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "ols_main_shldrs_nonmissing_earlst.ster",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "estimates"
+        ],
+        "@id": "doi:10.7910/DVN/27626/M2CBQW",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/M2CBQW",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "application/octet-stream",
+        "dvcore:filesize": 50274,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243626",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "ff2ed7bbcce2edb7cc90caeec99d4708"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "ols_main_shldrs_nonmissing.ster",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "estimates"
+        ],
+        "@id": "doi:10.7910/DVN/27626/F4WFM6",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/F4WFM6",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "application/octet-stream",
+        "dvcore:filesize": 51601,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243625",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "da6ca6e685e7f8dd263df794561ed707"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "ols_main.ster",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "estimates"
+        ],
+        "@id": "doi:10.7910/DVN/27626/MSW12A",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/MSW12A",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "application/octet-stream",
+        "dvcore:filesize": 50196,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243621",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "7b345ababb0d28db8cd0f3d188ad9455"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "ols_regressions_citations.do",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "do file"
+        ],
+        "@id": "doi:10.7910/DVN/27626/KH6BCS",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/KH6BCS",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "text/x-stata-syntax; charset=US-ASCII",
+        "dvcore:filesize": 3707,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243705",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "39b3924d2094b429a2fd2f1c704ddf59"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "perp_positions_freqs.rtf",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "tables"
+        ],
+        "@id": "doi:10.7910/DVN/27626/P0F8F4",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/P0F8F4",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "text/plain; charset=US-ASCII",
+        "dvcore:filesize": 1428,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243675",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "ebd424a42716808e6fe73778ce8e57b5"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "perps_by_pmid.dta",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "STATA DATA"
+        ],
+        "@id": "doi:10.7910/DVN/27626/ZYMTLQ",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/ZYMTLQ&format=original",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "application/x-stata",
+        "dvcore:filesize": 50889,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243820",
+        "dvcore:currentIngestedName": "perps_by_pmid.tab",
+        "dvcore:UNF": "UNF:5:luLm80vwZCqH4A5wO6LiPQ==",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "1dae470f4d124935344cbc0639e3fba4"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "perps_by_shldrs.rtf",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "tables"
+        ],
+        "@id": "doi:10.7910/DVN/27626/AJDHZY",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/AJDHZY",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "text/plain; charset=US-ASCII",
+        "dvcore:filesize": 1436,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243676",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "bdb98ef73f54de03ebd541810a149c23"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "pmra_level_freq.dta",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "STATA DATA"
+        ],
+        "@id": "doi:10.7910/DVN/27626/5GWZT2",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/5GWZT2&format=original",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "application/x-stata",
+        "dvcore:filesize": 1359879,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243821",
+        "dvcore:currentIngestedName": "pmra_level_freq.tab",
+        "dvcore:UNF": "UNF:5:NP09aF8MOd/rD5hC9XMwow==",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "e32ae59c2f6dc4c98726d4ff9a538849"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "pmra_level_funding.dta",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "STATA DATA"
+        ],
+        "@id": "doi:10.7910/DVN/27626/FWJPY1",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/FWJPY1&format=original",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "application/x-stata",
+        "dvcore:filesize": 1168677,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243822",
+        "dvcore:currentIngestedName": "pmra_level_funding.tab",
+        "dvcore:UNF": "UNF:5:NQlYB53gpmxZfQaslq33aw==",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "f562204ccaebde30f2b055b33e5f065a"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "poisson_amount.ster",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "estimates"
+        ],
+        "@id": "doi:10.7910/DVN/27626/PB1OOB",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/PB1OOB",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "application/octet-stream",
+        "dvcore:filesize": 48404,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243627",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "b0af6aa16f8c2e61beb8166d9fe1077b"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "poisson_fndng_dynamic.gph",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "graphs"
+        ],
+        "@id": "doi:10.7910/DVN/27626/R6QKZW",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/R6QKZW",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "text/plain; charset=US-ASCII",
+        "dvcore:filesize": 10491,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243662",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "f42281e29129888407803a96be38b743"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "poisson_fndng_dynamics.ster",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "estimates"
+        ],
+        "@id": "doi:10.7910/DVN/27626/MLJ3MM",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/MLJ3MM",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "application/octet-stream",
+        "dvcore:filesize": 72031,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243628",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "ced9e00bd6af2e307cfd35867796dd74"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "poisson_freq_dynamic.gph",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "graphs"
+        ],
+        "@id": "doi:10.7910/DVN/27626/ZH8XXY",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/ZH8XXY",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "text/plain; charset=US-ASCII",
+        "dvcore:filesize": 10462,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243663",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "405bc2ee33aefcf528577c61e355b52b"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "poisson_freq_dynamics.ster",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "estimates"
+        ],
+        "@id": "doi:10.7910/DVN/27626/2IFRAR",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/2IFRAR",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "application/octet-stream",
+        "dvcore:filesize": 79380,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243629",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "262a6e8abd56e7d5be40f8d24eb1646e"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "poisson_main_cited_intr_strct.ster",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "estimates"
+        ],
+        "@id": "doi:10.7910/DVN/27626/OZURSP",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/OZURSP",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "application/octet-stream",
+        "dvcore:filesize": 116715,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243631",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "16c18a3c2346ae015cdab7e97eb29366"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "poisson_main_cites_intr_strct.ster",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "estimates"
+        ],
+        "@id": "doi:10.7910/DVN/27626/KOQWYP",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/KOQWYP",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "application/octet-stream",
+        "dvcore:filesize": 116715,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243632",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "64dc421cb107ab5256b6ac0224488a8e"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "poisson_main_crowded_quartiles_shaky&absent.ster",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "estimates"
+        ],
+        "@id": "doi:10.7910/DVN/27626/EGIQ9N",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/EGIQ9N",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "application/octet-stream",
+        "dvcore:filesize": 121693,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243633",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "549213723743f0063d60d09f8d84503d"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "poisson_main_crowded_shaky&absent.ster",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "estimates"
+        ],
+        "@id": "doi:10.7910/DVN/27626/0XAXJY",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/0XAXJY",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "application/octet-stream",
+        "dvcore:filesize": 116723,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243634",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "1cd280411f145bf2112e5de1b532b00b"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "poisson_main_dynamics_strct.gph",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "graphs"
+        ],
+        "@id": "doi:10.7910/DVN/27626/30R8WW",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/30R8WW",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "text/plain; charset=US-ASCII",
+        "dvcore:filesize": 10498,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243664",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "92b57e5038627343e51389e2ddf8667a"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "poisson_main_dynamics_strct_rcap.gph",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "graphs"
+        ],
+        "@id": "doi:10.7910/DVN/27626/RV0XGF",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/RV0XGF",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "text/plain; charset=US-ASCII",
+        "dvcore:filesize": 9734,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243665",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "fdacf5e4cbbbc121b8b50065678af94b"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "poisson_main_dynamics_strct.ster",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "estimates"
+        ],
+        "@id": "doi:10.7910/DVN/27626/77HHMS",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/77HHMS",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "application/octet-stream",
+        "dvcore:filesize": 156617,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243635",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "eae0819abb2ce891dc750dfd3cd253e2"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "poisson_main_hotcold_3yrp_quartiles_shaky&absent.ster",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "estimates"
+        ],
+        "@id": "doi:10.7910/DVN/27626/U123DK",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/U123DK",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "application/octet-stream",
+        "dvcore:filesize": 121741,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243636",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "1071e28ec877e578d1d7fd0a88b1970c"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "poisson_main_hotcold_3yrp_shaky&absent.ster",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "estimates"
+        ],
+        "@id": "doi:10.7910/DVN/27626/IBPBS6",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/IBPBS6",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "application/octet-stream",
+        "dvcore:filesize": 116739,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243637",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "fa37a97540a914a317b14f191441b071"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "poisson_main_intent_strct.ster",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "estimates"
+        ],
+        "@id": "doi:10.7910/DVN/27626/HFATNH",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/HFATNH",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "application/octet-stream",
+        "dvcore:filesize": 119208,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243638",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "b885b677aac9b5def2759d4d87a1cafb"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "poisson_main_rnk_intr_loose.gph",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "graphs"
+        ],
+        "@id": "doi:10.7910/DVN/27626/K41UAR",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/K41UAR",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "text/plain; charset=US-ASCII",
+        "dvcore:filesize": 9602,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243666",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "6ac8a5a0db0e6139119f4f709206aaf5"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "poisson_main_rnk_intr_loose.ster",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "estimates"
+        ],
+        "@id": "doi:10.7910/DVN/27626/UVWHN3",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/UVWHN3",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "application/octet-stream",
+        "dvcore:filesize": 168149,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243639",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "8431ba06f062b0188f2d1c4d2498cbb0"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "poisson_main_rnk_intr_strct.gph",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "graphs"
+        ],
+        "@id": "doi:10.7910/DVN/27626/PQLVYB",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/PQLVYB",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "text/plain; charset=US-ASCII",
+        "dvcore:filesize": 9603,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243667",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "1606d7c254d0445167a452ba96c8584b"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "poisson_main_rnk_intr_strct.ster",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "estimates"
+        ],
+        "@id": "doi:10.7910/DVN/27626/5PYYYP",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/5PYYYP",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "application/octet-stream",
+        "dvcore:filesize": 168149,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243640",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "798658aa426112a4b957c5439a25b376"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "poisson_main_score_intr_strct.gph",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "graphs"
+        ],
+        "@id": "doi:10.7910/DVN/27626/73BYW1",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/73BYW1",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "text/plain; charset=US-ASCII",
+        "dvcore:filesize": 10439,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243668",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "b8e276adf9389e1d63247801b6fc73b2"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "poisson_main_score_intr_strct.ster",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "estimates"
+        ],
+        "@id": "doi:10.7910/DVN/27626/5QBKDF",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/5QBKDF",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "application/octet-stream",
+        "dvcore:filesize": 507884,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243641",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "6d89ab63f9ba185b4ee9bc105fad5596"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "poisson_main.ster",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "estimates"
+        ],
+        "@id": "doi:10.7910/DVN/27626/PGMXPV",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/PGMXPV",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "application/octet-stream",
+        "dvcore:filesize": 114302,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243630",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "c920b96b5c4b5d603967f9707fee4735"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "poisson_main_stk_cites_intr_topquartile_strct.ster",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "estimates"
+        ],
+        "@id": "doi:10.7910/DVN/27626/9VHAIR",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/9VHAIR",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "application/octet-stream",
+        "dvcore:filesize": 116755,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243642",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "75f4d86d17a6b850985c983f3b8bf13e"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "poisson_main_subset_wperp.ster",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "estimates"
+        ],
+        "@id": "doi:10.7910/DVN/27626/3XLQWD",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/3XLQWD",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "application/octet-stream",
+        "dvcore:filesize": 114302,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243643",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "cb0740d624744e5e3400815763da88c4"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "poisson_nbgrants.ster",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "estimates"
+        ],
+        "@id": "doi:10.7910/DVN/27626/731PC1",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/731PC1",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "application/octet-stream",
+        "dvcore:filesize": 48550,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243644",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "effbabe3664c025f850033c825113610"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "poisson_pmra_hijif.ster",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "estimates"
+        ],
+        "@id": "doi:10.7910/DVN/27626/RKQWNW",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/RKQWNW",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "application/octet-stream",
+        "dvcore:filesize": 54159,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243646",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "c274d79972beef8325a598f2359208cd"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "poisson_pmra_lojif.ster",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "estimates"
+        ],
+        "@id": "doi:10.7910/DVN/27626/HFEKD7",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/HFEKD7",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "application/octet-stream",
+        "dvcore:filesize": 54159,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243647",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "b5e5ebdf2b8ec02543d12e8b892eefb8"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "poisson_pmra_pct20.ster",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "estimates"
+        ],
+        "@id": "doi:10.7910/DVN/27626/N8LAUV",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/N8LAUV",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "application/octet-stream",
+        "dvcore:filesize": 54159,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243648",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "d717486e3211168cc6038ea7ce73d037"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "poisson_pmra_rnk10.ster",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "estimates"
+        ],
+        "@id": "doi:10.7910/DVN/27626/GWMPVS",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/GWMPVS",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "application/octet-stream",
+        "dvcore:filesize": 54159,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243649",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "88ff80573bb03cf9751e6ca14aaac942"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "poisson_pmra.ster",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "estimates"
+        ],
+        "@id": "doi:10.7910/DVN/27626/TREHSJ",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/TREHSJ",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "application/octet-stream",
+        "dvcore:filesize": 53673,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243645",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "c01162b0cc200905ac0a33e3e8c8ec2a"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "poisson_regressions_citations_heterogeneity.do",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "do file"
+        ],
+        "@id": "doi:10.7910/DVN/27626/7LFJDD",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/7LFJDD",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "text/x-stata-syntax; charset=US-ASCII",
+        "dvcore:filesize": 8779,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243706",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "e6af0ded0e452d394a46abed5af72fc1"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "poisson_regressions_entry&funding.do",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "do file"
+        ],
+        "@id": "doi:10.7910/DVN/27626/M3KJGC",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/M3KJGC",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "text/x-stata-syntax; charset=US-ASCII",
+        "dvcore:filesize": 3365,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243707",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "00eb2f00e3409d9870f2afc3c2710cf9"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "poisson_retracted1129_bigfraud_strct.ster",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "estimates"
+        ],
+        "@id": "doi:10.7910/DVN/27626/ES3ND4",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/ES3ND4",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "application/octet-stream",
+        "dvcore:filesize": 111504,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243651",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "82a3cc9b9cc59c585d5e961a93dec3b8"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "poisson_retracted1129_nonmissing.ster",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "estimates"
+        ],
+        "@id": "doi:10.7910/DVN/27626/C8N7ZW",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/C8N7ZW",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "application/octet-stream",
+        "dvcore:filesize": 109149,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243652",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "3a4274d471b3ac0ea76b27c314d83b3e"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "poisson_retracted1129_nostrng_earlst.ster",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "estimates"
+        ],
+        "@id": "doi:10.7910/DVN/27626/6ZJDI5",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/6ZJDI5",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "application/octet-stream",
+        "dvcore:filesize": 109149,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243654",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "446726275b0503de97cb1c25521bf3e8"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "poisson_retracted1129_nostrng.ster",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "estimates"
+        ],
+        "@id": "doi:10.7910/DVN/27626/PEIGM7",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/PEIGM7",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "application/octet-stream",
+        "dvcore:filesize": 111520,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243653",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "ff91b831db1e3d5cd47531810c747a37"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "poisson_retracted1129_shldrs_nonmissing.ster",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "estimates"
+        ],
+        "@id": "doi:10.7910/DVN/27626/OIHQDD",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/OIHQDD",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "application/octet-stream",
+        "dvcore:filesize": 113919,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243655",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "6660b66d0dc625136c7773150ff94da3"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "poisson_retracted1129.ster",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "estimates"
+        ],
+        "@id": "doi:10.7910/DVN/27626/NYIKXX",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/NYIKXX",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "application/octet-stream",
+        "dvcore:filesize": 109149,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243650",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "c32aa537cb25e0fc47a7d50d22e87798"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "poisson_retracted1129_strct_corp.ster",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "estimates"
+        ],
+        "@id": "doi:10.7910/DVN/27626/9HVS6F",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/9HVS6F",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "application/octet-stream",
+        "dvcore:filesize": 109589,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243656",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "886df954c7e2e5704bd43a1682bb8a31"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "poisson_retracted1129_strct_ncorp.ster",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "estimates"
+        ],
+        "@id": "doi:10.7910/DVN/27626/1XL2D6",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/1XL2D6",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "application/octet-stream",
+        "dvcore:filesize": 109730,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243657",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "83224855f822edf3b5f8932e61eaa44f"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "poisson_retracted1129_strct_patentcites_corp.ster",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "estimates"
+        ],
+        "@id": "doi:10.7910/DVN/27626/OSBAAN",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/OSBAAN",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "application/octet-stream",
+        "dvcore:filesize": 111982,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243658",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "82cbd29d3399e1222e604f8e7b3d41ee"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "poisson_retracted1129_strct_patentcites_ncorp.ster",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "estimates"
+        ],
+        "@id": "doi:10.7910/DVN/27626/DLQCCQ",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/DLQCCQ",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "application/octet-stream",
+        "dvcore:filesize": 112125,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243659",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "f6cfc17dc788ae55fd84b33e8babc16d"
+        }
+      },
+      {
+        "schema:description": "README file: contains information about each .do and .dta file and links them to the corresponding tables and figures in the paper",
+        "schema:name": "README.docx",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "README"
+        ],
+        "@id": "doi:10.7910/DVN/27626/SVZVQB",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/SVZVQB",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "dvcore:filesize": 30821,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243616",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "4406c9ce337d59f3e633caf602717b43"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "reappearance_analysis.do",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "do file"
+        ],
+        "@id": "doi:10.7910/DVN/27626/LAX448",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/LAX448",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "text/x-stata-syntax; charset=US-ASCII",
+        "dvcore:filesize": 1731,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243708",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "ae11b98326f0734774c98243770c82d3"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "reappearance_data.dta",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "STATA DATA"
+        ],
+        "@id": "doi:10.7910/DVN/27626/Z9XOVX",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/Z9XOVX&format=original",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "application/x-stata",
+        "dvcore:filesize": 1719752,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243823",
+        "dvcore:currentIngestedName": "reappearance_data.tab",
+        "dvcore:UNF": "UNF:5:8ZMORfFzgxWyG7kr0moHsg==",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "00c8058a106d8c8795855ae838f74296"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "related_pubs_descriptives.dta",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "STATA DATA"
+        ],
+        "@id": "doi:10.7910/DVN/27626/BQI0WG",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/BQI0WG&format=original",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "application/x-stata",
+        "dvcore:filesize": 9332421,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243824",
+        "dvcore:currentIngestedName": "related_pubs_descriptives.tab",
+        "dvcore:UNF": "UNF:5:g7vWwSDhT8esb1QDgnB52A==",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "ac1f38950bd08f0a4dc35fdfabea3bb4"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "retracted1129_analysisdata.dta",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "STATA DATA"
+        ],
+        "@id": "doi:10.7910/DVN/27626/EFIIVJ",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/EFIIVJ&format=original",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "application/x-stata",
+        "dvcore:filesize": 4191588,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243825",
+        "dvcore:currentIngestedName": "retracted1129_analysisdata.tab",
+        "dvcore:UNF": "UNF:5:wBPu9o1QxaZTYG7BsEdSmw==",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "eb2fee57b309aa5d4df6521c032ae211"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "retractions_citations_poisson_regressions.do",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "do file"
+        ],
+        "@id": "doi:10.7910/DVN/27626/CZZDBK",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/CZZDBK",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "text/x-stata-syntax; charset=US-ASCII",
+        "dvcore:filesize": 5991,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243709",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "3c354559e3e0f47e3326540304b86c15"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "retractions_descriptives.dta",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "STATA DATA"
+        ],
+        "@id": "doi:10.7910/DVN/27626/CDQA3E",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/CDQA3E&format=original",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "application/x-stata",
+        "dvcore:filesize": 204327,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243826",
+        "dvcore:currentIngestedName": "retractions_descriptives.tab",
+        "dvcore:UNF": "UNF:5:j7aONPF61owxGEP0n66Rpw==",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "35cd115595f7458ad8f793e1965caa15"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "retractions_desc_stats_srce_pmid_all.rtf",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "tables"
+        ],
+        "@id": "doi:10.7910/DVN/27626/STDPAC",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/STDPAC",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "text/plain; charset=US-ASCII",
+        "dvcore:filesize": 5287,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243677",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "bdc741f31fd93af508da07ba6804b3ee"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "retractions_desc_stats_srce_pmid_loose.rtf",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "tables"
+        ],
+        "@id": "doi:10.7910/DVN/27626/FKWDXY",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/FKWDXY",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "text/plain; charset=US-ASCII",
+        "dvcore:filesize": 5287,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243678",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "ebe80b7c721c8546dd7264492834f06c"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "retractions_desc_stats_srce_pmid_strct.rtf",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "tables"
+        ],
+        "@id": "doi:10.7910/DVN/27626/U9NM2K",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/U9NM2K",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "text/plain; charset=US-ASCII",
+        "dvcore:filesize": 5286,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243679",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "a12376d45144edca652b4b2bad6725fe"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "rtrct_authors_culpables.dta",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "STATA DATA"
+        ],
+        "@id": "doi:10.7910/DVN/27626/PFJJDC",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/PFJJDC&format=original",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "application/x-stata",
+        "dvcore:filesize": 519216,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243827",
+        "dvcore:currentIngestedName": "rtrct_authors_culpables.tab",
+        "dvcore:UNF": "UNF:5:QF4hJTrEurcJX7jv1WvCtA==",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "f85ed13ce4d1433ddf75a3ae3a0fd18b"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "rtrct_incidence.do",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "do file"
+        ],
+        "@id": "doi:10.7910/DVN/27626/KIMMQR",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/KIMMQR",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "text/x-stata-syntax; charset=US-ASCII",
+        "dvcore:filesize": 749,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243710",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "d0fd6e99fa251fcdb05bebe7d7a9e620"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "rtrct_incidence.gph",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "graphs"
+        ],
+        "@id": "doi:10.7910/DVN/27626/OFQ2AV",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/OFQ2AV",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "text/plain; charset=US-ASCII",
+        "dvcore:filesize": 8793,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243669",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "608d0e286b3bd92d0b8df86156847846"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "rtrct_incidence.dta",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "STATA DATA"
+        ],
+        "@id": "doi:10.7910/DVN/27626/75W8JO",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/75W8JO&format=original",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "application/x-stata",
+        "dvcore:filesize": 1344,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243828",
+        "dvcore:currentIngestedName": "rtrct_incidence.tab",
+        "dvcore:UNF": "UNF:5:WVVSPaPzdJQmL8CTHlvBXg==",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "b583f241ce3e4ac18e69c9f991ce76ef"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "scatterplot_scaling.do",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "do file"
+        ],
+        "@id": "doi:10.7910/DVN/27626/8WZKLD",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/8WZKLD",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "text/x-stata-syntax; charset=US-ASCII",
+        "dvcore:filesize": 1529,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243711",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "1e8310ffc67fcffd16bf647607f0f982"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "scatter_sclng_strct.gph",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "graphs"
+        ],
+        "@id": "doi:10.7910/DVN/27626/NW1I7S",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/NW1I7S",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "text/plain; charset=US-ASCII",
+        "dvcore:filesize": 15877,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243670",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "51ac05d07ad07cef42e6ae002ee88dd3"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "score_interactions_poisson.do",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "do file"
+        ],
+        "@id": "doi:10.7910/DVN/27626/6S5WZQ",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/6S5WZQ",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "text/x-stata-syntax",
+        "dvcore:filesize": 2679,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243618",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "f184402fc70f2db688566db3717c9346"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "table_ols_main_reasons_intr.rtf",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "tables"
+        ],
+        "@id": "doi:10.7910/DVN/27626/2RCVYM",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/2RCVYM",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "text/plain; charset=US-ASCII",
+        "dvcore:filesize": 5538,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243680",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "30049ca21b076a36fe5826dd312831d1"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "table_poisson_entry&funding.rtf",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "tables"
+        ],
+        "@id": "doi:10.7910/DVN/27626/58QFSA",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/58QFSA",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "text/plain; charset=US-ASCII",
+        "dvcore:filesize": 3801,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243681",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "04c08ac00ecba0840e9ba068c79d6a4a"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "table_poisson_retracted1129_reasons.rtf",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "tables"
+        ],
+        "@id": "doi:10.7910/DVN/27626/1UYWER",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/1UYWER",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "text/plain; charset=US-ASCII",
+        "dvcore:filesize": 4082,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243682",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "5717b732acdcc785bf6f107527523f47"
+        }
+      },
+      {
+        "schema:description": "",
+        "schema:name": "xtqmlp.ado",
+        "dvcore:restricted": false,
+        "schema:version": 2,
+        "dvcore:datasetVersionId": 79950,
+        "dvcore:categories": [
+          "ado"
+        ],
+        "@id": "doi:10.7910/DVN/27626/GYOEF6",
+        "schema:sameAs": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/:persistentId?persistentId=doi:10.7910/DVN/27626/GYOEF6",
+        "@type": "ore:AggregatedResource",
+        "schema:fileFormat": "text/plain; charset=US-ASCII",
+        "dvcore:filesize": 3180,
+        "dvcore:storageIdentifier": "s3://dvn-cloud:243619",
+        "dvcore:rootDataFileId": -1,
+        "dvcore:checksum": {
+          "@type": "MD5",
+          "@value": "d5efc5e546d9e46b6567f90a48b39927"
+        }
+      }
+    ],
+    "schema:hasPart": [
+      "doi:10.7910/DVN/27626/HSULIY",
+      "doi:10.7910/DVN/27626/2F0EMR",
+      "doi:10.7910/DVN/27626/UWZBQB",
+      "doi:10.7910/DVN/27626/BZRKUE",
+      "doi:10.7910/DVN/27626/PL9EBM",
+      "doi:10.7910/DVN/27626/HSMBAM",
+      "doi:10.7910/DVN/27626/AWPCNE",
+      "doi:10.7910/DVN/27626/DGMAOL",
+      "doi:10.7910/DVN/27626/E7TF0X",
+      "doi:10.7910/DVN/27626/3DXNJ7",
+      "doi:10.7910/DVN/27626/O3BA5C",
+      "doi:10.7910/DVN/27626/0MDX5T",
+      "doi:10.7910/DVN/27626/UDXW9K",
+      "doi:10.7910/DVN/27626/Z8WCAD",
+      "doi:10.7910/DVN/27626/CU1VWN",
+      "doi:10.7910/DVN/27626/ZHKDI7",
+      "doi:10.7910/DVN/27626/O1BADQ",
+      "doi:10.7910/DVN/27626/9TRUCM",
+      "doi:10.7910/DVN/27626/C7R0M4",
+      "doi:10.7910/DVN/27626/EQYUY4",
+      "doi:10.7910/DVN/27626/8SAPLS",
+      "doi:10.7910/DVN/27626/GOROKY",
+      "doi:10.7910/DVN/27626/M2CBQW",
+      "doi:10.7910/DVN/27626/F4WFM6",
+      "doi:10.7910/DVN/27626/MSW12A",
+      "doi:10.7910/DVN/27626/KH6BCS",
+      "doi:10.7910/DVN/27626/P0F8F4",
+      "doi:10.7910/DVN/27626/ZYMTLQ",
+      "doi:10.7910/DVN/27626/AJDHZY",
+      "doi:10.7910/DVN/27626/5GWZT2",
+      "doi:10.7910/DVN/27626/FWJPY1",
+      "doi:10.7910/DVN/27626/PB1OOB",
+      "doi:10.7910/DVN/27626/R6QKZW",
+      "doi:10.7910/DVN/27626/MLJ3MM",
+      "doi:10.7910/DVN/27626/ZH8XXY",
+      "doi:10.7910/DVN/27626/2IFRAR",
+      "doi:10.7910/DVN/27626/OZURSP",
+      "doi:10.7910/DVN/27626/KOQWYP",
+      "doi:10.7910/DVN/27626/EGIQ9N",
+      "doi:10.7910/DVN/27626/0XAXJY",
+      "doi:10.7910/DVN/27626/30R8WW",
+      "doi:10.7910/DVN/27626/RV0XGF",
+      "doi:10.7910/DVN/27626/77HHMS",
+      "doi:10.7910/DVN/27626/U123DK",
+      "doi:10.7910/DVN/27626/IBPBS6",
+      "doi:10.7910/DVN/27626/HFATNH",
+      "doi:10.7910/DVN/27626/K41UAR",
+      "doi:10.7910/DVN/27626/UVWHN3",
+      "doi:10.7910/DVN/27626/PQLVYB",
+      "doi:10.7910/DVN/27626/5PYYYP",
+      "doi:10.7910/DVN/27626/73BYW1",
+      "doi:10.7910/DVN/27626/5QBKDF",
+      "doi:10.7910/DVN/27626/PGMXPV",
+      "doi:10.7910/DVN/27626/9VHAIR",
+      "doi:10.7910/DVN/27626/3XLQWD",
+      "doi:10.7910/DVN/27626/731PC1",
+      "doi:10.7910/DVN/27626/RKQWNW",
+      "doi:10.7910/DVN/27626/HFEKD7",
+      "doi:10.7910/DVN/27626/N8LAUV",
+      "doi:10.7910/DVN/27626/GWMPVS",
+      "doi:10.7910/DVN/27626/TREHSJ",
+      "doi:10.7910/DVN/27626/7LFJDD",
+      "doi:10.7910/DVN/27626/M3KJGC",
+      "doi:10.7910/DVN/27626/ES3ND4",
+      "doi:10.7910/DVN/27626/C8N7ZW",
+      "doi:10.7910/DVN/27626/6ZJDI5",
+      "doi:10.7910/DVN/27626/PEIGM7",
+      "doi:10.7910/DVN/27626/OIHQDD",
+      "doi:10.7910/DVN/27626/NYIKXX",
+      "doi:10.7910/DVN/27626/9HVS6F",
+      "doi:10.7910/DVN/27626/1XL2D6",
+      "doi:10.7910/DVN/27626/OSBAAN",
+      "doi:10.7910/DVN/27626/DLQCCQ",
+      "doi:10.7910/DVN/27626/SVZVQB",
+      "doi:10.7910/DVN/27626/LAX448",
+      "doi:10.7910/DVN/27626/Z9XOVX",
+      "doi:10.7910/DVN/27626/BQI0WG",
+      "doi:10.7910/DVN/27626/EFIIVJ",
+      "doi:10.7910/DVN/27626/CZZDBK",
+      "doi:10.7910/DVN/27626/CDQA3E",
+      "doi:10.7910/DVN/27626/STDPAC",
+      "doi:10.7910/DVN/27626/FKWDXY",
+      "doi:10.7910/DVN/27626/U9NM2K",
+      "doi:10.7910/DVN/27626/PFJJDC",
+      "doi:10.7910/DVN/27626/KIMMQR",
+      "doi:10.7910/DVN/27626/OFQ2AV",
+      "doi:10.7910/DVN/27626/75W8JO",
+      "doi:10.7910/DVN/27626/8WZKLD",
+      "doi:10.7910/DVN/27626/NW1I7S",
+      "doi:10.7910/DVN/27626/6S5WZQ",
+      "doi:10.7910/DVN/27626/2RCVYM",
+      "doi:10.7910/DVN/27626/58QFSA",
+      "doi:10.7910/DVN/27626/1UYWER",
+      "doi:10.7910/DVN/27626/GYOEF6"
+    ]
+  },
+  "@context": {
+    "author": "http://purl.org/dc/terms/creator",
+    "citation": "https://dataverse.org/schema/citation/",
+    "dateOfDeposit": "http://purl.org/dc/terms/dateSubmitted",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dvcore": "https://dataverse.org/schema/core#",
+    "ore": "http://www.openarchives.org/ore/terms/",
+    "publication": "http://purl.org/dc/terms/isReferencedBy",
+    "publicationURL": "https://schema.org/distribution",
+    "schema": "http://schema.org/",
+    "subject": "http://purl.org/dc/terms/subject",
+    "title": "http://purl.org/dc/terms/title"
+  }
+}

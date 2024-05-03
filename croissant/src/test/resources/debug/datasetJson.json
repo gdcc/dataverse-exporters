@@ -1,0 +1,3447 @@
+{
+  "id": 54417,
+  "identifier": "DVN/27626",
+  "persistentUrl": "https://doi.org/10.7910/DVN/27626",
+  "protocol": "doi",
+  "authority": "10.7910",
+  "publisher": "Harvard Dataverse",
+  "publicationDate": "2015-01-12",
+  "storageIdentifier": "s3://10.7910/DVN/27626",
+  "datasetVersion": {
+    "id": 79950,
+    "datasetId": 54417,
+    "datasetPersistentId": "doi:10.7910/DVN/27626",
+    "storageIdentifier": "s3://10.7910/DVN/27626",
+    "versionNumber": 1,
+    "versionMinorNumber": 2,
+    "versionState": "RELEASED",
+    "UNF": "UNF:5:2Qq4Y8RSO6I6r44A6KmyPQ==",
+    "lastUpdateTime": "2016-02-29T10:59:43Z",
+    "releaseTime": "2016-02-29T10:59:43Z",
+    "createTime": "2016-02-29T10:59:29Z",
+    "publicationDate": "2015-01-12",
+    "citationDate": "2015-01-12",
+    "license": {
+      "name": "CC0 1.0",
+      "uri": "http://creativecommons.org/publicdomain/zero/1.0",
+      "iconUri": "https://licensebuttons.net/p/zero/1.0/88x31.png"
+    },
+    "fileAccessRequest": false,
+    "metadataBlocks": {
+      "citation": {
+        "displayName": "Citation Metadata",
+        "name": "citation",
+        "fields": [
+          {
+            "typeName": "title",
+            "multiple": false,
+            "typeClass": "primitive",
+            "value": "Replication data for: Retractions"
+          },
+          {
+            "typeName": "author",
+            "multiple": true,
+            "typeClass": "compound",
+            "value": [
+              {
+                "authorName": {
+                  "typeName": "authorName",
+                  "multiple": false,
+                  "typeClass": "primitive",
+                  "value": "Azoulay, Pierre"
+                },
+                "authorAffiliation": {
+                  "typeName": "authorAffiliation",
+                  "multiple": false,
+                  "typeClass": "primitive",
+                  "value": "MIT & NBER"
+                }
+              },
+              {
+                "authorName": {
+                  "typeName": "authorName",
+                  "multiple": false,
+                  "typeClass": "primitive",
+                  "value": "Furman, Jeffrey"
+                },
+                "authorAffiliation": {
+                  "typeName": "authorAffiliation",
+                  "multiple": false,
+                  "typeClass": "primitive",
+                  "value": "Boston University & NBER"
+                }
+              },
+              {
+                "authorName": {
+                  "typeName": "authorName",
+                  "multiple": false,
+                  "typeClass": "primitive",
+                  "value": "Krieger, Joshua"
+                },
+                "authorAffiliation": {
+                  "typeName": "authorAffiliation",
+                  "multiple": false,
+                  "typeClass": "primitive",
+                  "value": "MIT"
+                }
+              },
+              {
+                "authorName": {
+                  "typeName": "authorName",
+                  "multiple": false,
+                  "typeClass": "primitive",
+                  "value": "Murray, Fiona"
+                },
+                "authorAffiliation": {
+                  "typeName": "authorAffiliation",
+                  "multiple": false,
+                  "typeClass": "primitive",
+                  "value": "MIT & NBER"
+                }
+              }
+            ]
+          },
+          {
+            "typeName": "datasetContact",
+            "multiple": true,
+            "typeClass": "compound",
+            "value": [
+              {
+                "datasetContactName": {
+                  "typeName": "datasetContactName",
+                  "multiple": false,
+                  "typeClass": "primitive",
+                  "value": "Joshua Krieger"
+                },
+                "datasetContactAffiliation": {
+                  "typeName": "datasetContactAffiliation",
+                  "multiple": false,
+                  "typeClass": "primitive",
+                  "value": "MIT"
+                },
+                "datasetContactEmail": {
+                  "typeName": "datasetContactEmail",
+                  "multiple": false,
+                  "typeClass": "primitive",
+                  "value": "jkrieger@mit.edu"
+                }
+              }
+            ]
+          },
+          {
+            "typeName": "dsDescription",
+            "multiple": true,
+            "typeClass": "compound",
+            "value": [
+              {
+                "dsDescriptionValue": {
+                  "typeName": "dsDescriptionValue",
+                  "multiple": false,
+                  "typeClass": "primitive",
+                  "value": "Azoulay, Pierre, Furman, Jeffrey L., Krieger, Joshua L., and Murray, Fiona, (2015) \"Retractions.\" Review of Economics and Statistics  97:5, 1118-1136."
+                }
+              }
+            ]
+          },
+          {
+            "typeName": "subject",
+            "multiple": true,
+            "typeClass": "controlledVocabulary",
+            "value": [
+              "Social Sciences"
+            ]
+          },
+          {
+            "typeName": "publication",
+            "multiple": true,
+            "typeClass": "compound",
+            "value": [
+              {
+                "publicationURL": {
+                  "typeName": "publicationURL",
+                  "multiple": false,
+                  "typeClass": "primitive",
+                  "value": "http://dx.doi.org/10.1162/REST_a_00469"
+                }
+              }
+            ]
+          },
+          {
+            "typeName": "dateOfDeposit",
+            "multiple": false,
+            "typeClass": "primitive",
+            "value": "2014-10-17"
+          },
+          {
+            "typeName": "series",
+            "multiple": true,
+            "typeClass": "compound",
+            "value": [
+              {
+                "seriesName": {
+                  "typeName": "seriesName",
+                  "multiple": false,
+                  "typeClass": "primitive",
+                  "value": "Volume XX, Issue X"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "journal": {
+        "displayName": "Journal Metadata",
+        "name": "journal",
+        "fields": []
+      }
+    },
+    "files": [
+      {
+        "description": "",
+        "label": "artcl_aar_interactions_poisson.do",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "do file"
+        ],
+        "dataFile": {
+          "id": 2504260,
+          "persistentId": "doi:10.7910/DVN/27626/HSULIY",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/HSULIY",
+          "filename": "artcl_aar_interactions_poisson.do",
+          "contentType": "text/x-stata-syntax; charset=US-ASCII",
+          "friendlyType": "Stata Syntax",
+          "filesize": 1682,
+          "description": "",
+          "categories": [
+            "do file"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243697",
+          "rootDataFileId": -1,
+          "md5": "ee0422ad37c5355dba574f26afdc6ca8",
+          "checksum": {
+            "type": "MD5",
+            "value": "ee0422ad37c5355dba574f26afdc6ca8"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "baseline_stk_cites_strct.gph",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "graphs"
+        ],
+        "dataFile": {
+          "id": 2504192,
+          "persistentId": "doi:10.7910/DVN/27626/2F0EMR",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/2F0EMR",
+          "filename": "baseline_stk_cites_strct.gph",
+          "contentType": "text/plain; charset=US-ASCII",
+          "friendlyType": "Plain Text",
+          "filesize": 11126,
+          "description": "",
+          "categories": [
+            "graphs"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243660",
+          "rootDataFileId": -1,
+          "md5": "50a980d869d91122e1c383775df325d0",
+          "checksum": {
+            "type": "MD5",
+            "value": "50a980d869d91122e1c383775df325d0"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "citations_panel_rltd_patentcites.tab",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "STATA DATA"
+        ],
+        "dataFile": {
+          "id": 2504274,
+          "persistentId": "doi:10.7910/DVN/27626/UWZBQB",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/UWZBQB",
+          "filename": "citations_panel_rltd_patentcites.tab",
+          "contentType": "text/tab-separated-values",
+          "friendlyType": "Tab-Delimited",
+          "filesize": 85290795,
+          "description": "",
+          "categories": [
+            "STATA DATA"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243818",
+          "originalFileFormat": "application/x-stata",
+          "originalFormatLabel": "Stata Binary",
+          "originalFileSize": 57582167,
+          "originalFileName": "citations_panel_rltd_patentcites.dta",
+          "UNF": "UNF:5:4Px4xxLazJqQ2U4Vcx+u/g==",
+          "rootDataFileId": -1,
+          "md5": "4eae80b2e06e1a6b214e8a3cabf4b61c",
+          "checksum": {
+            "type": "MD5",
+            "value": "4eae80b2e06e1a6b214e8a3cabf4b61c"
+          },
+          "tabularData": true,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "corp_ncorp_poisson_regs.do",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "do file"
+        ],
+        "dataFile": {
+          "id": 2504254,
+          "persistentId": "doi:10.7910/DVN/27626/BZRKUE",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/BZRKUE",
+          "filename": "corp_ncorp_poisson_regs.do",
+          "contentType": "text/x-stata-syntax; charset=US-ASCII",
+          "friendlyType": "Stata Syntax",
+          "filesize": 2754,
+          "description": "",
+          "categories": [
+            "do file"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243698",
+          "rootDataFileId": -1,
+          "md5": "3c1b79649696c435ba8435e355b97a56",
+          "checksum": {
+            "type": "MD5",
+            "value": "3c1b79649696c435ba8435e355b97a56"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "culpable_author_analyses.do",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "do file"
+        ],
+        "dataFile": {
+          "id": 2504234,
+          "persistentId": "doi:10.7910/DVN/27626/PL9EBM",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/PL9EBM",
+          "filename": "culpable_author_analyses.do",
+          "contentType": "text/x-stata-syntax; charset=US-ASCII",
+          "friendlyType": "Stata Syntax",
+          "filesize": 3854,
+          "description": "",
+          "categories": [
+            "do file"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243699",
+          "rootDataFileId": -1,
+          "md5": "50691df42fe5a60426d930fb4d68f30a",
+          "checksum": {
+            "type": "MD5",
+            "value": "50691df42fe5a60426d930fb4d68f30a"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "data_dictionary.xlsx",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "data dictionary"
+        ],
+        "dataFile": {
+          "id": 2504208,
+          "persistentId": "doi:10.7910/DVN/27626/HSMBAM",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/HSMBAM",
+          "filename": "data_dictionary.xlsx",
+          "contentType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "friendlyType": "MS Excel Spreadsheet",
+          "filesize": 22239,
+          "description": "",
+          "categories": [
+            "data dictionary"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243683",
+          "rootDataFileId": -1,
+          "md5": "74fb30ed381e144bb19c0fdb2dd3324e",
+          "checksum": {
+            "type": "MD5",
+            "value": "74fb30ed381e144bb19c0fdb2dd3324e"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "desc_stats_entry&funding.do",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "do file"
+        ],
+        "dataFile": {
+          "id": 2504228,
+          "persistentId": "doi:10.7910/DVN/27626/AWPCNE",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/AWPCNE",
+          "filename": "desc_stats_entry&funding.do",
+          "contentType": "text/x-stata-syntax; charset=US-ASCII",
+          "friendlyType": "Stata Syntax",
+          "filesize": 1336,
+          "description": "",
+          "categories": [
+            "do file"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243700",
+          "rootDataFileId": -1,
+          "md5": "c267366f57394a02ac41c6715bbddfe3",
+          "checksum": {
+            "type": "MD5",
+            "value": "c267366f57394a02ac41c6715bbddfe3"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "desc_stats_pmid_strct.rtf",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "tables"
+        ],
+        "dataFile": {
+          "id": 2504196,
+          "persistentId": "doi:10.7910/DVN/27626/DGMAOL",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/DGMAOL",
+          "filename": "desc_stats_pmid_strct.rtf",
+          "contentType": "text/plain; charset=US-ASCII",
+          "friendlyType": "Plain Text",
+          "filesize": 10142,
+          "description": "",
+          "categories": [
+            "tables"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243671",
+          "rootDataFileId": -1,
+          "md5": "5587b4140b352b4e0d7a7f2db88fd7ad",
+          "checksum": {
+            "type": "MD5",
+            "value": "5587b4140b352b4e0d7a7f2db88fd7ad"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "desc_stats_pmra_freq.rtf",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "tables"
+        ],
+        "dataFile": {
+          "id": 2504229,
+          "persistentId": "doi:10.7910/DVN/27626/E7TF0X",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/E7TF0X",
+          "filename": "desc_stats_pmra_freq.rtf",
+          "contentType": "text/plain; charset=US-ASCII",
+          "friendlyType": "Plain Text",
+          "filesize": 3847,
+          "description": "",
+          "categories": [
+            "tables"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243672",
+          "rootDataFileId": -1,
+          "md5": "cd976bc5776a2e1052109fa86337fdde",
+          "checksum": {
+            "type": "MD5",
+            "value": "cd976bc5776a2e1052109fa86337fdde"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "desc_stats_pmra_funding.rtf",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "tables"
+        ],
+        "dataFile": {
+          "id": 2504242,
+          "persistentId": "doi:10.7910/DVN/27626/3DXNJ7",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/3DXNJ7",
+          "filename": "desc_stats_pmra_funding.rtf",
+          "contentType": "text/plain; charset=US-ASCII",
+          "friendlyType": "Plain Text",
+          "filesize": 5488,
+          "description": "",
+          "categories": [
+            "tables"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243673",
+          "rootDataFileId": -1,
+          "md5": "3ff83ecb9dbe9193ff9c5a9f42bee91f",
+          "checksum": {
+            "type": "MD5",
+            "value": "3ff83ecb9dbe9193ff9c5a9f42bee91f"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "desc_stats_related.do",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "do file"
+        ],
+        "dataFile": {
+          "id": 2504243,
+          "persistentId": "doi:10.7910/DVN/27626/O3BA5C",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/O3BA5C",
+          "filename": "desc_stats_related.do",
+          "contentType": "text/x-stata-syntax; charset=US-ASCII",
+          "friendlyType": "Stata Syntax",
+          "filesize": 2911,
+          "description": "",
+          "categories": [
+            "do file"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243701",
+          "rootDataFileId": -1,
+          "md5": "6638e28b42e8c6cc89512a38ebe055ef",
+          "checksum": {
+            "type": "MD5",
+            "value": "6638e28b42e8c6cc89512a38ebe055ef"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "desc_stats_retractions.do",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "do file"
+        ],
+        "dataFile": {
+          "id": 2504210,
+          "persistentId": "doi:10.7910/DVN/27626/0MDX5T",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/0MDX5T",
+          "filename": "desc_stats_retractions.do",
+          "contentType": "text/x-stata-syntax; charset=US-ASCII",
+          "friendlyType": "Stata Syntax",
+          "filesize": 1482,
+          "description": "",
+          "categories": [
+            "do file"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243702",
+          "rootDataFileId": -1,
+          "md5": "70f7c235e8e39f57fa7fd75ead33772f",
+          "checksum": {
+            "type": "MD5",
+            "value": "70f7c235e8e39f57fa7fd75ead33772f"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "dynamics_poisson.do",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "do file"
+        ],
+        "dataFile": {
+          "id": 2504209,
+          "persistentId": "doi:10.7910/DVN/27626/UDXW9K",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/UDXW9K",
+          "filename": "dynamics_poisson.do",
+          "contentType": "text/x-stata-syntax; charset=US-ASCII",
+          "friendlyType": "Stata Syntax",
+          "filesize": 6239,
+          "description": "",
+          "categories": [
+            "do file"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243703",
+          "rootDataFileId": -1,
+          "md5": "509931bc000965e4f3329ac221d2e20a",
+          "checksum": {
+            "type": "MD5",
+            "value": "509931bc000965e4f3329ac221d2e20a"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "dynamics_poisson_freq&funding.do",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "do file"
+        ],
+        "dataFile": {
+          "id": 2504186,
+          "persistentId": "doi:10.7910/DVN/27626/Z8WCAD",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/Z8WCAD",
+          "filename": "dynamics_poisson_freq&funding.do",
+          "contentType": "text/x-stata-syntax; charset=US-ASCII",
+          "friendlyType": "Stata Syntax",
+          "filesize": 5553,
+          "description": "",
+          "categories": [
+            "do file"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243704",
+          "rootDataFileId": -1,
+          "md5": "2a3723f65dfab633af9a424644a37067",
+          "checksum": {
+            "type": "MD5",
+            "value": "2a3723f65dfab633af9a424644a37067"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "MIT-BU Retractions Data_table1data.xlsx",
+        "restricted": false,
+        "version": 1,
+        "datasetVersionId": 79950,
+        "dataFile": {
+          "id": 2504246,
+          "persistentId": "doi:10.7910/DVN/27626/CU1VWN",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/CU1VWN",
+          "filename": "MIT-BU Retractions Data_table1data.xlsx",
+          "contentType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "friendlyType": "MS Excel Spreadsheet",
+          "filesize": 242373,
+          "description": "",
+          "storageIdentifier": "s3://dvn-cloud:243684",
+          "rootDataFileId": -1,
+          "md5": "3d5f48b39b4264c83c402c3a6b98b636",
+          "checksum": {
+            "type": "MD5",
+            "value": "3d5f48b39b4264c83c402c3a6b98b636"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "multi_level_dataset_005_field_vars.tab",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "STATA DATA"
+        ],
+        "dataFile": {
+          "id": 2504279,
+          "persistentId": "doi:10.7910/DVN/27626/ZHKDI7",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/ZHKDI7",
+          "filename": "multi_level_dataset_005_field_vars.tab",
+          "contentType": "text/tab-separated-values",
+          "friendlyType": "Tab-Delimited",
+          "filesize": 686512908,
+          "description": "",
+          "categories": [
+            "STATA DATA"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243819",
+          "originalFileFormat": "application/x-stata",
+          "originalFormatLabel": "Stata Binary",
+          "originalFileSize": 413362677,
+          "originalFileName": "multi_level_dataset_005_field_vars.dta",
+          "UNF": "UNF:5:EFzgTIdaVc7uD6/LMfO9Gw==",
+          "rootDataFileId": -1,
+          "md5": "7bdc9754d86ec740eef7e6f2b037a1ae",
+          "checksum": {
+            "type": "MD5",
+            "value": "7bdc9754d86ec740eef7e6f2b037a1ae"
+          },
+          "tabularData": true,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "nbretractions_strct.gph",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "graphs"
+        ],
+        "dataFile": {
+          "id": 2504216,
+          "persistentId": "doi:10.7910/DVN/27626/O1BADQ",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/O1BADQ",
+          "filename": "nbretractions_strct.gph",
+          "contentType": "text/plain; charset=US-ASCII",
+          "friendlyType": "Plain Text",
+          "filesize": 6973,
+          "description": "",
+          "categories": [
+            "graphs"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243661",
+          "rootDataFileId": -1,
+          "md5": "06a3eaf92384675f11233d9596ab9c80",
+          "checksum": {
+            "type": "MD5",
+            "value": "06a3eaf92384675f11233d9596ab9c80"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "ols_auposition_earliestpubFX.ster",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "estimates"
+        ],
+        "dataFile": {
+          "id": 2504198,
+          "persistentId": "doi:10.7910/DVN/27626/9TRUCM",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/9TRUCM",
+          "filename": "ols_auposition_earliestpubFX.ster",
+          "contentType": "application/octet-stream",
+          "friendlyType": "Unknown",
+          "filesize": 50950,
+          "description": "",
+          "categories": [
+            "estimates"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243620",
+          "rootDataFileId": -1,
+          "md5": "026412fe1f0e3ee7c06cebccc16aab45",
+          "checksum": {
+            "type": "MD5",
+            "value": "026412fe1f0e3ee7c06cebccc16aab45"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "ols_authors_reappear.rtf",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "tables"
+        ],
+        "dataFile": {
+          "id": 2504235,
+          "persistentId": "doi:10.7910/DVN/27626/C7R0M4",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/C7R0M4",
+          "filename": "ols_authors_reappear.rtf",
+          "contentType": "application/octet-stream",
+          "friendlyType": "Unknown",
+          "filesize": 1823,
+          "description": "",
+          "categories": [
+            "tables"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243674",
+          "rootDataFileId": -1,
+          "md5": "688f9ed2eb87d5df395fd959f4d6b5ee",
+          "checksum": {
+            "type": "MD5",
+            "value": "688f9ed2eb87d5df395fd959f4d6b5ee"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "ols_main_bigfraud_strct.ster",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "estimates"
+        ],
+        "dataFile": {
+          "id": 2504241,
+          "persistentId": "doi:10.7910/DVN/27626/EQYUY4",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/EQYUY4",
+          "filename": "ols_main_bigfraud_strct.ster",
+          "contentType": "application/octet-stream",
+          "friendlyType": "Unknown",
+          "filesize": 50914,
+          "description": "",
+          "categories": [
+            "estimates"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243622",
+          "rootDataFileId": -1,
+          "md5": "70eece562f0ef1e1f30ad766481dd280",
+          "checksum": {
+            "type": "MD5",
+            "value": "70eece562f0ef1e1f30ad766481dd280"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "ols_main_loose_shldrs.ster",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "estimates"
+        ],
+        "dataFile": {
+          "id": 2504203,
+          "persistentId": "doi:10.7910/DVN/27626/8SAPLS",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/8SAPLS",
+          "filename": "ols_main_loose_shldrs.ster",
+          "contentType": "application/octet-stream",
+          "friendlyType": "Unknown",
+          "filesize": 50926,
+          "description": "",
+          "categories": [
+            "estimates"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243623",
+          "rootDataFileId": -1,
+          "md5": "384d645dad523f539d11b992930cb8c9",
+          "checksum": {
+            "type": "MD5",
+            "value": "384d645dad523f539d11b992930cb8c9"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "ols_main_nonmissing.ster",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "estimates"
+        ],
+        "dataFile": {
+          "id": 2504212,
+          "persistentId": "doi:10.7910/DVN/27626/GOROKY",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/GOROKY",
+          "filename": "ols_main_nonmissing.ster",
+          "contentType": "application/octet-stream",
+          "friendlyType": "Unknown",
+          "filesize": 50236,
+          "description": "",
+          "categories": [
+            "estimates"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243624",
+          "rootDataFileId": -1,
+          "md5": "ffbc2473c295aba25daf258e03146d23",
+          "checksum": {
+            "type": "MD5",
+            "value": "ffbc2473c295aba25daf258e03146d23"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "ols_main_shldrs_nonmissing_earlst.ster",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "estimates"
+        ],
+        "dataFile": {
+          "id": 2504233,
+          "persistentId": "doi:10.7910/DVN/27626/M2CBQW",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/M2CBQW",
+          "filename": "ols_main_shldrs_nonmissing_earlst.ster",
+          "contentType": "application/octet-stream",
+          "friendlyType": "Unknown",
+          "filesize": 50274,
+          "description": "",
+          "categories": [
+            "estimates"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243626",
+          "rootDataFileId": -1,
+          "md5": "ff2ed7bbcce2edb7cc90caeec99d4708",
+          "checksum": {
+            "type": "MD5",
+            "value": "ff2ed7bbcce2edb7cc90caeec99d4708"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "ols_main_shldrs_nonmissing.ster",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "estimates"
+        ],
+        "dataFile": {
+          "id": 2504195,
+          "persistentId": "doi:10.7910/DVN/27626/F4WFM6",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/F4WFM6",
+          "filename": "ols_main_shldrs_nonmissing.ster",
+          "contentType": "application/octet-stream",
+          "friendlyType": "Unknown",
+          "filesize": 51601,
+          "description": "",
+          "categories": [
+            "estimates"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243625",
+          "rootDataFileId": -1,
+          "md5": "da6ca6e685e7f8dd263df794561ed707",
+          "checksum": {
+            "type": "MD5",
+            "value": "da6ca6e685e7f8dd263df794561ed707"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "ols_main.ster",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "estimates"
+        ],
+        "dataFile": {
+          "id": 2504213,
+          "persistentId": "doi:10.7910/DVN/27626/MSW12A",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/MSW12A",
+          "filename": "ols_main.ster",
+          "contentType": "application/octet-stream",
+          "friendlyType": "Unknown",
+          "filesize": 50196,
+          "description": "",
+          "categories": [
+            "estimates"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243621",
+          "rootDataFileId": -1,
+          "md5": "7b345ababb0d28db8cd0f3d188ad9455",
+          "checksum": {
+            "type": "MD5",
+            "value": "7b345ababb0d28db8cd0f3d188ad9455"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "ols_regressions_citations.do",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "do file"
+        ],
+        "dataFile": {
+          "id": 2504238,
+          "persistentId": "doi:10.7910/DVN/27626/KH6BCS",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/KH6BCS",
+          "filename": "ols_regressions_citations.do",
+          "contentType": "text/x-stata-syntax; charset=US-ASCII",
+          "friendlyType": "Stata Syntax",
+          "filesize": 3707,
+          "description": "",
+          "categories": [
+            "do file"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243705",
+          "rootDataFileId": -1,
+          "md5": "39b3924d2094b429a2fd2f1c704ddf59",
+          "checksum": {
+            "type": "MD5",
+            "value": "39b3924d2094b429a2fd2f1c704ddf59"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "perp_positions_freqs.rtf",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "tables"
+        ],
+        "dataFile": {
+          "id": 2504194,
+          "persistentId": "doi:10.7910/DVN/27626/P0F8F4",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/P0F8F4",
+          "filename": "perp_positions_freqs.rtf",
+          "contentType": "text/plain; charset=US-ASCII",
+          "friendlyType": "Plain Text",
+          "filesize": 1428,
+          "description": "",
+          "categories": [
+            "tables"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243675",
+          "rootDataFileId": -1,
+          "md5": "ebd424a42716808e6fe73778ce8e57b5",
+          "checksum": {
+            "type": "MD5",
+            "value": "ebd424a42716808e6fe73778ce8e57b5"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "perps_by_pmid.tab",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "STATA DATA"
+        ],
+        "dataFile": {
+          "id": 2504278,
+          "persistentId": "doi:10.7910/DVN/27626/ZYMTLQ",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/ZYMTLQ",
+          "filename": "perps_by_pmid.tab",
+          "contentType": "text/tab-separated-values",
+          "friendlyType": "Tab-Delimited",
+          "filesize": 25213,
+          "description": "",
+          "categories": [
+            "STATA DATA"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243820",
+          "originalFileFormat": "application/x-stata",
+          "originalFormatLabel": "Stata Binary",
+          "originalFileSize": 50889,
+          "originalFileName": "perps_by_pmid.dta",
+          "UNF": "UNF:5:luLm80vwZCqH4A5wO6LiPQ==",
+          "rootDataFileId": -1,
+          "md5": "1dae470f4d124935344cbc0639e3fba4",
+          "checksum": {
+            "type": "MD5",
+            "value": "1dae470f4d124935344cbc0639e3fba4"
+          },
+          "tabularData": true,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "perps_by_shldrs.rtf",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "tables"
+        ],
+        "dataFile": {
+          "id": 2504224,
+          "persistentId": "doi:10.7910/DVN/27626/AJDHZY",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/AJDHZY",
+          "filename": "perps_by_shldrs.rtf",
+          "contentType": "text/plain; charset=US-ASCII",
+          "friendlyType": "Plain Text",
+          "filesize": 1436,
+          "description": "",
+          "categories": [
+            "tables"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243676",
+          "rootDataFileId": -1,
+          "md5": "bdb98ef73f54de03ebd541810a149c23",
+          "checksum": {
+            "type": "MD5",
+            "value": "bdb98ef73f54de03ebd541810a149c23"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "pmra_level_freq.tab",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "STATA DATA"
+        ],
+        "dataFile": {
+          "id": 2504275,
+          "persistentId": "doi:10.7910/DVN/27626/5GWZT2",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/5GWZT2",
+          "filename": "pmra_level_freq.tab",
+          "contentType": "text/tab-separated-values",
+          "friendlyType": "Tab-Delimited",
+          "filesize": 2621292,
+          "description": "",
+          "categories": [
+            "STATA DATA"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243821",
+          "originalFileFormat": "application/x-stata",
+          "originalFormatLabel": "Stata Binary",
+          "originalFileSize": 1359879,
+          "originalFileName": "pmra_level_freq.dta",
+          "UNF": "UNF:5:NP09aF8MOd/rD5hC9XMwow==",
+          "rootDataFileId": -1,
+          "md5": "e32ae59c2f6dc4c98726d4ff9a538849",
+          "checksum": {
+            "type": "MD5",
+            "value": "e32ae59c2f6dc4c98726d4ff9a538849"
+          },
+          "tabularData": true,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "pmra_level_funding.tab",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "STATA DATA"
+        ],
+        "dataFile": {
+          "id": 2504270,
+          "persistentId": "doi:10.7910/DVN/27626/FWJPY1",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/FWJPY1",
+          "filename": "pmra_level_funding.tab",
+          "contentType": "text/tab-separated-values",
+          "friendlyType": "Tab-Delimited",
+          "filesize": 2078504,
+          "description": "",
+          "categories": [
+            "STATA DATA"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243822",
+          "originalFileFormat": "application/x-stata",
+          "originalFormatLabel": "Stata Binary",
+          "originalFileSize": 1168677,
+          "originalFileName": "pmra_level_funding.dta",
+          "UNF": "UNF:5:NQlYB53gpmxZfQaslq33aw==",
+          "rootDataFileId": -1,
+          "md5": "f562204ccaebde30f2b055b33e5f065a",
+          "checksum": {
+            "type": "MD5",
+            "value": "f562204ccaebde30f2b055b33e5f065a"
+          },
+          "tabularData": true,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "poisson_amount.ster",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "estimates"
+        ],
+        "dataFile": {
+          "id": 2504265,
+          "persistentId": "doi:10.7910/DVN/27626/PB1OOB",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/PB1OOB",
+          "filename": "poisson_amount.ster",
+          "contentType": "application/octet-stream",
+          "friendlyType": "Unknown",
+          "filesize": 48404,
+          "description": "",
+          "categories": [
+            "estimates"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243627",
+          "rootDataFileId": -1,
+          "md5": "b0af6aa16f8c2e61beb8166d9fe1077b",
+          "checksum": {
+            "type": "MD5",
+            "value": "b0af6aa16f8c2e61beb8166d9fe1077b"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "poisson_fndng_dynamic.gph",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "graphs"
+        ],
+        "dataFile": {
+          "id": 2504206,
+          "persistentId": "doi:10.7910/DVN/27626/R6QKZW",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/R6QKZW",
+          "filename": "poisson_fndng_dynamic.gph",
+          "contentType": "text/plain; charset=US-ASCII",
+          "friendlyType": "Plain Text",
+          "filesize": 10491,
+          "description": "",
+          "categories": [
+            "graphs"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243662",
+          "rootDataFileId": -1,
+          "md5": "f42281e29129888407803a96be38b743",
+          "checksum": {
+            "type": "MD5",
+            "value": "f42281e29129888407803a96be38b743"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "poisson_fndng_dynamics.ster",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "estimates"
+        ],
+        "dataFile": {
+          "id": 2504245,
+          "persistentId": "doi:10.7910/DVN/27626/MLJ3MM",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/MLJ3MM",
+          "filename": "poisson_fndng_dynamics.ster",
+          "contentType": "application/octet-stream",
+          "friendlyType": "Unknown",
+          "filesize": 72031,
+          "description": "",
+          "categories": [
+            "estimates"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243628",
+          "rootDataFileId": -1,
+          "md5": "ced9e00bd6af2e307cfd35867796dd74",
+          "checksum": {
+            "type": "MD5",
+            "value": "ced9e00bd6af2e307cfd35867796dd74"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "poisson_freq_dynamic.gph",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "graphs"
+        ],
+        "dataFile": {
+          "id": 2504251,
+          "persistentId": "doi:10.7910/DVN/27626/ZH8XXY",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/ZH8XXY",
+          "filename": "poisson_freq_dynamic.gph",
+          "contentType": "text/plain; charset=US-ASCII",
+          "friendlyType": "Plain Text",
+          "filesize": 10462,
+          "description": "",
+          "categories": [
+            "graphs"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243663",
+          "rootDataFileId": -1,
+          "md5": "405bc2ee33aefcf528577c61e355b52b",
+          "checksum": {
+            "type": "MD5",
+            "value": "405bc2ee33aefcf528577c61e355b52b"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "poisson_freq_dynamics.ster",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "estimates"
+        ],
+        "dataFile": {
+          "id": 2504202,
+          "persistentId": "doi:10.7910/DVN/27626/2IFRAR",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/2IFRAR",
+          "filename": "poisson_freq_dynamics.ster",
+          "contentType": "application/octet-stream",
+          "friendlyType": "Unknown",
+          "filesize": 79380,
+          "description": "",
+          "categories": [
+            "estimates"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243629",
+          "rootDataFileId": -1,
+          "md5": "262a6e8abd56e7d5be40f8d24eb1646e",
+          "checksum": {
+            "type": "MD5",
+            "value": "262a6e8abd56e7d5be40f8d24eb1646e"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "poisson_main_cited_intr_strct.ster",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "estimates"
+        ],
+        "dataFile": {
+          "id": 2504250,
+          "persistentId": "doi:10.7910/DVN/27626/OZURSP",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/OZURSP",
+          "filename": "poisson_main_cited_intr_strct.ster",
+          "contentType": "application/octet-stream",
+          "friendlyType": "Unknown",
+          "filesize": 116715,
+          "description": "",
+          "categories": [
+            "estimates"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243631",
+          "rootDataFileId": -1,
+          "md5": "16c18a3c2346ae015cdab7e97eb29366",
+          "checksum": {
+            "type": "MD5",
+            "value": "16c18a3c2346ae015cdab7e97eb29366"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "poisson_main_cites_intr_strct.ster",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "estimates"
+        ],
+        "dataFile": {
+          "id": 2504230,
+          "persistentId": "doi:10.7910/DVN/27626/KOQWYP",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/KOQWYP",
+          "filename": "poisson_main_cites_intr_strct.ster",
+          "contentType": "application/octet-stream",
+          "friendlyType": "Unknown",
+          "filesize": 116715,
+          "description": "",
+          "categories": [
+            "estimates"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243632",
+          "rootDataFileId": -1,
+          "md5": "64dc421cb107ab5256b6ac0224488a8e",
+          "checksum": {
+            "type": "MD5",
+            "value": "64dc421cb107ab5256b6ac0224488a8e"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "poisson_main_crowded_quartiles_shaky&absent.ster",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "estimates"
+        ],
+        "dataFile": {
+          "id": 2504231,
+          "persistentId": "doi:10.7910/DVN/27626/EGIQ9N",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/EGIQ9N",
+          "filename": "poisson_main_crowded_quartiles_shaky&absent.ster",
+          "contentType": "application/octet-stream",
+          "friendlyType": "Unknown",
+          "filesize": 121693,
+          "description": "",
+          "categories": [
+            "estimates"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243633",
+          "rootDataFileId": -1,
+          "md5": "549213723743f0063d60d09f8d84503d",
+          "checksum": {
+            "type": "MD5",
+            "value": "549213723743f0063d60d09f8d84503d"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "poisson_main_crowded_shaky&absent.ster",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "estimates"
+        ],
+        "dataFile": {
+          "id": 2504189,
+          "persistentId": "doi:10.7910/DVN/27626/0XAXJY",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/0XAXJY",
+          "filename": "poisson_main_crowded_shaky&absent.ster",
+          "contentType": "application/octet-stream",
+          "friendlyType": "Unknown",
+          "filesize": 116723,
+          "description": "",
+          "categories": [
+            "estimates"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243634",
+          "rootDataFileId": -1,
+          "md5": "1cd280411f145bf2112e5de1b532b00b",
+          "checksum": {
+            "type": "MD5",
+            "value": "1cd280411f145bf2112e5de1b532b00b"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "poisson_main_dynamics_strct.gph",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "graphs"
+        ],
+        "dataFile": {
+          "id": 2504201,
+          "persistentId": "doi:10.7910/DVN/27626/30R8WW",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/30R8WW",
+          "filename": "poisson_main_dynamics_strct.gph",
+          "contentType": "text/plain; charset=US-ASCII",
+          "friendlyType": "Plain Text",
+          "filesize": 10498,
+          "description": "",
+          "categories": [
+            "graphs"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243664",
+          "rootDataFileId": -1,
+          "md5": "92b57e5038627343e51389e2ddf8667a",
+          "checksum": {
+            "type": "MD5",
+            "value": "92b57e5038627343e51389e2ddf8667a"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "poisson_main_dynamics_strct_rcap.gph",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "graphs"
+        ],
+        "dataFile": {
+          "id": 2504263,
+          "persistentId": "doi:10.7910/DVN/27626/RV0XGF",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/RV0XGF",
+          "filename": "poisson_main_dynamics_strct_rcap.gph",
+          "contentType": "text/plain; charset=US-ASCII",
+          "friendlyType": "Plain Text",
+          "filesize": 9734,
+          "description": "",
+          "categories": [
+            "graphs"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243665",
+          "rootDataFileId": -1,
+          "md5": "fdacf5e4cbbbc121b8b50065678af94b",
+          "checksum": {
+            "type": "MD5",
+            "value": "fdacf5e4cbbbc121b8b50065678af94b"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "poisson_main_dynamics_strct.ster",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "estimates"
+        ],
+        "dataFile": {
+          "id": 2504226,
+          "persistentId": "doi:10.7910/DVN/27626/77HHMS",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/77HHMS",
+          "filename": "poisson_main_dynamics_strct.ster",
+          "contentType": "application/octet-stream",
+          "friendlyType": "Unknown",
+          "filesize": 156617,
+          "description": "",
+          "categories": [
+            "estimates"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243635",
+          "rootDataFileId": -1,
+          "md5": "eae0819abb2ce891dc750dfd3cd253e2",
+          "checksum": {
+            "type": "MD5",
+            "value": "eae0819abb2ce891dc750dfd3cd253e2"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "poisson_main_hotcold_3yrp_quartiles_shaky&absent.ster",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "estimates"
+        ],
+        "dataFile": {
+          "id": 2504188,
+          "persistentId": "doi:10.7910/DVN/27626/U123DK",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/U123DK",
+          "filename": "poisson_main_hotcold_3yrp_quartiles_shaky&absent.ster",
+          "contentType": "application/octet-stream",
+          "friendlyType": "Unknown",
+          "filesize": 121741,
+          "description": "",
+          "categories": [
+            "estimates"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243636",
+          "rootDataFileId": -1,
+          "md5": "1071e28ec877e578d1d7fd0a88b1970c",
+          "checksum": {
+            "type": "MD5",
+            "value": "1071e28ec877e578d1d7fd0a88b1970c"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "poisson_main_hotcold_3yrp_shaky&absent.ster",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "estimates"
+        ],
+        "dataFile": {
+          "id": 2504222,
+          "persistentId": "doi:10.7910/DVN/27626/IBPBS6",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/IBPBS6",
+          "filename": "poisson_main_hotcold_3yrp_shaky&absent.ster",
+          "contentType": "application/octet-stream",
+          "friendlyType": "Unknown",
+          "filesize": 116739,
+          "description": "",
+          "categories": [
+            "estimates"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243637",
+          "rootDataFileId": -1,
+          "md5": "fa37a97540a914a317b14f191441b071",
+          "checksum": {
+            "type": "MD5",
+            "value": "fa37a97540a914a317b14f191441b071"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "poisson_main_intent_strct.ster",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "estimates"
+        ],
+        "dataFile": {
+          "id": 2504219,
+          "persistentId": "doi:10.7910/DVN/27626/HFATNH",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/HFATNH",
+          "filename": "poisson_main_intent_strct.ster",
+          "contentType": "application/octet-stream",
+          "friendlyType": "Unknown",
+          "filesize": 119208,
+          "description": "",
+          "categories": [
+            "estimates"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243638",
+          "rootDataFileId": -1,
+          "md5": "b885b677aac9b5def2759d4d87a1cafb",
+          "checksum": {
+            "type": "MD5",
+            "value": "b885b677aac9b5def2759d4d87a1cafb"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "poisson_main_rnk_intr_loose.gph",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "graphs"
+        ],
+        "dataFile": {
+          "id": 2504236,
+          "persistentId": "doi:10.7910/DVN/27626/K41UAR",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/K41UAR",
+          "filename": "poisson_main_rnk_intr_loose.gph",
+          "contentType": "text/plain; charset=US-ASCII",
+          "friendlyType": "Plain Text",
+          "filesize": 9602,
+          "description": "",
+          "categories": [
+            "graphs"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243666",
+          "rootDataFileId": -1,
+          "md5": "6ac8a5a0db0e6139119f4f709206aaf5",
+          "checksum": {
+            "type": "MD5",
+            "value": "6ac8a5a0db0e6139119f4f709206aaf5"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "poisson_main_rnk_intr_loose.ster",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "estimates"
+        ],
+        "dataFile": {
+          "id": 2504249,
+          "persistentId": "doi:10.7910/DVN/27626/UVWHN3",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/UVWHN3",
+          "filename": "poisson_main_rnk_intr_loose.ster",
+          "contentType": "application/octet-stream",
+          "friendlyType": "Unknown",
+          "filesize": 168149,
+          "description": "",
+          "categories": [
+            "estimates"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243639",
+          "rootDataFileId": -1,
+          "md5": "8431ba06f062b0188f2d1c4d2498cbb0",
+          "checksum": {
+            "type": "MD5",
+            "value": "8431ba06f062b0188f2d1c4d2498cbb0"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "poisson_main_rnk_intr_strct.gph",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "graphs"
+        ],
+        "dataFile": {
+          "id": 2504200,
+          "persistentId": "doi:10.7910/DVN/27626/PQLVYB",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/PQLVYB",
+          "filename": "poisson_main_rnk_intr_strct.gph",
+          "contentType": "text/plain; charset=US-ASCII",
+          "friendlyType": "Plain Text",
+          "filesize": 9603,
+          "description": "",
+          "categories": [
+            "graphs"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243667",
+          "rootDataFileId": -1,
+          "md5": "1606d7c254d0445167a452ba96c8584b",
+          "checksum": {
+            "type": "MD5",
+            "value": "1606d7c254d0445167a452ba96c8584b"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "poisson_main_rnk_intr_strct.ster",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "estimates"
+        ],
+        "dataFile": {
+          "id": 2504190,
+          "persistentId": "doi:10.7910/DVN/27626/5PYYYP",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/5PYYYP",
+          "filename": "poisson_main_rnk_intr_strct.ster",
+          "contentType": "application/octet-stream",
+          "friendlyType": "Unknown",
+          "filesize": 168149,
+          "description": "",
+          "categories": [
+            "estimates"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243640",
+          "rootDataFileId": -1,
+          "md5": "798658aa426112a4b957c5439a25b376",
+          "checksum": {
+            "type": "MD5",
+            "value": "798658aa426112a4b957c5439a25b376"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "poisson_main_score_intr_strct.gph",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "graphs"
+        ],
+        "dataFile": {
+          "id": 2504223,
+          "persistentId": "doi:10.7910/DVN/27626/73BYW1",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/73BYW1",
+          "filename": "poisson_main_score_intr_strct.gph",
+          "contentType": "text/plain; charset=US-ASCII",
+          "friendlyType": "Plain Text",
+          "filesize": 10439,
+          "description": "",
+          "categories": [
+            "graphs"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243668",
+          "rootDataFileId": -1,
+          "md5": "b8e276adf9389e1d63247801b6fc73b2",
+          "checksum": {
+            "type": "MD5",
+            "value": "b8e276adf9389e1d63247801b6fc73b2"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "poisson_main_score_intr_strct.ster",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "estimates"
+        ],
+        "dataFile": {
+          "id": 2504255,
+          "persistentId": "doi:10.7910/DVN/27626/5QBKDF",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/5QBKDF",
+          "filename": "poisson_main_score_intr_strct.ster",
+          "contentType": "application/octet-stream",
+          "friendlyType": "Unknown",
+          "filesize": 507884,
+          "description": "",
+          "categories": [
+            "estimates"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243641",
+          "rootDataFileId": -1,
+          "md5": "6d89ab63f9ba185b4ee9bc105fad5596",
+          "checksum": {
+            "type": "MD5",
+            "value": "6d89ab63f9ba185b4ee9bc105fad5596"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "poisson_main.ster",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "estimates"
+        ],
+        "dataFile": {
+          "id": 2504225,
+          "persistentId": "doi:10.7910/DVN/27626/PGMXPV",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/PGMXPV",
+          "filename": "poisson_main.ster",
+          "contentType": "application/octet-stream",
+          "friendlyType": "Unknown",
+          "filesize": 114302,
+          "description": "",
+          "categories": [
+            "estimates"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243630",
+          "rootDataFileId": -1,
+          "md5": "c920b96b5c4b5d603967f9707fee4735",
+          "checksum": {
+            "type": "MD5",
+            "value": "c920b96b5c4b5d603967f9707fee4735"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "poisson_main_stk_cites_intr_topquartile_strct.ster",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "estimates"
+        ],
+        "dataFile": {
+          "id": 2504237,
+          "persistentId": "doi:10.7910/DVN/27626/9VHAIR",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/9VHAIR",
+          "filename": "poisson_main_stk_cites_intr_topquartile_strct.ster",
+          "contentType": "application/octet-stream",
+          "friendlyType": "Unknown",
+          "filesize": 116755,
+          "description": "",
+          "categories": [
+            "estimates"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243642",
+          "rootDataFileId": -1,
+          "md5": "75f4d86d17a6b850985c983f3b8bf13e",
+          "checksum": {
+            "type": "MD5",
+            "value": "75f4d86d17a6b850985c983f3b8bf13e"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "poisson_main_subset_wperp.ster",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "estimates"
+        ],
+        "dataFile": {
+          "id": 2504240,
+          "persistentId": "doi:10.7910/DVN/27626/3XLQWD",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/3XLQWD",
+          "filename": "poisson_main_subset_wperp.ster",
+          "contentType": "application/octet-stream",
+          "friendlyType": "Unknown",
+          "filesize": 114302,
+          "description": "",
+          "categories": [
+            "estimates"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243643",
+          "rootDataFileId": -1,
+          "md5": "cb0740d624744e5e3400815763da88c4",
+          "checksum": {
+            "type": "MD5",
+            "value": "cb0740d624744e5e3400815763da88c4"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "poisson_nbgrants.ster",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "estimates"
+        ],
+        "dataFile": {
+          "id": 2504253,
+          "persistentId": "doi:10.7910/DVN/27626/731PC1",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/731PC1",
+          "filename": "poisson_nbgrants.ster",
+          "contentType": "application/octet-stream",
+          "friendlyType": "Unknown",
+          "filesize": 48550,
+          "description": "",
+          "categories": [
+            "estimates"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243644",
+          "rootDataFileId": -1,
+          "md5": "effbabe3664c025f850033c825113610",
+          "checksum": {
+            "type": "MD5",
+            "value": "effbabe3664c025f850033c825113610"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "poisson_pmra_hijif.ster",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "estimates"
+        ],
+        "dataFile": {
+          "id": 2504248,
+          "persistentId": "doi:10.7910/DVN/27626/RKQWNW",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/RKQWNW",
+          "filename": "poisson_pmra_hijif.ster",
+          "contentType": "application/octet-stream",
+          "friendlyType": "Unknown",
+          "filesize": 54159,
+          "description": "",
+          "categories": [
+            "estimates"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243646",
+          "rootDataFileId": -1,
+          "md5": "c274d79972beef8325a598f2359208cd",
+          "checksum": {
+            "type": "MD5",
+            "value": "c274d79972beef8325a598f2359208cd"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "poisson_pmra_lojif.ster",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "estimates"
+        ],
+        "dataFile": {
+          "id": 2504193,
+          "persistentId": "doi:10.7910/DVN/27626/HFEKD7",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/HFEKD7",
+          "filename": "poisson_pmra_lojif.ster",
+          "contentType": "application/octet-stream",
+          "friendlyType": "Unknown",
+          "filesize": 54159,
+          "description": "",
+          "categories": [
+            "estimates"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243647",
+          "rootDataFileId": -1,
+          "md5": "b5e5ebdf2b8ec02543d12e8b892eefb8",
+          "checksum": {
+            "type": "MD5",
+            "value": "b5e5ebdf2b8ec02543d12e8b892eefb8"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "poisson_pmra_pct20.ster",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "estimates"
+        ],
+        "dataFile": {
+          "id": 2504199,
+          "persistentId": "doi:10.7910/DVN/27626/N8LAUV",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/N8LAUV",
+          "filename": "poisson_pmra_pct20.ster",
+          "contentType": "application/octet-stream",
+          "friendlyType": "Unknown",
+          "filesize": 54159,
+          "description": "",
+          "categories": [
+            "estimates"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243648",
+          "rootDataFileId": -1,
+          "md5": "d717486e3211168cc6038ea7ce73d037",
+          "checksum": {
+            "type": "MD5",
+            "value": "d717486e3211168cc6038ea7ce73d037"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "poisson_pmra_rnk10.ster",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "estimates"
+        ],
+        "dataFile": {
+          "id": 2504204,
+          "persistentId": "doi:10.7910/DVN/27626/GWMPVS",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/GWMPVS",
+          "filename": "poisson_pmra_rnk10.ster",
+          "contentType": "application/octet-stream",
+          "friendlyType": "Unknown",
+          "filesize": 54159,
+          "description": "",
+          "categories": [
+            "estimates"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243649",
+          "rootDataFileId": -1,
+          "md5": "88ff80573bb03cf9751e6ca14aaac942",
+          "checksum": {
+            "type": "MD5",
+            "value": "88ff80573bb03cf9751e6ca14aaac942"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "poisson_pmra.ster",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "estimates"
+        ],
+        "dataFile": {
+          "id": 2504256,
+          "persistentId": "doi:10.7910/DVN/27626/TREHSJ",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/TREHSJ",
+          "filename": "poisson_pmra.ster",
+          "contentType": "application/octet-stream",
+          "friendlyType": "Unknown",
+          "filesize": 53673,
+          "description": "",
+          "categories": [
+            "estimates"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243645",
+          "rootDataFileId": -1,
+          "md5": "c01162b0cc200905ac0a33e3e8c8ec2a",
+          "checksum": {
+            "type": "MD5",
+            "value": "c01162b0cc200905ac0a33e3e8c8ec2a"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "poisson_regressions_citations_heterogeneity.do",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "do file"
+        ],
+        "dataFile": {
+          "id": 2504217,
+          "persistentId": "doi:10.7910/DVN/27626/7LFJDD",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/7LFJDD",
+          "filename": "poisson_regressions_citations_heterogeneity.do",
+          "contentType": "text/x-stata-syntax; charset=US-ASCII",
+          "friendlyType": "Stata Syntax",
+          "filesize": 8779,
+          "description": "",
+          "categories": [
+            "do file"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243706",
+          "rootDataFileId": -1,
+          "md5": "e6af0ded0e452d394a46abed5af72fc1",
+          "checksum": {
+            "type": "MD5",
+            "value": "e6af0ded0e452d394a46abed5af72fc1"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "poisson_regressions_entry&funding.do",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "do file"
+        ],
+        "dataFile": {
+          "id": 2504191,
+          "persistentId": "doi:10.7910/DVN/27626/M3KJGC",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/M3KJGC",
+          "filename": "poisson_regressions_entry&funding.do",
+          "contentType": "text/x-stata-syntax; charset=US-ASCII",
+          "friendlyType": "Stata Syntax",
+          "filesize": 3365,
+          "description": "",
+          "categories": [
+            "do file"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243707",
+          "rootDataFileId": -1,
+          "md5": "00eb2f00e3409d9870f2afc3c2710cf9",
+          "checksum": {
+            "type": "MD5",
+            "value": "00eb2f00e3409d9870f2afc3c2710cf9"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "poisson_retracted1129_bigfraud_strct.ster",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "estimates"
+        ],
+        "dataFile": {
+          "id": 2504266,
+          "persistentId": "doi:10.7910/DVN/27626/ES3ND4",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/ES3ND4",
+          "filename": "poisson_retracted1129_bigfraud_strct.ster",
+          "contentType": "application/octet-stream",
+          "friendlyType": "Unknown",
+          "filesize": 111504,
+          "description": "",
+          "categories": [
+            "estimates"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243651",
+          "rootDataFileId": -1,
+          "md5": "82a3cc9b9cc59c585d5e961a93dec3b8",
+          "checksum": {
+            "type": "MD5",
+            "value": "82a3cc9b9cc59c585d5e961a93dec3b8"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "poisson_retracted1129_nonmissing.ster",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "estimates"
+        ],
+        "dataFile": {
+          "id": 2504259,
+          "persistentId": "doi:10.7910/DVN/27626/C8N7ZW",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/C8N7ZW",
+          "filename": "poisson_retracted1129_nonmissing.ster",
+          "contentType": "application/octet-stream",
+          "friendlyType": "Unknown",
+          "filesize": 109149,
+          "description": "",
+          "categories": [
+            "estimates"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243652",
+          "rootDataFileId": -1,
+          "md5": "3a4274d471b3ac0ea76b27c314d83b3e",
+          "checksum": {
+            "type": "MD5",
+            "value": "3a4274d471b3ac0ea76b27c314d83b3e"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "poisson_retracted1129_nostrng_earlst.ster",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "estimates"
+        ],
+        "dataFile": {
+          "id": 2504252,
+          "persistentId": "doi:10.7910/DVN/27626/6ZJDI5",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/6ZJDI5",
+          "filename": "poisson_retracted1129_nostrng_earlst.ster",
+          "contentType": "application/octet-stream",
+          "friendlyType": "Unknown",
+          "filesize": 109149,
+          "description": "",
+          "categories": [
+            "estimates"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243654",
+          "rootDataFileId": -1,
+          "md5": "446726275b0503de97cb1c25521bf3e8",
+          "checksum": {
+            "type": "MD5",
+            "value": "446726275b0503de97cb1c25521bf3e8"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "poisson_retracted1129_nostrng.ster",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "estimates"
+        ],
+        "dataFile": {
+          "id": 2504207,
+          "persistentId": "doi:10.7910/DVN/27626/PEIGM7",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/PEIGM7",
+          "filename": "poisson_retracted1129_nostrng.ster",
+          "contentType": "application/octet-stream",
+          "friendlyType": "Unknown",
+          "filesize": 111520,
+          "description": "",
+          "categories": [
+            "estimates"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243653",
+          "rootDataFileId": -1,
+          "md5": "ff91b831db1e3d5cd47531810c747a37",
+          "checksum": {
+            "type": "MD5",
+            "value": "ff91b831db1e3d5cd47531810c747a37"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "poisson_retracted1129_shldrs_nonmissing.ster",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "estimates"
+        ],
+        "dataFile": {
+          "id": 2504267,
+          "persistentId": "doi:10.7910/DVN/27626/OIHQDD",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/OIHQDD",
+          "filename": "poisson_retracted1129_shldrs_nonmissing.ster",
+          "contentType": "application/octet-stream",
+          "friendlyType": "Unknown",
+          "filesize": 113919,
+          "description": "",
+          "categories": [
+            "estimates"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243655",
+          "rootDataFileId": -1,
+          "md5": "6660b66d0dc625136c7773150ff94da3",
+          "checksum": {
+            "type": "MD5",
+            "value": "6660b66d0dc625136c7773150ff94da3"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "poisson_retracted1129.ster",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "estimates"
+        ],
+        "dataFile": {
+          "id": 2504239,
+          "persistentId": "doi:10.7910/DVN/27626/NYIKXX",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/NYIKXX",
+          "filename": "poisson_retracted1129.ster",
+          "contentType": "application/octet-stream",
+          "friendlyType": "Unknown",
+          "filesize": 109149,
+          "description": "",
+          "categories": [
+            "estimates"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243650",
+          "rootDataFileId": -1,
+          "md5": "c32aa537cb25e0fc47a7d50d22e87798",
+          "checksum": {
+            "type": "MD5",
+            "value": "c32aa537cb25e0fc47a7d50d22e87798"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "poisson_retracted1129_strct_corp.ster",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "estimates"
+        ],
+        "dataFile": {
+          "id": 2504205,
+          "persistentId": "doi:10.7910/DVN/27626/9HVS6F",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/9HVS6F",
+          "filename": "poisson_retracted1129_strct_corp.ster",
+          "contentType": "application/octet-stream",
+          "friendlyType": "Unknown",
+          "filesize": 109589,
+          "description": "",
+          "categories": [
+            "estimates"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243656",
+          "rootDataFileId": -1,
+          "md5": "886df954c7e2e5704bd43a1682bb8a31",
+          "checksum": {
+            "type": "MD5",
+            "value": "886df954c7e2e5704bd43a1682bb8a31"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "poisson_retracted1129_strct_ncorp.ster",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "estimates"
+        ],
+        "dataFile": {
+          "id": 2504221,
+          "persistentId": "doi:10.7910/DVN/27626/1XL2D6",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/1XL2D6",
+          "filename": "poisson_retracted1129_strct_ncorp.ster",
+          "contentType": "application/octet-stream",
+          "friendlyType": "Unknown",
+          "filesize": 109730,
+          "description": "",
+          "categories": [
+            "estimates"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243657",
+          "rootDataFileId": -1,
+          "md5": "83224855f822edf3b5f8932e61eaa44f",
+          "checksum": {
+            "type": "MD5",
+            "value": "83224855f822edf3b5f8932e61eaa44f"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "poisson_retracted1129_strct_patentcites_corp.ster",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "estimates"
+        ],
+        "dataFile": {
+          "id": 2504187,
+          "persistentId": "doi:10.7910/DVN/27626/OSBAAN",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/OSBAAN",
+          "filename": "poisson_retracted1129_strct_patentcites_corp.ster",
+          "contentType": "application/octet-stream",
+          "friendlyType": "Unknown",
+          "filesize": 111982,
+          "description": "",
+          "categories": [
+            "estimates"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243658",
+          "rootDataFileId": -1,
+          "md5": "82cbd29d3399e1222e604f8e7b3d41ee",
+          "checksum": {
+            "type": "MD5",
+            "value": "82cbd29d3399e1222e604f8e7b3d41ee"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "poisson_retracted1129_strct_patentcites_ncorp.ster",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "estimates"
+        ],
+        "dataFile": {
+          "id": 2504247,
+          "persistentId": "doi:10.7910/DVN/27626/DLQCCQ",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/DLQCCQ",
+          "filename": "poisson_retracted1129_strct_patentcites_ncorp.ster",
+          "contentType": "application/octet-stream",
+          "friendlyType": "Unknown",
+          "filesize": 112125,
+          "description": "",
+          "categories": [
+            "estimates"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243659",
+          "rootDataFileId": -1,
+          "md5": "f6cfc17dc788ae55fd84b33e8babc16d",
+          "checksum": {
+            "type": "MD5",
+            "value": "f6cfc17dc788ae55fd84b33e8babc16d"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "README file: contains information about each .do and .dta file and links them to the corresponding tables and figures in the paper",
+        "label": "README.docx",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "README"
+        ],
+        "dataFile": {
+          "id": 2504185,
+          "persistentId": "doi:10.7910/DVN/27626/SVZVQB",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/SVZVQB",
+          "filename": "README.docx",
+          "contentType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "friendlyType": "MS Word",
+          "filesize": 30821,
+          "description": "README file: contains information about each .do and .dta file and links them to the corresponding tables and figures in the paper",
+          "categories": [
+            "README"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243616",
+          "rootDataFileId": -1,
+          "md5": "4406c9ce337d59f3e633caf602717b43",
+          "checksum": {
+            "type": "MD5",
+            "value": "4406c9ce337d59f3e633caf602717b43"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "reappearance_analysis.do",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "do file"
+        ],
+        "dataFile": {
+          "id": 2504232,
+          "persistentId": "doi:10.7910/DVN/27626/LAX448",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/LAX448",
+          "filename": "reappearance_analysis.do",
+          "contentType": "text/x-stata-syntax; charset=US-ASCII",
+          "friendlyType": "Stata Syntax",
+          "filesize": 1731,
+          "description": "",
+          "categories": [
+            "do file"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243708",
+          "rootDataFileId": -1,
+          "md5": "ae11b98326f0734774c98243770c82d3",
+          "checksum": {
+            "type": "MD5",
+            "value": "ae11b98326f0734774c98243770c82d3"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "reappearance_data.tab",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "STATA DATA"
+        ],
+        "dataFile": {
+          "id": 2504272,
+          "persistentId": "doi:10.7910/DVN/27626/Z9XOVX",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/Z9XOVX",
+          "filename": "reappearance_data.tab",
+          "contentType": "text/tab-separated-values",
+          "friendlyType": "Tab-Delimited",
+          "filesize": 1230087,
+          "description": "",
+          "categories": [
+            "STATA DATA"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243823",
+          "originalFileFormat": "application/x-stata",
+          "originalFormatLabel": "Stata Binary",
+          "originalFileSize": 1719752,
+          "originalFileName": "reappearance_data.dta",
+          "UNF": "UNF:5:8ZMORfFzgxWyG7kr0moHsg==",
+          "rootDataFileId": -1,
+          "md5": "00c8058a106d8c8795855ae838f74296",
+          "checksum": {
+            "type": "MD5",
+            "value": "00c8058a106d8c8795855ae838f74296"
+          },
+          "tabularData": true,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "related_pubs_descriptives.tab",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "STATA DATA"
+        ],
+        "dataFile": {
+          "id": 2504276,
+          "persistentId": "doi:10.7910/DVN/27626/BQI0WG",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/BQI0WG",
+          "filename": "related_pubs_descriptives.tab",
+          "contentType": "text/tab-separated-values",
+          "friendlyType": "Tab-Delimited",
+          "filesize": 14655011,
+          "description": "",
+          "categories": [
+            "STATA DATA"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243824",
+          "originalFileFormat": "application/x-stata",
+          "originalFormatLabel": "Stata Binary",
+          "originalFileSize": 9332421,
+          "originalFileName": "related_pubs_descriptives.dta",
+          "UNF": "UNF:5:g7vWwSDhT8esb1QDgnB52A==",
+          "rootDataFileId": -1,
+          "md5": "ac1f38950bd08f0a4dc35fdfabea3bb4",
+          "checksum": {
+            "type": "MD5",
+            "value": "ac1f38950bd08f0a4dc35fdfabea3bb4"
+          },
+          "tabularData": true,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "retracted1129_analysisdata.tab",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "STATA DATA"
+        ],
+        "dataFile": {
+          "id": 2504277,
+          "persistentId": "doi:10.7910/DVN/27626/EFIIVJ",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/EFIIVJ",
+          "filename": "retracted1129_analysisdata.tab",
+          "contentType": "text/tab-separated-values",
+          "friendlyType": "Tab-Delimited",
+          "filesize": 5462980,
+          "description": "",
+          "categories": [
+            "STATA DATA"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243825",
+          "originalFileFormat": "application/x-stata",
+          "originalFormatLabel": "Stata Binary",
+          "originalFileSize": 4191588,
+          "originalFileName": "retracted1129_analysisdata.dta",
+          "UNF": "UNF:5:wBPu9o1QxaZTYG7BsEdSmw==",
+          "rootDataFileId": -1,
+          "md5": "eb2fee57b309aa5d4df6521c032ae211",
+          "checksum": {
+            "type": "MD5",
+            "value": "eb2fee57b309aa5d4df6521c032ae211"
+          },
+          "tabularData": true,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "retractions_citations_poisson_regressions.do",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "do file"
+        ],
+        "dataFile": {
+          "id": 2504211,
+          "persistentId": "doi:10.7910/DVN/27626/CZZDBK",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/CZZDBK",
+          "filename": "retractions_citations_poisson_regressions.do",
+          "contentType": "text/x-stata-syntax; charset=US-ASCII",
+          "friendlyType": "Stata Syntax",
+          "filesize": 5991,
+          "description": "",
+          "categories": [
+            "do file"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243709",
+          "rootDataFileId": -1,
+          "md5": "3c354559e3e0f47e3326540304b86c15",
+          "checksum": {
+            "type": "MD5",
+            "value": "3c354559e3e0f47e3326540304b86c15"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "retractions_descriptives.tab",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "STATA DATA"
+        ],
+        "dataFile": {
+          "id": 2504273,
+          "persistentId": "doi:10.7910/DVN/27626/CDQA3E",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/CDQA3E",
+          "filename": "retractions_descriptives.tab",
+          "contentType": "text/tab-separated-values",
+          "friendlyType": "Tab-Delimited",
+          "filesize": 127193,
+          "description": "",
+          "categories": [
+            "STATA DATA"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243826",
+          "originalFileFormat": "application/x-stata",
+          "originalFormatLabel": "Stata Binary",
+          "originalFileSize": 204327,
+          "originalFileName": "retractions_descriptives.dta",
+          "UNF": "UNF:5:j7aONPF61owxGEP0n66Rpw==",
+          "rootDataFileId": -1,
+          "md5": "35cd115595f7458ad8f793e1965caa15",
+          "checksum": {
+            "type": "MD5",
+            "value": "35cd115595f7458ad8f793e1965caa15"
+          },
+          "tabularData": true,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "retractions_desc_stats_srce_pmid_all.rtf",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "tables"
+        ],
+        "dataFile": {
+          "id": 2504227,
+          "persistentId": "doi:10.7910/DVN/27626/STDPAC",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/STDPAC",
+          "filename": "retractions_desc_stats_srce_pmid_all.rtf",
+          "contentType": "text/plain; charset=US-ASCII",
+          "friendlyType": "Plain Text",
+          "filesize": 5287,
+          "description": "",
+          "categories": [
+            "tables"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243677",
+          "rootDataFileId": -1,
+          "md5": "bdc741f31fd93af508da07ba6804b3ee",
+          "checksum": {
+            "type": "MD5",
+            "value": "bdc741f31fd93af508da07ba6804b3ee"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "retractions_desc_stats_srce_pmid_loose.rtf",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "tables"
+        ],
+        "dataFile": {
+          "id": 2504215,
+          "persistentId": "doi:10.7910/DVN/27626/FKWDXY",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/FKWDXY",
+          "filename": "retractions_desc_stats_srce_pmid_loose.rtf",
+          "contentType": "text/plain; charset=US-ASCII",
+          "friendlyType": "Plain Text",
+          "filesize": 5287,
+          "description": "",
+          "categories": [
+            "tables"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243678",
+          "rootDataFileId": -1,
+          "md5": "ebe80b7c721c8546dd7264492834f06c",
+          "checksum": {
+            "type": "MD5",
+            "value": "ebe80b7c721c8546dd7264492834f06c"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "retractions_desc_stats_srce_pmid_strct.rtf",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "tables"
+        ],
+        "dataFile": {
+          "id": 2504257,
+          "persistentId": "doi:10.7910/DVN/27626/U9NM2K",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/U9NM2K",
+          "filename": "retractions_desc_stats_srce_pmid_strct.rtf",
+          "contentType": "text/plain; charset=US-ASCII",
+          "friendlyType": "Plain Text",
+          "filesize": 5286,
+          "description": "",
+          "categories": [
+            "tables"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243679",
+          "rootDataFileId": -1,
+          "md5": "a12376d45144edca652b4b2bad6725fe",
+          "checksum": {
+            "type": "MD5",
+            "value": "a12376d45144edca652b4b2bad6725fe"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "rtrct_authors_culpables.tab",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "STATA DATA"
+        ],
+        "dataFile": {
+          "id": 2504269,
+          "persistentId": "doi:10.7910/DVN/27626/PFJJDC",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/PFJJDC",
+          "filename": "rtrct_authors_culpables.tab",
+          "contentType": "text/tab-separated-values",
+          "friendlyType": "Tab-Delimited",
+          "filesize": 283177,
+          "description": "",
+          "categories": [
+            "STATA DATA"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243827",
+          "originalFileFormat": "application/x-stata",
+          "originalFormatLabel": "Stata Binary",
+          "originalFileSize": 519216,
+          "originalFileName": "rtrct_authors_culpables.dta",
+          "UNF": "UNF:5:QF4hJTrEurcJX7jv1WvCtA==",
+          "rootDataFileId": -1,
+          "md5": "f85ed13ce4d1433ddf75a3ae3a0fd18b",
+          "checksum": {
+            "type": "MD5",
+            "value": "f85ed13ce4d1433ddf75a3ae3a0fd18b"
+          },
+          "tabularData": true,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "rtrct_incidence.do",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "do file"
+        ],
+        "dataFile": {
+          "id": 2504258,
+          "persistentId": "doi:10.7910/DVN/27626/KIMMQR",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/KIMMQR",
+          "filename": "rtrct_incidence.do",
+          "contentType": "text/x-stata-syntax; charset=US-ASCII",
+          "friendlyType": "Stata Syntax",
+          "filesize": 749,
+          "description": "",
+          "categories": [
+            "do file"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243710",
+          "rootDataFileId": -1,
+          "md5": "d0fd6e99fa251fcdb05bebe7d7a9e620",
+          "checksum": {
+            "type": "MD5",
+            "value": "d0fd6e99fa251fcdb05bebe7d7a9e620"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "rtrct_incidence.gph",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "graphs"
+        ],
+        "dataFile": {
+          "id": 2504220,
+          "persistentId": "doi:10.7910/DVN/27626/OFQ2AV",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/OFQ2AV",
+          "filename": "rtrct_incidence.gph",
+          "contentType": "text/plain; charset=US-ASCII",
+          "friendlyType": "Plain Text",
+          "filesize": 8793,
+          "description": "",
+          "categories": [
+            "graphs"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243669",
+          "rootDataFileId": -1,
+          "md5": "608d0e286b3bd92d0b8df86156847846",
+          "checksum": {
+            "type": "MD5",
+            "value": "608d0e286b3bd92d0b8df86156847846"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "rtrct_incidence.tab",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "STATA DATA"
+        ],
+        "dataFile": {
+          "id": 2504271,
+          "persistentId": "doi:10.7910/DVN/27626/75W8JO",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/75W8JO",
+          "filename": "rtrct_incidence.tab",
+          "contentType": "text/tab-separated-values",
+          "friendlyType": "Tab-Delimited",
+          "filesize": 1074,
+          "description": "",
+          "categories": [
+            "STATA DATA"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243828",
+          "originalFileFormat": "application/x-stata",
+          "originalFormatLabel": "Stata Binary",
+          "originalFileSize": 1344,
+          "originalFileName": "rtrct_incidence.dta",
+          "UNF": "UNF:5:WVVSPaPzdJQmL8CTHlvBXg==",
+          "rootDataFileId": -1,
+          "md5": "b583f241ce3e4ac18e69c9f991ce76ef",
+          "checksum": {
+            "type": "MD5",
+            "value": "b583f241ce3e4ac18e69c9f991ce76ef"
+          },
+          "tabularData": true,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "scatterplot_scaling.do",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "do file"
+        ],
+        "dataFile": {
+          "id": 2504261,
+          "persistentId": "doi:10.7910/DVN/27626/8WZKLD",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/8WZKLD",
+          "filename": "scatterplot_scaling.do",
+          "contentType": "text/x-stata-syntax; charset=US-ASCII",
+          "friendlyType": "Stata Syntax",
+          "filesize": 1529,
+          "description": "",
+          "categories": [
+            "do file"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243711",
+          "rootDataFileId": -1,
+          "md5": "1e8310ffc67fcffd16bf647607f0f982",
+          "checksum": {
+            "type": "MD5",
+            "value": "1e8310ffc67fcffd16bf647607f0f982"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "scatter_sclng_strct.gph",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "graphs"
+        ],
+        "dataFile": {
+          "id": 2504218,
+          "persistentId": "doi:10.7910/DVN/27626/NW1I7S",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/NW1I7S",
+          "filename": "scatter_sclng_strct.gph",
+          "contentType": "text/plain; charset=US-ASCII",
+          "friendlyType": "Plain Text",
+          "filesize": 15877,
+          "description": "",
+          "categories": [
+            "graphs"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243670",
+          "rootDataFileId": -1,
+          "md5": "51ac05d07ad07cef42e6ae002ee88dd3",
+          "checksum": {
+            "type": "MD5",
+            "value": "51ac05d07ad07cef42e6ae002ee88dd3"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "score_interactions_poisson.do",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "do file"
+        ],
+        "dataFile": {
+          "id": 2504214,
+          "persistentId": "doi:10.7910/DVN/27626/6S5WZQ",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/6S5WZQ",
+          "filename": "score_interactions_poisson.do",
+          "contentType": "text/x-stata-syntax",
+          "friendlyType": "Stata Syntax",
+          "filesize": 2679,
+          "description": "",
+          "categories": [
+            "do file"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243618",
+          "rootDataFileId": -1,
+          "md5": "f184402fc70f2db688566db3717c9346",
+          "checksum": {
+            "type": "MD5",
+            "value": "f184402fc70f2db688566db3717c9346"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "table_ols_main_reasons_intr.rtf",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "tables"
+        ],
+        "dataFile": {
+          "id": 2504264,
+          "persistentId": "doi:10.7910/DVN/27626/2RCVYM",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/2RCVYM",
+          "filename": "table_ols_main_reasons_intr.rtf",
+          "contentType": "text/plain; charset=US-ASCII",
+          "friendlyType": "Plain Text",
+          "filesize": 5538,
+          "description": "",
+          "categories": [
+            "tables"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243680",
+          "rootDataFileId": -1,
+          "md5": "30049ca21b076a36fe5826dd312831d1",
+          "checksum": {
+            "type": "MD5",
+            "value": "30049ca21b076a36fe5826dd312831d1"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "table_poisson_entry&funding.rtf",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "tables"
+        ],
+        "dataFile": {
+          "id": 2504262,
+          "persistentId": "doi:10.7910/DVN/27626/58QFSA",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/58QFSA",
+          "filename": "table_poisson_entry&funding.rtf",
+          "contentType": "text/plain; charset=US-ASCII",
+          "friendlyType": "Plain Text",
+          "filesize": 3801,
+          "description": "",
+          "categories": [
+            "tables"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243681",
+          "rootDataFileId": -1,
+          "md5": "04c08ac00ecba0840e9ba068c79d6a4a",
+          "checksum": {
+            "type": "MD5",
+            "value": "04c08ac00ecba0840e9ba068c79d6a4a"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "table_poisson_retracted1129_reasons.rtf",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "tables"
+        ],
+        "dataFile": {
+          "id": 2504197,
+          "persistentId": "doi:10.7910/DVN/27626/1UYWER",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/1UYWER",
+          "filename": "table_poisson_retracted1129_reasons.rtf",
+          "contentType": "text/plain; charset=US-ASCII",
+          "friendlyType": "Plain Text",
+          "filesize": 4082,
+          "description": "",
+          "categories": [
+            "tables"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243682",
+          "rootDataFileId": -1,
+          "md5": "5717b732acdcc785bf6f107527523f47",
+          "checksum": {
+            "type": "MD5",
+            "value": "5717b732acdcc785bf6f107527523f47"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      },
+      {
+        "description": "",
+        "label": "xtqmlp.ado",
+        "restricted": false,
+        "version": 2,
+        "datasetVersionId": 79950,
+        "categories": [
+          "ado"
+        ],
+        "dataFile": {
+          "id": 2504244,
+          "persistentId": "doi:10.7910/DVN/27626/GYOEF6",
+          "pidURL": "https://doi.org/10.7910/DVN/27626/GYOEF6",
+          "filename": "xtqmlp.ado",
+          "contentType": "text/plain; charset=US-ASCII",
+          "friendlyType": "Plain Text",
+          "filesize": 3180,
+          "description": "",
+          "categories": [
+            "ado"
+          ],
+          "storageIdentifier": "s3://dvn-cloud:243619",
+          "rootDataFileId": -1,
+          "md5": "d5efc5e546d9e46b6567f90a48b39927",
+          "checksum": {
+            "type": "MD5",
+            "value": "d5efc5e546d9e46b6567f90a48b39927"
+          },
+          "tabularData": false,
+          "creationDate": "2014-10-17",
+          "publicationDate": "2015-01-11",
+          "fileAccessRequest": false
+        }
+      }
+    ],
+    "citation": "Azoulay, Pierre; Furman, Jeffrey; Krieger, Joshua; Murray, Fiona, 2015, \"Replication data for: Retractions\", https://doi.org/10.7910/DVN/27626, Harvard Dataverse, V1, UNF:5:2Qq4Y8RSO6I6r44A6KmyPQ== [fileUNF]"
+  }
+}

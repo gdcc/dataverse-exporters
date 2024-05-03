@@ -225,6 +225,7 @@ public class CroissantExporter implements Exporter {
             for (JsonValue jsonValue : datasetFileDetails) {
 
                 JsonObject fileDetails = jsonValue.asJsonObject();
+System.out.println("got here. file " + fileCounter);
                 String filename = fileDetails.getString("originalFileName", null);
                 if (filename == null) {
                     filename = fileDetails.getString("filename");
@@ -276,6 +277,7 @@ public class CroissantExporter implements Exporter {
                 }
                 for (JsonValue dataTableValue : dataTables) {
                     JsonObject dataTableObject = dataTableValue.asJsonObject();
+//System.out.println("got here. file " + fileCounter + " var debug1");
                     // Unused
                     int varQuantity = dataTableObject.getInt("varQuantity");
                     // Unused
@@ -283,15 +285,20 @@ public class CroissantExporter implements Exporter {
                     JsonArray dataVariables = dataTableObject.getJsonArray("dataVariables");
                     JsonArrayBuilder fieldSetArray = Json.createArrayBuilder();
                     for (JsonValue dataVariableValue : dataVariables) {
+//System.out.println("got here. file " + fileCounter + " var debug2");
                         JsonObjectBuilder fieldSetObject = Json.createObjectBuilder();
                         fieldSetObject.add("@type", "cr:RecordSet");
                         JsonObject dataVariableObject = dataVariableValue.asJsonObject();
                         // TODO: should this be an integer?
                         Integer variableId = dataVariableObject.getInt("id");
                         String variableName = dataVariableObject.getString("name");
+                        System.out.println("variableName: " + variableName);
                         String variableDescription = dataVariableObject.getString("label");
+                        System.out.println("variableDescription: " + variableDescription);
                         String variableFormatType = dataVariableObject.getString("variableFormatType");
+                        System.out.println("variableFormatType: " + variableFormatType);
                         String dataType = null;
+//System.out.println("got here. file " + fileCounter + " var debug3");
                         switch (variableFormatType) {
                             case "CHARACTER":
                                 dataType = "sc:Text";
@@ -303,6 +310,7 @@ public class CroissantExporter implements Exporter {
                             default:
                                 break;
                         }
+System.out.println("got here. file " + fileCounter + " var debug70");
                         fieldSetArray.add(
                                 Json.createObjectBuilder()
                                         .add("@type", "cr:Field")
@@ -316,10 +324,15 @@ public class CroissantExporter implements Exporter {
                                                 )
                                         )
                         );
+System.out.println("got here. file " + fileCounter + " var debug80");
                         fieldSetObject.add("field", fieldSetArray);
+System.out.println("got here. file " + fileCounter + " var debug85");
+                        System.out.println("fieldSetObject: " + fieldSetObject);
                         recordSet.add(fieldSetObject);
                     }
+System.out.println("got here. file " + fileCounter + " var debug87");
                     fileIndex++;
+System.out.println("got here. file " + fileCounter + " var debug99");
                 }
                 fileCounter++;
             }

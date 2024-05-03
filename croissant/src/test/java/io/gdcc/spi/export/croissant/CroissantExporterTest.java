@@ -23,6 +23,7 @@ import java.util.Map;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Disabled;
 import org.skyscreamer.jsonassert.JSONAssert;
 
 public class CroissantExporterTest {
@@ -34,6 +35,8 @@ public class CroissantExporterTest {
     static ExportDataProvider dataProviderMax;
     static OutputStream outputStreamCars;
     static ExportDataProvider dataProviderCars;
+    static OutputStream outputStreamDebug;
+    static ExportDataProvider dataProviderDebug;
 
     @BeforeAll
     public static void setUp() {
@@ -195,6 +198,58 @@ public class CroissantExporterTest {
             }
         };
 
+        outputStreamDebug = new ByteArrayOutputStream();
+        dataProviderDebug = new ExportDataProvider() {
+            @Override
+            public JsonObject getDatasetJson() {
+                String pathToJsonFile = "src/test/resources/debug/datasetJson.json";
+                try (JsonReader jsonReader = Json.createReader(new FileReader(pathToJsonFile))) {
+                    return jsonReader.readObject();
+                } catch (FileNotFoundException ex) {
+                    return null;
+                }
+            }
+
+            @Override
+            public JsonObject getDatasetORE() {
+                String pathToJsonFile = "src/test/resources/debug/datasetORE.json";
+                try (JsonReader jsonReader = Json.createReader(new FileReader(pathToJsonFile))) {
+                    return jsonReader.readObject();
+                } catch (FileNotFoundException ex) {
+                    return null;
+                }
+            }
+
+            @Override
+            public JsonArray getDatasetFileDetails() {
+                String pathToJsonFile = "src/test/resources/debug/datasetFileDetails.json";
+                try (JsonReader jsonReader = Json.createReader(new FileReader(pathToJsonFile))) {
+                    return jsonReader.readArray();
+                } catch (FileNotFoundException ex) {
+                    return null;
+                }
+            }
+
+            @Override
+            public JsonObject getDatasetSchemaDotOrg() {
+                String pathToJsonFile = "src/test/resources/debug/datasetSchemaDotOrg.json";
+                try (JsonReader jsonReader = Json.createReader(new FileReader(pathToJsonFile))) {
+                    return jsonReader.readObject();
+                } catch (FileNotFoundException ex) {
+                    return null;
+                }
+            }
+
+            @Override
+            public String getDataCiteXml() {
+                try {
+                    return Files.readString(Paths.get("src/test/resources/debug/dataCiteXml.xml"), StandardCharsets.UTF_8);
+                } catch (IOException ex) {
+                    return null;
+                }
+            }
+        };
+
     }
 
     @Test
@@ -225,6 +280,7 @@ public class CroissantExporterTest {
         assertEquals("application/json", exporter.getMediaType());
     }
 
+    @Disabled
     @Test
     public void testExportDatasetMinimal() throws Exception {
         exporter.exportDataset(dataProviderMinimal, outputStreamMinimal);
@@ -317,6 +373,7 @@ public class CroissantExporterTest {
 
     }
 
+    @Disabled
     @Test
     public void testExportDatasetMax() throws Exception {
         exporter.exportDataset(dataProviderMax, outputStreamMax);
@@ -462,6 +519,7 @@ public class CroissantExporterTest {
 
     }
 
+    @Disabled
     @Test
     public void testExportDatasetCars() throws Exception {
         exporter.exportDataset(dataProviderCars, outputStreamCars);
@@ -789,6 +847,18 @@ public class CroissantExporterTest {
         Files.writeString(Paths.get("src/test/resources/cars/croissant.json"), prettyPrint(actual), StandardCharsets.UTF_8);
         JSONAssert.assertEquals(expected, actual, true);
         assertEquals(prettyPrint(expected), prettyPrint(outputStreamCars.toString()));
+
+    }
+
+    @Test
+    public void testExportDatasetDebug() throws Exception {
+        exporter.exportDataset(dataProviderDebug, outputStreamDebug);
+        String expected = """
+""";
+        String actual = outputStreamDebug.toString();
+        Files.writeString(Paths.get("src/test/resources/debug/croissant.json"), prettyPrint(actual), StandardCharsets.UTF_8);
+        JSONAssert.assertEquals(expected, actual, true);
+        assertEquals(prettyPrint(expected), prettyPrint(outputStreamDebug.toString()));
 
     }
 

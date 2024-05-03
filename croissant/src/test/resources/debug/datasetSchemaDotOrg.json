@@ -1,0 +1,1062 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Dataset",
+  "@id": "https://doi.org/10.7910/DVN/27626",
+  "identifier": "https://doi.org/10.7910/DVN/27626",
+  "name": "Replication data for: Retractions",
+  "creator": [
+    {
+      "@type": "Person",
+      "givenName": "Pierre",
+      "familyName": "Azoulay",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "MIT & NBER"
+      },
+      "name": "Azoulay, Pierre"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Jeffrey",
+      "familyName": "Furman",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Boston University & NBER"
+      },
+      "name": "Furman, Jeffrey"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Joshua",
+      "familyName": "Krieger",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "MIT"
+      },
+      "name": "Krieger, Joshua"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Fiona",
+      "familyName": "Murray",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "MIT & NBER"
+      },
+      "name": "Murray, Fiona"
+    }
+  ],
+  "author": [
+    {
+      "@type": "Person",
+      "givenName": "Pierre",
+      "familyName": "Azoulay",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "MIT & NBER"
+      },
+      "name": "Azoulay, Pierre"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Jeffrey",
+      "familyName": "Furman",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Boston University & NBER"
+      },
+      "name": "Furman, Jeffrey"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Joshua",
+      "familyName": "Krieger",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "MIT"
+      },
+      "name": "Krieger, Joshua"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Fiona",
+      "familyName": "Murray",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "MIT & NBER"
+      },
+      "name": "Murray, Fiona"
+    }
+  ],
+  "datePublished": "2015-01-12",
+  "dateModified": "2016-02-29",
+  "version": "1",
+  "description": "Azoulay, Pierre, Furman, Jeffrey L., Krieger, Joshua L., and Murray, Fiona, (2015) \"Retractions.\" Review of Economics and Statistics 97:5, 1118-1136.",
+  "keywords": [
+    "Social Sciences"
+  ],
+  "citation": [
+    {
+      "@type": "CreativeWork",
+      "@id": "http://dx.doi.org/10.1162/REST_a_00469",
+      "identifier": "http://dx.doi.org/10.1162/REST_a_00469",
+      "url": "http://dx.doi.org/10.1162/REST_a_00469"
+    }
+  ],
+  "license": "http://creativecommons.org/publicdomain/zero/1.0",
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "Harvard Dataverse",
+    "url": "http://ec2-52-207-99-79.compute-1.amazonaws.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Harvard Dataverse"
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "Harvard Dataverse"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "name": "artcl_aar_interactions_poisson.do",
+      "encodingFormat": "text/x-stata-syntax; charset=US-ASCII",
+      "contentSize": 1682,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/HSULIY",
+      "identifier": "https://doi.org/10.7910/DVN/27626/HSULIY",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504260"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "baseline_stk_cites_strct.gph",
+      "encodingFormat": "text/plain; charset=US-ASCII",
+      "contentSize": 11126,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/2F0EMR",
+      "identifier": "https://doi.org/10.7910/DVN/27626/2F0EMR",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504192"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "citations_panel_rltd_patentcites.tab",
+      "encodingFormat": "text/tab-separated-values",
+      "contentSize": 85290795,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/UWZBQB",
+      "identifier": "https://doi.org/10.7910/DVN/27626/UWZBQB",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504274"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "corp_ncorp_poisson_regs.do",
+      "encodingFormat": "text/x-stata-syntax; charset=US-ASCII",
+      "contentSize": 2754,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/BZRKUE",
+      "identifier": "https://doi.org/10.7910/DVN/27626/BZRKUE",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504254"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "culpable_author_analyses.do",
+      "encodingFormat": "text/x-stata-syntax; charset=US-ASCII",
+      "contentSize": 3854,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/PL9EBM",
+      "identifier": "https://doi.org/10.7910/DVN/27626/PL9EBM",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504234"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "data_dictionary.xlsx",
+      "encodingFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "contentSize": 22239,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/HSMBAM",
+      "identifier": "https://doi.org/10.7910/DVN/27626/HSMBAM",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504208"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "desc_stats_entry&funding.do",
+      "encodingFormat": "text/x-stata-syntax; charset=US-ASCII",
+      "contentSize": 1336,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/AWPCNE",
+      "identifier": "https://doi.org/10.7910/DVN/27626/AWPCNE",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504228"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "desc_stats_pmid_strct.rtf",
+      "encodingFormat": "text/plain; charset=US-ASCII",
+      "contentSize": 10142,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/DGMAOL",
+      "identifier": "https://doi.org/10.7910/DVN/27626/DGMAOL",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504196"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "desc_stats_pmra_freq.rtf",
+      "encodingFormat": "text/plain; charset=US-ASCII",
+      "contentSize": 3847,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/E7TF0X",
+      "identifier": "https://doi.org/10.7910/DVN/27626/E7TF0X",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504229"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "desc_stats_pmra_funding.rtf",
+      "encodingFormat": "text/plain; charset=US-ASCII",
+      "contentSize": 5488,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/3DXNJ7",
+      "identifier": "https://doi.org/10.7910/DVN/27626/3DXNJ7",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504242"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "desc_stats_related.do",
+      "encodingFormat": "text/x-stata-syntax; charset=US-ASCII",
+      "contentSize": 2911,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/O3BA5C",
+      "identifier": "https://doi.org/10.7910/DVN/27626/O3BA5C",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504243"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "desc_stats_retractions.do",
+      "encodingFormat": "text/x-stata-syntax; charset=US-ASCII",
+      "contentSize": 1482,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/0MDX5T",
+      "identifier": "https://doi.org/10.7910/DVN/27626/0MDX5T",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504210"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "dynamics_poisson.do",
+      "encodingFormat": "text/x-stata-syntax; charset=US-ASCII",
+      "contentSize": 6239,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/UDXW9K",
+      "identifier": "https://doi.org/10.7910/DVN/27626/UDXW9K",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504209"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "dynamics_poisson_freq&funding.do",
+      "encodingFormat": "text/x-stata-syntax; charset=US-ASCII",
+      "contentSize": 5553,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/Z8WCAD",
+      "identifier": "https://doi.org/10.7910/DVN/27626/Z8WCAD",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504186"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "MIT-BU Retractions Data_table1data.xlsx",
+      "encodingFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "contentSize": 242373,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/CU1VWN",
+      "identifier": "https://doi.org/10.7910/DVN/27626/CU1VWN",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504246"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "multi_level_dataset_005_field_vars.tab",
+      "encodingFormat": "text/tab-separated-values",
+      "contentSize": 686512908,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/ZHKDI7",
+      "identifier": "https://doi.org/10.7910/DVN/27626/ZHKDI7",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504279"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "nbretractions_strct.gph",
+      "encodingFormat": "text/plain; charset=US-ASCII",
+      "contentSize": 6973,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/O1BADQ",
+      "identifier": "https://doi.org/10.7910/DVN/27626/O1BADQ",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504216"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "ols_auposition_earliestpubFX.ster",
+      "encodingFormat": "application/octet-stream",
+      "contentSize": 50950,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/9TRUCM",
+      "identifier": "https://doi.org/10.7910/DVN/27626/9TRUCM",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504198"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "ols_authors_reappear.rtf",
+      "encodingFormat": "application/octet-stream",
+      "contentSize": 1823,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/C7R0M4",
+      "identifier": "https://doi.org/10.7910/DVN/27626/C7R0M4",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504235"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "ols_main.ster",
+      "encodingFormat": "application/octet-stream",
+      "contentSize": 50196,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/MSW12A",
+      "identifier": "https://doi.org/10.7910/DVN/27626/MSW12A",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504213"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "ols_main_bigfraud_strct.ster",
+      "encodingFormat": "application/octet-stream",
+      "contentSize": 50914,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/EQYUY4",
+      "identifier": "https://doi.org/10.7910/DVN/27626/EQYUY4",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504241"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "ols_main_loose_shldrs.ster",
+      "encodingFormat": "application/octet-stream",
+      "contentSize": 50926,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/8SAPLS",
+      "identifier": "https://doi.org/10.7910/DVN/27626/8SAPLS",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504203"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "ols_main_nonmissing.ster",
+      "encodingFormat": "application/octet-stream",
+      "contentSize": 50236,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/GOROKY",
+      "identifier": "https://doi.org/10.7910/DVN/27626/GOROKY",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504212"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "ols_main_shldrs_nonmissing.ster",
+      "encodingFormat": "application/octet-stream",
+      "contentSize": 51601,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/F4WFM6",
+      "identifier": "https://doi.org/10.7910/DVN/27626/F4WFM6",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504195"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "ols_main_shldrs_nonmissing_earlst.ster",
+      "encodingFormat": "application/octet-stream",
+      "contentSize": 50274,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/M2CBQW",
+      "identifier": "https://doi.org/10.7910/DVN/27626/M2CBQW",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504233"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "ols_regressions_citations.do",
+      "encodingFormat": "text/x-stata-syntax; charset=US-ASCII",
+      "contentSize": 3707,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/KH6BCS",
+      "identifier": "https://doi.org/10.7910/DVN/27626/KH6BCS",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504238"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "perps_by_pmid.tab",
+      "encodingFormat": "text/tab-separated-values",
+      "contentSize": 25213,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/ZYMTLQ",
+      "identifier": "https://doi.org/10.7910/DVN/27626/ZYMTLQ",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504278"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "perps_by_shldrs.rtf",
+      "encodingFormat": "text/plain; charset=US-ASCII",
+      "contentSize": 1436,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/AJDHZY",
+      "identifier": "https://doi.org/10.7910/DVN/27626/AJDHZY",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504224"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "perp_positions_freqs.rtf",
+      "encodingFormat": "text/plain; charset=US-ASCII",
+      "contentSize": 1428,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/P0F8F4",
+      "identifier": "https://doi.org/10.7910/DVN/27626/P0F8F4",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504194"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "pmra_level_freq.tab",
+      "encodingFormat": "text/tab-separated-values",
+      "contentSize": 2621292,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/5GWZT2",
+      "identifier": "https://doi.org/10.7910/DVN/27626/5GWZT2",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504275"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "pmra_level_funding.tab",
+      "encodingFormat": "text/tab-separated-values",
+      "contentSize": 2078504,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/FWJPY1",
+      "identifier": "https://doi.org/10.7910/DVN/27626/FWJPY1",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504270"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "poisson_amount.ster",
+      "encodingFormat": "application/octet-stream",
+      "contentSize": 48404,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/PB1OOB",
+      "identifier": "https://doi.org/10.7910/DVN/27626/PB1OOB",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504265"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "poisson_fndng_dynamic.gph",
+      "encodingFormat": "text/plain; charset=US-ASCII",
+      "contentSize": 10491,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/R6QKZW",
+      "identifier": "https://doi.org/10.7910/DVN/27626/R6QKZW",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504206"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "poisson_fndng_dynamics.ster",
+      "encodingFormat": "application/octet-stream",
+      "contentSize": 72031,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/MLJ3MM",
+      "identifier": "https://doi.org/10.7910/DVN/27626/MLJ3MM",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504245"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "poisson_freq_dynamic.gph",
+      "encodingFormat": "text/plain; charset=US-ASCII",
+      "contentSize": 10462,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/ZH8XXY",
+      "identifier": "https://doi.org/10.7910/DVN/27626/ZH8XXY",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504251"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "poisson_freq_dynamics.ster",
+      "encodingFormat": "application/octet-stream",
+      "contentSize": 79380,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/2IFRAR",
+      "identifier": "https://doi.org/10.7910/DVN/27626/2IFRAR",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504202"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "poisson_main.ster",
+      "encodingFormat": "application/octet-stream",
+      "contentSize": 114302,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/PGMXPV",
+      "identifier": "https://doi.org/10.7910/DVN/27626/PGMXPV",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504225"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "poisson_main_cited_intr_strct.ster",
+      "encodingFormat": "application/octet-stream",
+      "contentSize": 116715,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/OZURSP",
+      "identifier": "https://doi.org/10.7910/DVN/27626/OZURSP",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504250"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "poisson_main_cites_intr_strct.ster",
+      "encodingFormat": "application/octet-stream",
+      "contentSize": 116715,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/KOQWYP",
+      "identifier": "https://doi.org/10.7910/DVN/27626/KOQWYP",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504230"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "poisson_main_crowded_quartiles_shaky&absent.ster",
+      "encodingFormat": "application/octet-stream",
+      "contentSize": 121693,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/EGIQ9N",
+      "identifier": "https://doi.org/10.7910/DVN/27626/EGIQ9N",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504231"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "poisson_main_crowded_shaky&absent.ster",
+      "encodingFormat": "application/octet-stream",
+      "contentSize": 116723,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/0XAXJY",
+      "identifier": "https://doi.org/10.7910/DVN/27626/0XAXJY",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504189"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "poisson_main_dynamics_strct.gph",
+      "encodingFormat": "text/plain; charset=US-ASCII",
+      "contentSize": 10498,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/30R8WW",
+      "identifier": "https://doi.org/10.7910/DVN/27626/30R8WW",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504201"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "poisson_main_dynamics_strct.ster",
+      "encodingFormat": "application/octet-stream",
+      "contentSize": 156617,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/77HHMS",
+      "identifier": "https://doi.org/10.7910/DVN/27626/77HHMS",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504226"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "poisson_main_dynamics_strct_rcap.gph",
+      "encodingFormat": "text/plain; charset=US-ASCII",
+      "contentSize": 9734,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/RV0XGF",
+      "identifier": "https://doi.org/10.7910/DVN/27626/RV0XGF",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504263"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "poisson_main_hotcold_3yrp_quartiles_shaky&absent.ster",
+      "encodingFormat": "application/octet-stream",
+      "contentSize": 121741,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/U123DK",
+      "identifier": "https://doi.org/10.7910/DVN/27626/U123DK",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504188"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "poisson_main_hotcold_3yrp_shaky&absent.ster",
+      "encodingFormat": "application/octet-stream",
+      "contentSize": 116739,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/IBPBS6",
+      "identifier": "https://doi.org/10.7910/DVN/27626/IBPBS6",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504222"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "poisson_main_intent_strct.ster",
+      "encodingFormat": "application/octet-stream",
+      "contentSize": 119208,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/HFATNH",
+      "identifier": "https://doi.org/10.7910/DVN/27626/HFATNH",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504219"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "poisson_main_rnk_intr_loose.gph",
+      "encodingFormat": "text/plain; charset=US-ASCII",
+      "contentSize": 9602,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/K41UAR",
+      "identifier": "https://doi.org/10.7910/DVN/27626/K41UAR",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504236"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "poisson_main_rnk_intr_loose.ster",
+      "encodingFormat": "application/octet-stream",
+      "contentSize": 168149,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/UVWHN3",
+      "identifier": "https://doi.org/10.7910/DVN/27626/UVWHN3",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504249"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "poisson_main_rnk_intr_strct.gph",
+      "encodingFormat": "text/plain; charset=US-ASCII",
+      "contentSize": 9603,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/PQLVYB",
+      "identifier": "https://doi.org/10.7910/DVN/27626/PQLVYB",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504200"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "poisson_main_rnk_intr_strct.ster",
+      "encodingFormat": "application/octet-stream",
+      "contentSize": 168149,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/5PYYYP",
+      "identifier": "https://doi.org/10.7910/DVN/27626/5PYYYP",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504190"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "poisson_main_score_intr_strct.gph",
+      "encodingFormat": "text/plain; charset=US-ASCII",
+      "contentSize": 10439,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/73BYW1",
+      "identifier": "https://doi.org/10.7910/DVN/27626/73BYW1",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504223"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "poisson_main_score_intr_strct.ster",
+      "encodingFormat": "application/octet-stream",
+      "contentSize": 507884,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/5QBKDF",
+      "identifier": "https://doi.org/10.7910/DVN/27626/5QBKDF",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504255"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "poisson_main_stk_cites_intr_topquartile_strct.ster",
+      "encodingFormat": "application/octet-stream",
+      "contentSize": 116755,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/9VHAIR",
+      "identifier": "https://doi.org/10.7910/DVN/27626/9VHAIR",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504237"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "poisson_main_subset_wperp.ster",
+      "encodingFormat": "application/octet-stream",
+      "contentSize": 114302,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/3XLQWD",
+      "identifier": "https://doi.org/10.7910/DVN/27626/3XLQWD",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504240"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "poisson_nbgrants.ster",
+      "encodingFormat": "application/octet-stream",
+      "contentSize": 48550,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/731PC1",
+      "identifier": "https://doi.org/10.7910/DVN/27626/731PC1",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504253"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "poisson_pmra.ster",
+      "encodingFormat": "application/octet-stream",
+      "contentSize": 53673,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/TREHSJ",
+      "identifier": "https://doi.org/10.7910/DVN/27626/TREHSJ",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504256"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "poisson_pmra_hijif.ster",
+      "encodingFormat": "application/octet-stream",
+      "contentSize": 54159,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/RKQWNW",
+      "identifier": "https://doi.org/10.7910/DVN/27626/RKQWNW",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504248"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "poisson_pmra_lojif.ster",
+      "encodingFormat": "application/octet-stream",
+      "contentSize": 54159,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/HFEKD7",
+      "identifier": "https://doi.org/10.7910/DVN/27626/HFEKD7",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504193"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "poisson_pmra_pct20.ster",
+      "encodingFormat": "application/octet-stream",
+      "contentSize": 54159,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/N8LAUV",
+      "identifier": "https://doi.org/10.7910/DVN/27626/N8LAUV",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504199"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "poisson_pmra_rnk10.ster",
+      "encodingFormat": "application/octet-stream",
+      "contentSize": 54159,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/GWMPVS",
+      "identifier": "https://doi.org/10.7910/DVN/27626/GWMPVS",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504204"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "poisson_regressions_citations_heterogeneity.do",
+      "encodingFormat": "text/x-stata-syntax; charset=US-ASCII",
+      "contentSize": 8779,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/7LFJDD",
+      "identifier": "https://doi.org/10.7910/DVN/27626/7LFJDD",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504217"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "poisson_regressions_entry&funding.do",
+      "encodingFormat": "text/x-stata-syntax; charset=US-ASCII",
+      "contentSize": 3365,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/M3KJGC",
+      "identifier": "https://doi.org/10.7910/DVN/27626/M3KJGC",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504191"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "poisson_retracted1129.ster",
+      "encodingFormat": "application/octet-stream",
+      "contentSize": 109149,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/NYIKXX",
+      "identifier": "https://doi.org/10.7910/DVN/27626/NYIKXX",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504239"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "poisson_retracted1129_bigfraud_strct.ster",
+      "encodingFormat": "application/octet-stream",
+      "contentSize": 111504,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/ES3ND4",
+      "identifier": "https://doi.org/10.7910/DVN/27626/ES3ND4",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504266"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "poisson_retracted1129_nonmissing.ster",
+      "encodingFormat": "application/octet-stream",
+      "contentSize": 109149,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/C8N7ZW",
+      "identifier": "https://doi.org/10.7910/DVN/27626/C8N7ZW",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504259"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "poisson_retracted1129_nostrng.ster",
+      "encodingFormat": "application/octet-stream",
+      "contentSize": 111520,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/PEIGM7",
+      "identifier": "https://doi.org/10.7910/DVN/27626/PEIGM7",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504207"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "poisson_retracted1129_nostrng_earlst.ster",
+      "encodingFormat": "application/octet-stream",
+      "contentSize": 109149,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/6ZJDI5",
+      "identifier": "https://doi.org/10.7910/DVN/27626/6ZJDI5",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504252"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "poisson_retracted1129_shldrs_nonmissing.ster",
+      "encodingFormat": "application/octet-stream",
+      "contentSize": 113919,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/OIHQDD",
+      "identifier": "https://doi.org/10.7910/DVN/27626/OIHQDD",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504267"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "poisson_retracted1129_strct_corp.ster",
+      "encodingFormat": "application/octet-stream",
+      "contentSize": 109589,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/9HVS6F",
+      "identifier": "https://doi.org/10.7910/DVN/27626/9HVS6F",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504205"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "poisson_retracted1129_strct_ncorp.ster",
+      "encodingFormat": "application/octet-stream",
+      "contentSize": 109730,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/1XL2D6",
+      "identifier": "https://doi.org/10.7910/DVN/27626/1XL2D6",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504221"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "poisson_retracted1129_strct_patentcites_corp.ster",
+      "encodingFormat": "application/octet-stream",
+      "contentSize": 111982,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/OSBAAN",
+      "identifier": "https://doi.org/10.7910/DVN/27626/OSBAAN",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504187"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "poisson_retracted1129_strct_patentcites_ncorp.ster",
+      "encodingFormat": "application/octet-stream",
+      "contentSize": 112125,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/DLQCCQ",
+      "identifier": "https://doi.org/10.7910/DVN/27626/DLQCCQ",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504247"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "README.docx",
+      "encodingFormat": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "contentSize": 30821,
+      "description": "README file: contains information about each .do and .dta file and links them to the corresponding tables and figures in the paper",
+      "@id": "https://doi.org/10.7910/DVN/27626/SVZVQB",
+      "identifier": "https://doi.org/10.7910/DVN/27626/SVZVQB",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504185"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "reappearance_analysis.do",
+      "encodingFormat": "text/x-stata-syntax; charset=US-ASCII",
+      "contentSize": 1731,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/LAX448",
+      "identifier": "https://doi.org/10.7910/DVN/27626/LAX448",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504232"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "reappearance_data.tab",
+      "encodingFormat": "text/tab-separated-values",
+      "contentSize": 1230087,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/Z9XOVX",
+      "identifier": "https://doi.org/10.7910/DVN/27626/Z9XOVX",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504272"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "related_pubs_descriptives.tab",
+      "encodingFormat": "text/tab-separated-values",
+      "contentSize": 14655011,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/BQI0WG",
+      "identifier": "https://doi.org/10.7910/DVN/27626/BQI0WG",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504276"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "retracted1129_analysisdata.tab",
+      "encodingFormat": "text/tab-separated-values",
+      "contentSize": 5462980,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/EFIIVJ",
+      "identifier": "https://doi.org/10.7910/DVN/27626/EFIIVJ",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504277"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "retractions_citations_poisson_regressions.do",
+      "encodingFormat": "text/x-stata-syntax; charset=US-ASCII",
+      "contentSize": 5991,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/CZZDBK",
+      "identifier": "https://doi.org/10.7910/DVN/27626/CZZDBK",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504211"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "retractions_descriptives.tab",
+      "encodingFormat": "text/tab-separated-values",
+      "contentSize": 127193,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/CDQA3E",
+      "identifier": "https://doi.org/10.7910/DVN/27626/CDQA3E",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504273"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "retractions_desc_stats_srce_pmid_all.rtf",
+      "encodingFormat": "text/plain; charset=US-ASCII",
+      "contentSize": 5287,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/STDPAC",
+      "identifier": "https://doi.org/10.7910/DVN/27626/STDPAC",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504227"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "retractions_desc_stats_srce_pmid_loose.rtf",
+      "encodingFormat": "text/plain; charset=US-ASCII",
+      "contentSize": 5287,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/FKWDXY",
+      "identifier": "https://doi.org/10.7910/DVN/27626/FKWDXY",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504215"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "retractions_desc_stats_srce_pmid_strct.rtf",
+      "encodingFormat": "text/plain; charset=US-ASCII",
+      "contentSize": 5286,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/U9NM2K",
+      "identifier": "https://doi.org/10.7910/DVN/27626/U9NM2K",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504257"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "rtrct_authors_culpables.tab",
+      "encodingFormat": "text/tab-separated-values",
+      "contentSize": 283177,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/PFJJDC",
+      "identifier": "https://doi.org/10.7910/DVN/27626/PFJJDC",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504269"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "rtrct_incidence.do",
+      "encodingFormat": "text/x-stata-syntax; charset=US-ASCII",
+      "contentSize": 749,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/KIMMQR",
+      "identifier": "https://doi.org/10.7910/DVN/27626/KIMMQR",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504258"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "rtrct_incidence.gph",
+      "encodingFormat": "text/plain; charset=US-ASCII",
+      "contentSize": 8793,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/OFQ2AV",
+      "identifier": "https://doi.org/10.7910/DVN/27626/OFQ2AV",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504220"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "rtrct_incidence.tab",
+      "encodingFormat": "text/tab-separated-values",
+      "contentSize": 1074,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/75W8JO",
+      "identifier": "https://doi.org/10.7910/DVN/27626/75W8JO",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504271"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "scatterplot_scaling.do",
+      "encodingFormat": "text/x-stata-syntax; charset=US-ASCII",
+      "contentSize": 1529,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/8WZKLD",
+      "identifier": "https://doi.org/10.7910/DVN/27626/8WZKLD",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504261"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "scatter_sclng_strct.gph",
+      "encodingFormat": "text/plain; charset=US-ASCII",
+      "contentSize": 15877,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/NW1I7S",
+      "identifier": "https://doi.org/10.7910/DVN/27626/NW1I7S",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504218"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "score_interactions_poisson.do",
+      "encodingFormat": "text/x-stata-syntax",
+      "contentSize": 2679,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/6S5WZQ",
+      "identifier": "https://doi.org/10.7910/DVN/27626/6S5WZQ",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504214"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "table_ols_main_reasons_intr.rtf",
+      "encodingFormat": "text/plain; charset=US-ASCII",
+      "contentSize": 5538,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/2RCVYM",
+      "identifier": "https://doi.org/10.7910/DVN/27626/2RCVYM",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504264"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "table_poisson_entry&funding.rtf",
+      "encodingFormat": "text/plain; charset=US-ASCII",
+      "contentSize": 3801,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/58QFSA",
+      "identifier": "https://doi.org/10.7910/DVN/27626/58QFSA",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504262"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "table_poisson_retracted1129_reasons.rtf",
+      "encodingFormat": "text/plain; charset=US-ASCII",
+      "contentSize": 4082,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/1UYWER",
+      "identifier": "https://doi.org/10.7910/DVN/27626/1UYWER",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504197"
+    },
+    {
+      "@type": "DataDownload",
+      "name": "xtqmlp.ado",
+      "encodingFormat": "text/plain; charset=US-ASCII",
+      "contentSize": 3180,
+      "description": "",
+      "@id": "https://doi.org/10.7910/DVN/27626/GYOEF6",
+      "identifier": "https://doi.org/10.7910/DVN/27626/GYOEF6",
+      "contentUrl": "http://ec2-52-207-99-79.compute-1.amazonaws.com/api/access/datafile/2504244"
+    }
+  ]
+}
