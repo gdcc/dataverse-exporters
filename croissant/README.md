@@ -23,11 +23,18 @@ We opened https://github.com/mlcommons/croissant/issues/641 about this. Perhaps 
 
 ### What if the Croissant file is huge, due to many files (distribution) and columns (recordSet)?
 
-Good question. We already have a similar problem with our Schema.org JSON-LD format, where the file produced is 1.6 MB in size for a [test dataset][] with 10,000 files (images). For Croissant, the file produced is even bigger at 2.5 MB.
+Good question. We already have a similar problem with our Schema.org JSON-LD format. We opened https://github.com/mlcommons/croissant/issues/646 about it.
+
+For a [test dataset][] with 10,000 files (images), the Schema.org file is 1.6 MB and the Croissant file is 2.5 MB.
+
+For a [large dataset][] with 25,310 files (images), the Schema.org file is 4.4 MB and the Croissant file is 7.1 MB.
+
+Datasets with many columns from ingested files are another potential problem.
 
 Google's [guidelines on structured data][] don't indicate any size limit but we should take care not to make pages too heavy.
 
 [test dataset]: https://github.com/IQSS/dataverse-sample-data/pull/42
+[large dataset]: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/3CTMKP
 [guidelines on structured data]: https://developers.google.com/search/docs/appearance/structured-data/sd-policies
 
 ### Can summary statistics go into Croissant?
