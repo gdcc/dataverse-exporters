@@ -126,6 +126,7 @@ A pyDataverse implementation is underway at https://github.com/Dans-labs/pyDatav
 
 The "croissant" branch does the following:
 
+- `contentSize` is a string rather than a number.
 - For files, for `@id`, the database id (e.g. `f26148`) is used instead of the filename (e.g. `README.md`).
 - `sc:Person` is used instead of `Person`.
 - `url` is used.
