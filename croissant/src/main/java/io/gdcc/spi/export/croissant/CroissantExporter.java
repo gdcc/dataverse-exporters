@@ -327,6 +327,7 @@ public class CroissantExporter implements Exporter {
             job.add("recordSet", recordSet);
 
             job.add("creator", datasetSchemaDotOrg.getJsonArray("creator"));
+            job.add("description", datasetSchemaDotOrg.getJsonString("description"));
             job.add("keywords", datasetSchemaDotOrg.getJsonArray("keywords"));
             JsonArray citation = datasetSchemaDotOrg.getJsonArray("citation");
             if (citation != null) {

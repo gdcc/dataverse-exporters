@@ -293,6 +293,7 @@ public class CroissantExporterTest {
             "name": "Durbin, Philip"
         }
     ],
+    "description": "Minimal metadata and no files.",
     "keywords": [
         "Other"
     ],
@@ -423,6 +424,7 @@ public class CroissantExporterTest {
             "name": "IQSS"
         }
     ],
+    "description": "Exercising fields used by `schema.org` exporter.",
     "keywords": [
         "Social Sciences",
         "Other",
@@ -768,6 +770,7 @@ public class CroissantExporterTest {
                         "name": "Durbin, Philip"
                     }
                 ],
+                "description": "This dataset is about cars.",
                 "keywords": [
                     "Other"
                 ],
