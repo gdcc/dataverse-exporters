@@ -41,6 +41,10 @@ Google's [guidelines on structured data][] don't indicate any size limit but we 
 
 No, but we opened https://github.com/mlcommons/croissant/issues/640 about this. See also "potential areas of work" in the [Croissant Task Force Minutes] for 2024-04-01. 
 
+### FileObject is not a known valid target type for the distribution property?
+
+We are aware that you could see the error "http://mlcommons.org/croissant/FileObject is not a known valid target type for the distribution property" at https://validator.schema.org if you try to validate the Croissant export.
+
 ## Developer documentation
 
 The rest of this documentation is for developers of the Dataverse Croissant exporter, including how to build and test it.
@@ -73,6 +77,8 @@ WARNING: The JSON-LD `@context` is not standard. Refer to the official @context 
 As the error indicates, go to https://github.com/mlcommons/croissant/tree/main/datasets/1.0 and find a dataset such as "titanic" and copy the latest `@context` from there. Note that this may be different (but more up to date) than the version in the spec at https://mlcommons.github.io/croissant/docs/croissant-spec.html#appendix-1-json-ld-context
 
 In short, we are trusting the output of `mlcroissant validate --jsonld` over the spec.
+
+For additional validation you can use https://search.google.com/test/rich-results and https://validator.schema.org which are linked from https://developers.google.com/search/docs/appearance/structured-data
 
 [mlcroissant]: https://pypi.org/project/mlcroissant/
 
@@ -113,3 +119,33 @@ Same as above but use a JVM option in domain.xml such as the example below.
 ```
 <jvm-options>-Ddataverse.spi.exporters.directory=/home/dataverse/dataverse-exporters/croissant/target</jvm-options>
 ```
+
+### Differences from pyDataverse
+
+A pyDataverse implementation is underway at https://github.com/Dans-labs/pyDataverse/tree/croissant and https://github.com/Dans-labs/pyDataverse/tree/semantic-mappings
+
+The "croissant" branch does the following:
+
+- For files, for `@id`, the database id (e.g. `f26148`) is used instead of the filename (e.g. `README.md`).
+- `sc:Person` is used instead of `Person`.
+- `url` is used.
+- `dateCreated` is used.
+
+### Difference from Schema.org JSON-LD
+
+Dataverse's Schema.org implementation does the following:
+
+- `@context` is much more minimal, only showing "http://schema.org".
+- Type is `sc:Dataset instead of `cr:Dataset`.
+- No `conformsTo` (`"conformsTo": "http://mlcommons.org/croissant/1.0"`)
+- No `citeAs`
+- No `recordSet`
+- For `version`, "1" is used instead of "1.0.0".
+- Under `distribution` the type is `DataDownload` instead of `cr:FileObject`.
+- Under `distribution` there is no `@id`.
+- Under `distribution` there is no `md5`.
+- Has the following (but Croissant doesn't):
+  - `@id`
+  - `identifier`
+  - `author` (duplicate of `creator`)
+  - `provider` (duplicate of `publisher`)
