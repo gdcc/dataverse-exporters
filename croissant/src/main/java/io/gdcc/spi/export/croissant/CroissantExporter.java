@@ -237,7 +237,9 @@ public class CroissantExporter implements Exporter {
                 if (fileSize == null) {
                     fileSize = fileDetails.getJsonNumber("filesize");
                 }
-                String fileSizeInBytes = fileSize.toString() + " B";
+
+                // No unit because the spec says "Defaults to bytes if a unit is not specified."
+                String fileSizeInBytes = fileSize.toString();
                 JsonObject checksum = fileDetails.getJsonObject("checksum");
                 // Out of the box the checksum type will be md5
                 String checksumType = checksum.getString("type").toLowerCase();
