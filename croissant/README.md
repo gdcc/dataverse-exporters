@@ -99,7 +99,7 @@ cp target/*jar docker-dev-volumes/app/data/exporters
 
 Then stop and start the containers. On a dataset, click "Metadata" then "Export Metadata" and in the dropdown you should see "Croissant" listed.
 
-If you update the jar but not the dataset and want to see the changes, you can reexport all datasets or a specific dataset per https://guides.dataverse.org/en/6.1/admin/metadataexport.html#batch-exports-through-the-api
+If you update the jar but not the dataset and want to see the changes, you can reexport all datasets or a specific dataset per https://guides.dataverse.org/en/6.2/admin/metadataexport.html#batch-exports-through-the-api
 
 ```
 curl http://localhost:8080/api/admin/metadata/reExportAll
