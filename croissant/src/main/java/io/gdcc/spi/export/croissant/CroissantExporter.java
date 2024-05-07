@@ -239,7 +239,7 @@ public class CroissantExporter implements Exporter {
                 }
 
                 // No unit because the spec says "Defaults to bytes if a unit is not specified."
-                String fileSizeInBytes = fileSize.toString();
+                JsonNumber fileSizeInBytes = fileSize;
                 JsonObject checksum = fileDetails.getJsonObject("checksum");
                 // Out of the box the checksum type will be md5
                 String checksumType = checksum.getString("type").toLowerCase();
