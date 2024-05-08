@@ -126,7 +126,6 @@ A pyDataverse implementation is underway at https://github.com/Dans-labs/pyDatav
 
 The "croissant" branch does the following:
 
-- `contentSize` is a string rather than a number.
 - For files, for `@id`, the database id (e.g. `f26148`) is used instead of the filename (e.g. `README.md`).
 - `sc:Person` is used instead of `Person`.
 - `url` is used.
@@ -145,8 +144,13 @@ Dataverse's Schema.org implementation does the following:
 - Under `distribution` the type is `DataDownload` instead of `cr:FileObject`.
 - Under `distribution` there is no `@id`.
 - Under `distribution` there is no `md5`.
+- Under `distribution`, `contentSize` is a number rather than a string.
 - Has the following (but Croissant doesn't):
   - `@id`
   - `identifier`
   - `author` (duplicate of `creator`)
   - `provider` (duplicate of `publisher`)
+
+### Changes under consideration
+
+- Append " B" to `contentSize` strings to clarify that the implied unit is bytes. The examples in the spec and on GitHub do this.
