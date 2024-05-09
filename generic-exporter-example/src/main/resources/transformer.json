@@ -155,7 +155,7 @@
             "sourcePointer": "/datasetVersion/files[i]/dataFile",
             "resultPointer": "/ore:describes/ore:aggregates[i]/dvcore:currentIngestedName",
             "expressions": [
-                "script(res = x.originalFileFormat ? x.filename : null)"
+                "script(res = x.originalFileFormat ? x.filename : JsonValue.NULL)"
             ]
         },
         {

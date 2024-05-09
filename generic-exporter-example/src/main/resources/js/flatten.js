@@ -1,15 +1,23 @@
+doFlatten = function (v) {
+    if (v.add && v.size() > 0) {
+        if (v.size() > 1) {
+            return v.stream().map(doFlatten).collect(Collectors.toList());
+        }
+        return doFlatten(v.get(0));
+    } else if (v.keySet) {
+        var m = new Map();
+        v.keySet().forEach(flatten(m, v));
+        return m;
+    }
+    return v;
+}
+
 flatten = function (result, value) {
     return function (key) {
-        flattened = value.get(key);
-        if (!flattened.keySet && flattened.size && flattened.size() === 1) {
-            flattened = flattened.get(0);
+        var v = value.get(key)
+        if (v !== null && !JsonValue.NULL.equals(v)) {
+            result.put(key, doFlatten(v));
         }
-        if (flattened.keySet) {
-            innerFlattened = new Map();
-            flattened.keySet().forEach(flatten(innerFlattened, flattened));
-            flattened = innerFlattened;
-        }
-        result.put(key, flattened);
     }
 };
 
