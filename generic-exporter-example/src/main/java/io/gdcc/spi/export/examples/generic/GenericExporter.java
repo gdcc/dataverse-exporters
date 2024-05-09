@@ -16,8 +16,6 @@ import java.nio.file.Paths;
 import java.util.Locale;
 import java.util.logging.Logger;
 
-import javax.script.ScriptEngineManager;
-
 import org.openjdk.nashorn.api.scripting.NashornScriptEngineFactory;
 
 import jakarta.json.JsonObject;
@@ -38,13 +36,9 @@ import jakarta.ws.rs.core.MediaType;
 // interface that extends it.
 public class GenericExporter implements Exporter {
     private static final Logger logger = Logger.getLogger(TransformerFactory.class.getName());
-    public static final TransformerFactory factory = TransformerFactory.factory();
+    public static final TransformerFactory factory = TransformerFactory.factory(new NashornScriptEngineFactory());
     public static Transformer preTransformer = transformer("/exporters/pre_transformer.json");
     public static Transformer transformer = transformer("/exporters/transformer.json");
-
-    static {
-        new ScriptEngineManager(Exporter.class.getClassLoader()).registerEngineName("javascript", new NashornScriptEngineFactory());
-    }
 
     private static Transformer transformer(String fileName) {
         try {
