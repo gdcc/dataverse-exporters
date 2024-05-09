@@ -1,10 +1,23 @@
-mapSubField = function (v) {
-    return "test"
-}
-mapField = function (r) {
-    return function (v) {
-        r[v.typeName] = typeof v.value === 'string' ? v.value : mapSubField(v.value); 
+mapSubField = function (subField) {
+    if (typeof subField === 'string') {
+        return subField;
     }
-}
+    mappedSubField = {};
+    subField.forEach(function (value) {
+        if (value.keySet) {
+            value.keySet().forEach(function (key) {
+                mapped = mapSubField(value.get(key).value);
+                mappedSubField[key] = mappedSubField[key] ? mappedSubField[key].add(mapped) : new List([mapped]);
+            });
+        } else {
+            mappedSubField = subField;
+        }
+    });
+    return mappedSubField;
+};
+
 res = {};
-x.stream().forEach(mapField(res))
+x.stream().forEach(function (field) {
+    mapped = mapSubField(field.value);
+    res[field.typeName] = res[field.typeName] ? res[field.typeName].add(mapped) : new List([mapped]);
+});

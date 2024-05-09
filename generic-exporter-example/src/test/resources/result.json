@@ -24,27 +24,13 @@
         ],
         "schema:version": "3.0",
         "schema:name": "Darwin's Finches",
-        "schema:dateModified": "2023-08-10 11:23:21.403",
+        "schema:dateModified": "2023-08-10",
         "schema:datePublished": "2023-02-02",
         "schema:license": "http://creativecommons.org/publicdomain/zero/1.0",
         "dvcore:fileTermsOfAccess": {
             "dvcore:fileRequestAccess": true
         },
         "schema:includedInDataCatalog": "Demo Dataverse",
-        "schema:isPartOf": {
-            "schema:name": "Brand New Dataverse",
-            "@id": "https://demo.dataverse.org/dataverse/bnd",
-            "schema:description": "Only on Demo",
-            "schema:isPartOf": {
-                "schema:name": "Sherry-OSF Files Dataverse",
-                "@id": "https://demo.dataverse.org/dataverse/shl-osf",
-                "schema:isPartOf": {
-                    "schema:name": "Demo Dataverse",
-                    "@id": "https://demo.dataverse.org/dataverse/demo",
-                    "schema:description": "<span><span><span><h3>This Dataverse is for demo purposes only.</h3></span></span></span>\n\n\nDatasets older than 30 days will be deleted at 5am EST on the first day of each month. <br /><br />\n\nTo archive and publish to the Harvard repository, visit <a href=\"https://dataverse.harvard.edu\" title=\"Harvard Dataverse\" target=\"_blank\">dataverse.harvard.edu</a>. To learn about and publish to other repositories, visit The Dataverse Project at <a href=\"https://dataverse.org\" title=\"The Dataverse Project\" target=\"_blank\">dataverse.org</a>."
-                }
-            }
-        },
         "ore:aggregates": [
             {
                 "schema:name": "ETD_Checklist.pdf",
