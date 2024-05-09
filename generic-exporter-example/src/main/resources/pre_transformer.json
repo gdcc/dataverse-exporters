@@ -5,7 +5,7 @@
             "sourcePointer": "/datasetVersion/metadataBlocks/citation/fields",
             "resultPointer": "/datasetVersion/metadataBlocks/citation",
             "expressions": [
-                "script(importJS ${path}/js/map_metadata_fields.js endImport)"
+                "script(importJS /js/map_metadata_fields.js endImport)"
             ]
         }
     ]

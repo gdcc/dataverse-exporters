@@ -189,7 +189,7 @@
             "sourcePointer": "/ore:describes",
             "resultPointer": "/ore:describes",
             "expressions": [
-                "script(importJS ${path}/js/flatten.js endImport)"
+                "script(importJS /js/flatten.js endImport)"
             ]
         }
     ]

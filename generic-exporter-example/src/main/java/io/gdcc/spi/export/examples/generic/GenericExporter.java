@@ -42,8 +42,8 @@ public class GenericExporter implements Exporter {
         try {
             final URL transformerURL = Exporter.class.getClassLoader().getResource(fileName);
             final Path path = Paths.get(transformerURL.toURI());
-            final String transformerString = Files.readString(path).replace("${path}", path.getParent().toString());
-            return factory.createFromJsonString(transformerString);
+            final String transformerString = Files.readString(path);
+            return factory.createFromJsonString(transformerString, path.getParent().toString());
         } catch (final Exception e) {
             logger.severe("transformer creation failed (using identity transformer): " + e);
             return factory.createFromJsonString("{\"transformations\":[{}]}");
