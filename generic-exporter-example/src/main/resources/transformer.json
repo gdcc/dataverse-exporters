@@ -152,8 +152,11 @@
             "resultPointer": "/ore:describes/ore:aggregates[i]/dvcore:storageIdentifier"
         },
         {
-            "sourcePointer": "/datasetVersion/files[i]/dataFile/filename",
-            "resultPointer": "/ore:describes/ore:aggregates[i]/dvcore:currentIngestedName"
+            "sourcePointer": "/datasetVersion/files[i]/dataFile",
+            "resultPointer": "/ore:describes/ore:aggregates[i]/dvcore:currentIngestedName",
+            "expressions": [
+                "script(res = x.originalFileFormat ? x.filename : null)"
+            ]
         },
         {
             "sourcePointer": "/datasetVersion/files[i]/dataFile/UNF",
