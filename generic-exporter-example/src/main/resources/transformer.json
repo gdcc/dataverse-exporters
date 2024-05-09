@@ -120,14 +120,15 @@
             "resultPointer": "/ore:describes/ore:aggregates[i]/@id"
         },
         {
-            "sourcePointer": "/datasetVersion/files[i]/dataFile/persistentId",
+            "sourcePointer": "/datasetVersion/files[i]/dataFile",
             "resultPointer": "/ore:describes/ore:aggregates[i]/schema:sameAs",
             "expressions": [
-                "script(res = 'https://demo.dataverse.org/api/access/datafile/:persistentId?persistentId=' + x)"
+                "script(res = 'https://demo.dataverse.org/api/access/datafile/:persistentId?persistentId=' + x.persistentId + (x.originalFileFormat ? '&format=original' : ''))"
             ]
         },
         {
-            "resultPointer": "/ore:describes/ore:aggregates/@type",
+            "sourcePointer": "/datasetVersion/files[i]",
+            "resultPointer": "/ore:describes/ore:aggregates[i]/@type",
             "expressions": [
                 "\"ore:AggregatedResource\""
             ]
