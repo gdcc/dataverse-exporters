@@ -8,11 +8,16 @@ import io.gdcc.spi.export.Exporter;
 import io.github.erykkul.json.transformer.Transformer;
 import io.github.erykkul.json.transformer.TransformerFactory;
 
+import java.io.IOException;
 import java.io.OutputStream;
-import java.net.URL;
+import java.net.URI;
+import java.nio.file.FileSystem;
+import java.nio.file.FileSystems;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.HashMap;
+import java.util.List;
 import java.util.Locale;
 import java.util.logging.Logger;
 
@@ -36,19 +41,41 @@ import jakarta.ws.rs.core.MediaType;
 // interface that extends it.
 public class GenericExporter implements Exporter {
     private static final Logger logger = Logger.getLogger(TransformerFactory.class.getName());
-    public static final TransformerFactory factory = TransformerFactory.factory(new NashornScriptEngineFactory());
-    public static Transformer preTransformer = transformer("/exporters/pre_transformer.json");
-    public static Transformer transformer = transformer("/exporters/transformer.json");
+    private static final TransformerFactory factory = TransformerFactory.factory(new NashornScriptEngineFactory());
+    private static final Transformer preTransformer = transformer("pre_transformer.json");
+    private static final Transformer transformer = transformer("transformer.json");
 
-    private static Transformer transformer(String fileName) {
+    private static Transformer transformer(final String fileName) {
         try {
-            final URL transformerURL = Exporter.class.getResource(fileName);
-            final Path path = transformerURL == null ? Paths.get(fileName) : Paths.get(transformerURL.toURI());
-            final String transformerString = Files.readString(path);
-            return factory.createFromJsonString(transformerString, path.getParent().toString());
+            // when running tests, etc.
+            final Path path = Paths.get(GenericExporter.class.getClassLoader().getResource(fileName).toURI());
+            return factory.createFromJsonString(Files.readString(path), path.getParent().toString());
         } catch (final Exception e) {
-            logger.severe("transformer creation failed (using identity transformer): " + e);
-            return factory.createFromJsonString("{\"transformations\":[{}]}");
+            try {
+                // on the server:
+                // copy the transformers from the jar if they are not yet in the exporters dir
+                final URI jarUri = GenericExporter.class.getProtectionDomain().getCodeSource().getLocation().toURI();
+                final FileSystem fs = FileSystems.newFileSystem(jarUri, new HashMap<>());
+                final Path outPath = Paths.get(jarUri.toString().substring("jar:file:".length(),
+                        jarUri.toString().length() - ".jar!/".length()));
+                Files.createDirectories(outPath.resolve("js"));
+                List.of(Paths.get("pre_transformer.json"), Paths.get("transformer.json"), Paths.get("js", "flatten.js"),
+                        Paths.get("js", "map_metadata_fields.js"))
+                        .stream().filter(x -> !Files.exists(outPath.resolve(x))).forEach(x -> {
+                            try {
+                                Files.copy(fs.getPath(x.toString()), outPath.resolve(x));
+                            } catch (final IOException e2) {
+                            }
+                        });
+                fs.close();
+
+                // read from files, as usual
+                final String transformerString = Files.readString(outPath.resolve(fileName));
+                return factory.createFromJsonString(transformerString, outPath.toString());
+            } catch (final Exception e3) {
+                logger.severe("transformer creation failed (using identity transformer): " + e3);
+                return factory.createFromJsonString("{\"transformations\":[{}]}");
+            }
         }
     }
 
@@ -67,7 +94,7 @@ public class GenericExporter implements Exporter {
 
     // The display name shown in the UI
     @Override
-    public String getDisplayName(Locale locale) {
+    public String getDisplayName(final Locale locale) {
         // This example includes the language in the name to demonstrate that locale is
         // available. A production exporter would instead use the locale to generate an
         // appropriate translation.
@@ -97,7 +124,8 @@ public class GenericExporter implements Exporter {
     // This method is called by Dataverse when metadata for a given dataset in this
     // format is requested.
     @Override
-    public void exportDataset(ExportDataProvider dataProvider, OutputStream outputStream) throws ExportException {
+    public void exportDataset(final ExportDataProvider dataProvider, final OutputStream outputStream)
+            throws ExportException {
         try {
             final JsonObject preTransformed = preTransformer.transform(dataProvider.getDatasetJson());
             final JsonObject transformed = transformer.transform(preTransformed);
@@ -106,7 +134,7 @@ public class GenericExporter implements Exporter {
             // Flush the output stream - The output stream is automatically closed by
             // Dataverse and should not be closed in the Exporter.
             outputStream.flush();
-        } catch (Exception e) {
+        } catch (final Exception e) {
             // If anything goes wrong, an Exporter should throw an ExportException.
             throw new ExportException("Unknown exception caught during JSON export.");
         }
