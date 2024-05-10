@@ -12,10 +12,12 @@ doFlatten = function (v) {
     return v;
 }
 
+var empty = new List();
+
 flatten = function (result, value) {
     return function (key) {
         var v = value.get(key)
-        if (v !== null && !JsonValue.NULL.equals(v)) {
+        if (v !== null && !JsonValue.NULL.equals(v) && !empty.equals(v)) {
             result.put(key, doFlatten(v));
         }
     }

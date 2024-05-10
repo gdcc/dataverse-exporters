@@ -186,8 +186,8 @@
         },
         {
             "useResultAsSource": true,
-            "sourcePointer": "/ore:describes",
-            "resultPointer": "/ore:describes",
+            "sourcePointer": "",
+            "resultPointer": "",
             "expressions": [
                 "script(importJS /js/flatten.js endImport)"
             ]
