@@ -1,10 +1,6 @@
 package io.gdcc.spi.export.examples.generic;
 
-import io.gdcc.spi.export.ExportDataProvider;
-import jakarta.json.Json;
-import jakarta.json.JsonArray;
-import jakarta.json.JsonObject;
-import jakarta.json.JsonReader;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.io.ByteArrayOutputStream;
 import java.io.FileNotFoundException;
@@ -12,10 +8,16 @@ import java.io.FileReader;
 import java.io.OutputStream;
 import java.net.URISyntaxException;
 import java.util.Locale;
+
 import org.junit.jupiter.api.AfterEach;
-import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+
+import io.gdcc.spi.export.ExportDataProvider;
+import jakarta.json.Json;
+import jakarta.json.JsonArray;
+import jakarta.json.JsonObject;
+import jakarta.json.JsonReader;
 
 public class GenericExporterTest {
 
@@ -40,7 +42,7 @@ public class GenericExporterTest {
             public JsonObject getDatasetJson() {
                 try {
                     return parse("source.json");
-                } catch (Exception e) {
+                } catch (final Exception e) {
                     throw new RuntimeException(e);
                 }
             }
@@ -99,7 +101,7 @@ public class GenericExporterTest {
     @Test
     public void testExportDataset() throws Exception {
         genericExporter.exportDataset(dataProvider, outputStream);
-        String expected = parse("result.json").toString();
+        final String expected = parse("result.json").toString();
         assertEquals(expected.trim(), outputStream.toString().trim());
     }
 
