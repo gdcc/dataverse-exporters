@@ -1,0 +1,11 @@
+# Transformer Exporter
+
+Example exporter using the [JSON Transformer](https://github.com/erykKul/json-transformer) library for transformation of metadata JSON to OAI ORE JSON format. The transformation has two steps:
+- [pre_transformer.json](/transformer-example/src/main/resources/pre_transformer.json): changes the metadata citation block into a more JSON Pointer friendly structure. This transformer uses the [map_metadata_fields.js](/transformer-example/src/main/resources/js/map_metadata_fields.js) JavaScript for the metadata citation block transformation.
+- [transformer.json](/transformer-example/src/main/resources/transformer.json): copies the metadata fields from the pre-transformed format into OAI ORE format. This transformer uses the [flatten.js](/transformer-example/src/main/resources/js/flatten.js) JavaScript that (at the end of the transformation) eliminates the empty arrays, replaces arrays having only one element with JSON objects, and filters out the `NULL` values.
+
+The test contains an example transformation from a [test dataset metadata JSON](/transformer-example/src/test/resources/source.json) into a [transformed document](/transformer-example/src/test/resources/result.json). Also, the [pre-transformed intermediary JSON](/transformer-example/src/test/resources/pre_transformed.json) is included in the test resources.
+
+When the built jar is placed in the `dataverse.spi.exporters.directory` directory on the server, this exporter will look for the transformation files in the exporters' directory subfolder having the same name as the jar file (the part before the `.jar`). If the transformation files are not there yet, the exporter will copy them from its resources to that location. You can either place your own transformation files there before deploying the jar, use the default files as provided by this example exporter, or overwrite them later.
+
+All the transformation logic is contained in the transformer JSON files and the JavaScript files as used by those JSON transformers. The documentation on how to write such transformers can be found on the [JSON Transformer](https://github.com/erykKul/json-transformer?tab=readme-ov-file#json-transformer) library GitHub page.
