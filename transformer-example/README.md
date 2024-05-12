@@ -13,7 +13,6 @@ All the transformation logic is contained in the transformer JSON files and the 
 Suppose now that this example does not work for your installation as intended because your installation does not have the persistent identifiers for individual files, i.e., it has only persistent identifiers on the dataset level. In this case, you can adapt the relevant parts of the [transformer.json](/transformer-example/src/main/resources/transformer.json) to address these differences (and replace the reference to the demo Dataverse with the references to your own installation):
 
 ```json
-...
         {
             "sourcePointer": "/persistentUrl",
             "resultPointer": "/@id",
@@ -21,7 +20,8 @@ Suppose now that this example does not work for your installation as intended be
                 "script(res = 'https://demo.dataverse.org/api/datasets/export?exporter=OAI_ORE&persistentId=' + x)"
             ]
         },
-...
+```
+```json
         {
             "sourcePointer": "/datasetVersion/files[i]/dataFile",
             "resultPointer": "/ore:describes/ore:aggregates[i]/@id",
@@ -36,8 +36,8 @@ Suppose now that this example does not work for your installation as intended be
                 "script(res = 'https://demo.dataverse.org/api/access/datafile/' + x.id)"
             ]
         },
-...
-
+```
+```json
         {
             "sourcePointer": "/datasetVersion/files[i]/dataFile",
             "resultPointer": "/ore:describes/schema:hasPart",
