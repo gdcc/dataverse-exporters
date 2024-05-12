@@ -45,5 +45,4 @@ Suppose now that this example does not work for your installation as intended be
                 "script(res = 'https://demo.dataverse.org/file.xhtml?fileId=' + x.id)"
             ]
         },
-...
 ```
