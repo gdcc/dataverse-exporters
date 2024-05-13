@@ -46,3 +46,12 @@ Suppose now that this example does not work for your installation as intended be
             ]
         },
 ```
+
+However, it is better not to hardcode the installation URL in the transformations. Other available formats may already contain the value you need. This is just an example transformation, the ORE metadata export is already available from the `DataProvider` and contains the fields that are needed here. You can use multiple sources when defining your transformations, for example:
+```java
+            final JsonObject preTransformed = preTransformer.transform(dataProvider.getDatasetJson());
+            final JsonObject enriched = Json.createObjectBuilder(preTransformed).add("ore", dataProvider.getDatasetORE()).build();
+            final JsonObject transformed = transformer.transform(enriched);
+```
+
+The metadata from ORE export becomes then available at the `\ore` pointer.
