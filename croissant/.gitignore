@@ -1,5 +1,6 @@
 target
 venv
+.flattened-pom.xml
 src/test/resources/minimal/croissant.json
 src/test/resources/max/croissant.json
 src/test/resources/cars/croissant.json
