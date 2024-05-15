@@ -136,16 +136,16 @@ The "croissant" branch does the following:
 Dataverse's Schema.org implementation does the following:
 
 - `@context` is much more minimal, only showing "http://schema.org".
-- Type is `sc:Dataset instead of `cr:Dataset`.
-- No `conformsTo` (`"conformsTo": "http://mlcommons.org/croissant/1.0"`)
-- No `citeAs`
-- No `recordSet`
+- Type is `sc:Dataset` instead of `cr:Dataset` (Croissant-specific).
+- No `conformsTo` (`"conformsTo": "http://mlcommons.org/croissant/1.0"` is Croissant-specific).
+- No `citeAs` (Croissant-specific).
+- No `recordSet` (Croissant-specific).
 - For `version`, "1" is used instead of "1.0.0".
-- Under `distribution` the type is `DataDownload` instead of `cr:FileObject`.
+- Under `distribution` the type is `DataDownload` instead of `cr:FileObject` (Croissant-specific).
 - Under `distribution` there is no `@id`.
 - Under `distribution` there is no `md5`.
 - Under `distribution`, `contentSize` is a number rather than a string.
-- Has the following (but Croissant doesn't):
+- Has the following (but our Croissant doesn't):
   - `@id`
   - `identifier`
   - `author` (duplicate of `creator`)
