@@ -279,12 +279,6 @@ public class CroissantExporterTest {
     "@type": "sc:Dataset",
     "conformsTo": "http://mlcommons.org/croissant/1.0",
     "name": "Minimal",
-    "version": "1.0.0",
-    "citeAs": "@data{FK2/4C0JYC_2024,author = {Durbin, Philip},publisher = {Root},title = {Minimal},year = {2024},url = {https://doi.org/10.5072/FK2/4C0JYC}}",
-    "distribution": [
-    ],
-    "recordSet": [
-    ],
     "creator": [
         {
             "@type": "Person",
@@ -308,7 +302,13 @@ public class CroissantExporterTest {
     "publisher": {
         "@type": "Organization",
         "name": "Root"
-    }
+    },
+    "version": "1.0.0",
+    "citeAs": "@data{FK2/4C0JYC_2024,author = {Durbin, Philip},publisher = {Root},title = {Minimal},year = {2024},url = {https://doi.org/10.5072/FK2/4C0JYC}}",
+    "distribution": [
+    ],
+    "recordSet": [
+    ]
 }
 """;
         String actual = outputStreamMinimal.toString();
@@ -372,35 +372,6 @@ public class CroissantExporterTest {
     "@type": "sc:Dataset",
     "conformsTo": "http://mlcommons.org/croissant/1.0",
     "name": "Max Schema.org",
-    "version": "1.0.0",
-    "citeAs": "@data{FK2/VQTYHD_2024,author = {Durbin, Philip and IQSS},publisher = {Root},title = {Max Schema.org},year = {2024},url = {https://doi.org/10.5072/FK2/VQTYHD}}",
-    "funder": [
-        {
-            "@type": "Organization",
-            "name": "NSF"
-        },
-        {
-            "@type": "Organization",
-            "name": "NIH"
-        }
-    ],
-    "spatialCoverage": [
-            "Cambridge, MA, United States, Harvard Square"
-    ],
-    "distribution": [
-        {
-            "@type": "cr:FileObject",
-            "@id": "README.md",
-            "name": "README.md",
-            "encodingFormat": "text/markdown",
-            "md5": "ebf050ec8cce5df0a72b100cfc9f442f",
-            "contentSize": "34",
-            "description": "Additional documentation.",
-            "contentUrl": "https://beta.dataverse.org/api/access/datafile/26148"
-        }
-    ],
-    "recordSet": [
-    ],
     "creator": [
         {
             "@type": "Person",
@@ -431,6 +402,33 @@ public class CroissantExporterTest {
         "foo",
         "bar"
     ],
+    "license": "http://creativecommons.org/publicdomain/zero/1.0",
+    "datePublished": "2024-05-01",
+    "dateModified": "2024-05-01",
+    "includedInDataCatalog": {
+        "@type": "DataCatalog",
+        "name": "Root",
+        "url": "https://beta.dataverse.org"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Root"
+    },
+    "version": "1.0.0",
+    "citeAs": "@data{FK2/VQTYHD_2024,author = {Durbin, Philip and IQSS},publisher = {Root},title = {Max Schema.org},year = {2024},url = {https://doi.org/10.5072/FK2/VQTYHD}}",
+    "funder": [
+        {
+            "@type": "Organization",
+            "name": "NSF"
+        },
+        {
+            "@type": "Organization",
+            "name": "NIH"
+        }
+    ],
+    "spatialCoverage": [
+            "Cambridge, MA, United States, Harvard Square"
+    ],
     "citation": [
         {
             "@type": "CreativeWork",
@@ -443,18 +441,20 @@ public class CroissantExporterTest {
     "temporalCoverage": [
         "2023-01-01/2023-12-31"
     ],
-    "license": "http://creativecommons.org/publicdomain/zero/1.0",
-    "datePublished": "2024-05-01",
-    "dateModified": "2024-05-01",
-    "includedInDataCatalog": {
-        "@type": "DataCatalog",
-        "name": "Root",
-        "url": "https://beta.dataverse.org"
-    },
-    "publisher": {
-        "@type": "Organization",
-        "name": "Root"
-    }
+    "distribution": [
+        {
+            "@type": "cr:FileObject",
+            "@id": "README.md",
+            "name": "README.md",
+            "encodingFormat": "text/markdown",
+            "md5": "ebf050ec8cce5df0a72b100cfc9f442f",
+            "contentSize": "34",
+            "description": "Additional documentation.",
+            "contentUrl": "https://beta.dataverse.org/api/access/datafile/26148"
+        }
+    ],
+    "recordSet": [
+    ]
 }
 """;
         String actual = outputStreamMax.toString();
@@ -537,6 +537,34 @@ public class CroissantExporterTest {
     "@type": "sc:Dataset",
     "conformsTo": "http://mlcommons.org/croissant/1.0",
     "name": "Cars",
+    "creator": [
+        {
+            "@type": "Person",
+            "givenName": "Philip",
+            "familyName": "Durbin",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "Harvard"
+            },
+            "name": "Durbin, Philip"
+        }
+    ],
+    "description": "This dataset is about cars.",
+    "keywords": [
+        "Other"
+    ],
+    "license": "http://creativecommons.org/publicdomain/zero/1.0",
+    "datePublished": "2024-03-20",
+    "dateModified": "2024-03-20",
+    "includedInDataCatalog": {
+        "@type": "DataCatalog",
+        "name": "Root",
+        "url": "http://localhost:8080"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Root"
+    },
     "version": "1.0.0",
     "citeAs": "@data{FK2/6ZUDGC_2024,author = {Durbin, Philip},publisher = {Root},title = {Cars},year = {2024},url = {https://doi.org/10.5072/FK2/6ZUDGC}}",
     "distribution": [
@@ -776,35 +804,7 @@ public class CroissantExporterTest {
                 }
             ]
         }
-    ],
-    "creator": [
-        {
-            "@type": "Person",
-            "givenName": "Philip",
-            "familyName": "Durbin",
-            "affiliation": {
-                "@type": "Organization",
-                "name": "Harvard"
-            },
-            "name": "Durbin, Philip"
-        }
-    ],
-    "description": "This dataset is about cars.",
-    "keywords": [
-        "Other"
-    ],
-    "license": "http://creativecommons.org/publicdomain/zero/1.0",
-    "datePublished": "2024-03-20",
-    "dateModified": "2024-03-20",
-    "includedInDataCatalog": {
-        "@type": "DataCatalog",
-        "name": "Root",
-        "url": "http://localhost:8080"
-    },
-    "publisher": {
-        "@type": "Organization",
-        "name": "Root"
-    }
+    ]
 }
 """;
         String actual = outputStreamCars.toString();

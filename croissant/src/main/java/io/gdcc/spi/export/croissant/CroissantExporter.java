@@ -151,6 +151,15 @@ public class CroissantExporter implements Exporter {
             job.add("name", describes
                     .getString("title")
             );
+            JsonObject datasetSchemaDotOrg = dataProvider.getDatasetSchemaDotOrg();
+            job.add("creator", datasetSchemaDotOrg.getJsonArray("creator"));
+            job.add("description", datasetSchemaDotOrg.getJsonString("description"));
+            job.add("keywords", datasetSchemaDotOrg.getJsonArray("keywords"));
+            job.add("license", datasetSchemaDotOrg.getString("license"));
+            job.add("datePublished", datasetSchemaDotOrg.getString("datePublished"));
+            job.add("dateModified", datasetSchemaDotOrg.getString("dateModified"));
+            job.add("includedInDataCatalog", datasetSchemaDotOrg.getJsonObject("includedInDataCatalog"));
+            job.add("publisher", datasetSchemaDotOrg.getJsonObject("publisher"));
 
             /**
              * We append ".0" to our version string to make the Croissant
@@ -202,7 +211,6 @@ public class CroissantExporter implements Exporter {
              * dataset" so we have asked for clarification here:
              * https://github.com/mlcommons/croissant/issues/638
              */
-            JsonObject datasetSchemaDotOrg = dataProvider.getDatasetSchemaDotOrg();
             job.add("citeAs", getBibtex(datasetORE, datasetJson, datasetSchemaDotOrg));
 
             JsonArray funder = datasetSchemaDotOrg.getJsonArray("funder");
@@ -331,12 +339,7 @@ public class CroissantExporter implements Exporter {
                 }
                 fileCounter++;
             }
-            job.add("distribution", distribution);
-            job.add("recordSet", recordSet);
 
-            job.add("creator", datasetSchemaDotOrg.getJsonArray("creator"));
-            job.add("description", datasetSchemaDotOrg.getJsonString("description"));
-            job.add("keywords", datasetSchemaDotOrg.getJsonArray("keywords"));
             JsonArray citation = datasetSchemaDotOrg.getJsonArray("citation");
             if (citation != null) {
                 job.add("citation", citation);
@@ -345,11 +348,8 @@ public class CroissantExporter implements Exporter {
             if (temporalCoverage != null) {
                 job.add("temporalCoverage", temporalCoverage);
             }
-            job.add("license", datasetSchemaDotOrg.getString("license"));
-            job.add("datePublished", datasetSchemaDotOrg.getString("datePublished"));
-            job.add("dateModified", datasetSchemaDotOrg.getString("dateModified"));
-            job.add("includedInDataCatalog", datasetSchemaDotOrg.getJsonObject("includedInDataCatalog"));
-            job.add("publisher", datasetSchemaDotOrg.getJsonObject("publisher"));
+            job.add("distribution", distribution);
+            job.add("recordSet", recordSet);
 
             // TODO: Do we need DataCite XML?
             String dataCiteXml = dataProvider.getDataCiteXml();
