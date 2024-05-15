@@ -122,14 +122,33 @@ Same as above but use a JVM option in domain.xml such as the example below.
 
 ### Differences from pyDataverse
 
-A pyDataverse implementation is underway at https://github.com/Dans-labs/pyDataverse/tree/croissant and https://github.com/Dans-labs/pyDataverse/tree/semantic-mappings
+A pyDataverse implementation is underway at https://github.com/Dans-labs/pyDataverse/tree/semantic-mappings and it has the following differences compared to the implementation in this dataverse-exporters repo:
 
-The "croissant" branch does the following:
-
-- For files, for `@id`, the database id (e.g. `f26148`) is used instead of the filename (e.g. `README.md`).
-- `sc:Person` is used instead of `Person`.
-- `url` is used.
-- `dateCreated` is used.
+- Under `@context`:
+  - Missing: `"wd": "https://www.wikidata.org/wiki/"`
+- Missing: `citation` (Related Publication).
+- `citeAs` shows title rather than full BibTex.
+- under `creator`:
+  - under `@type`, `sc:Person` is used instead of `Person`.
+  - Missing: `@id`. Should be an ORCID id when available (e.g. `"@id": "https://orcid.org/0000-0002-9528-9470"`).
+  - Missing: `@identifier`. Should be an ORCID id when available.
+  - Missing: `@sameAs`. Should be an ORCID id when available.
+  - Missing: `affiliation`.
+  - Missing: `familyName`.
+  - Missing: `givenName`.
+- Missing: `dateModified`. Should be YYYY-MM-DD.
+- `datePublished` is YYYY-MM-DD HH:MM:SS. Should be YYYY-MM-DD.
+- Under `distribution`:
+    - For files, for `@id`, the database id (e.g. `f26148`) is used instead of the filename (e.g. `README.md`).
+- Missing: `funder`
+- Missing: `includedInDataCatalog`
+- `name` inserts underscores for spaces (e.g. "Max Schema.org" becomes "Max_Schema.org")
+- Missing: `publisher`. Expected is something like `{"@type": "Organization","name": "Root"}`.
+- Missing: `spatialCoverage`. Expected is an array with something like `"Cambridge, MA, United States, Harvard Square"`.
+- Missing: `temportalCoverage`. Expected is an array with something like `"2023-01-01/2023-12-31"`.
+- `version` shows the version of Dataverse (`6.2 build develop-28a9d44.0`) rather than the version of the dataset.
+- `url` is present.
+- `dateCreated` is present.
 
 ### Difference from Schema.org JSON-LD
 
@@ -154,3 +173,8 @@ Dataverse's Schema.org implementation does the following:
 ### Changes under consideration
 
 - Append " B" to `contentSize` strings to clarify that the implied unit is bytes. The examples in the spec and on GitHub do this.
+- Switch `version` to "1.0" to reflect reality in Dataverse. Trying to use "1.0.0" with Dataverse APIs will not work.
+- instead of an empty array for `recordSet`, omit it
+- instead of an empty array for `spatialCoverage`, omit it
+- instead of an empty array for `temporalCoverage`, omit it
+

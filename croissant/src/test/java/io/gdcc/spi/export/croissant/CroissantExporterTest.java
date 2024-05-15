@@ -459,6 +459,25 @@ public class CroissantExporterTest {
 """;
         String actual = outputStreamMax.toString();
         Files.writeString(Paths.get("src/test/resources/max/croissant.json"), prettyPrint(actual), StandardCharsets.UTF_8);
+        /*
+        First, install pyDataverse from Dans-labs, the "croissant" branch:
+        pip3 install --upgrade --no-cache-dir  git+https://github.com/Dans-labs/pyDataverse@croissant#egg=pyDataverse
+        You can use this script to export Croissant from a dataset:
+        ---
+        from pyDataverse.Croissant import Croissant
+        #from pyDataverse.Croissant import Croissant
+        import json
+        #host = "https://dataverse.nl"
+        #PID = "doi:10.34894/KMRAYH"
+        host = "https://beta.dataverse.org"
+        PID = "doi:10.5072/FK2/VQTYHD"
+        croissant = Croissant(host, PID)
+        print(json.dumps(croissant.get_record(), indent=4, default=str))
+        ---
+        Finally, uncomment the lines below to check for differences.
+         */
+//        String pyDataverse = Files.readString(Paths.get("/tmp/pyDataverse.json"), StandardCharsets.UTF_8);
+//        JSONAssert.assertEquals(actual, pyDataverse, true);
         JSONAssert.assertEquals(expected, actual, true);
         assertEquals(prettyPrint(expected), prettyPrint(outputStreamMax.toString()));
 
