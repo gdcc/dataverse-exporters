@@ -139,7 +139,7 @@ A pyDataverse implementation is underway at https://github.com/Dans-labs/pyDatav
 - Missing: `dateModified`. Should be YYYY-MM-DD.
 - `datePublished` is YYYY-MM-DD HH:MM:SS. Should be YYYY-MM-DD.
 - Under `distribution`:
-    - For files, for `@id`, the database id (e.g. `f26148`) is used instead of the filename (e.g. `README.md`).
+    - For files, for `@id`, the database id (e.g. `f26148`) is used instead of the filename (e.g. `README.md`) for path plus filename (e.g. `doc/README.md`).
 - Missing: `funder`
 - Missing: `includedInDataCatalog`
 - `name` inserts underscores for spaces (e.g. "Max Schema.org" becomes "Max_Schema.org")

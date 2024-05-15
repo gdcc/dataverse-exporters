@@ -444,7 +444,7 @@ public class CroissantExporterTest {
     "distribution": [
         {
             "@type": "cr:FileObject",
-            "@id": "README.md",
+            "@id": "doc/README.md",
             "name": "README.md",
             "encodingFormat": "text/markdown",
             "md5": "ebf050ec8cce5df0a72b100cfc9f442f",
@@ -570,7 +570,7 @@ public class CroissantExporterTest {
     "distribution": [
         {
             "@type": "cr:FileObject",
-            "@id": "compute.py",
+            "@id": "code/compute.py",
             "name": "compute.py",
             "encodingFormat": "text/x-python",
             "md5": "d84985e94dde671f318076bd7a137f15",
@@ -580,7 +580,7 @@ public class CroissantExporterTest {
         },
         {
             "@type": "cr:FileObject",
-            "@id": "README.md",
+            "@id": "doc/README.md",
             "name": "README.md",
             "encodingFormat": "text/markdown",
             "md5": "a2e484d07ee5590cc32182dc2c6ccc83",
@@ -590,7 +590,7 @@ public class CroissantExporterTest {
         },
         {
             "@type": "cr:FileObject",
-            "@id": "stata13-auto.dta",
+            "@id": "data/stata13-auto.dta",
             "name": "stata13-auto.dta",
             "encodingFormat": "application/x-stata-13",
             "md5": "7b1201ce6b469796837a835377338c5a",
@@ -611,7 +611,7 @@ public class CroissantExporterTest {
                     "source": {
                         "@id": "11",
                         "fileObject": {
-                            "@id": "stata13-auto.dta"
+                            "@id": "data/stata13-auto.dta"
                         }
                     }
                 }
@@ -628,7 +628,7 @@ public class CroissantExporterTest {
                     "source": {
                         "@id": "5",
                         "fileObject": {
-                            "@id": "stata13-auto.dta"
+                            "@id": "data/stata13-auto.dta"
                         }
                     }
                 }
@@ -645,7 +645,7 @@ public class CroissantExporterTest {
                     "source": {
                         "@id": "6",
                         "fileObject": {
-                            "@id": "stata13-auto.dta"
+                            "@id": "data/stata13-auto.dta"
                         }
                     }
                 }
@@ -662,7 +662,7 @@ public class CroissantExporterTest {
                     "source": {
                         "@id": "4",
                         "fileObject": {
-                            "@id": "stata13-auto.dta"
+                            "@id": "data/stata13-auto.dta"
                         }
                     }
                 }
@@ -679,7 +679,7 @@ public class CroissantExporterTest {
                     "source": {
                         "@id": "7",
                         "fileObject": {
-                            "@id": "stata13-auto.dta"
+                            "@id": "data/stata13-auto.dta"
                         }
                     }
                 }
@@ -696,7 +696,7 @@ public class CroissantExporterTest {
                     "source": {
                         "@id": "9",
                         "fileObject": {
-                            "@id": "stata13-auto.dta"
+                            "@id": "data/stata13-auto.dta"
                         }
                     }
                 }
@@ -713,7 +713,7 @@ public class CroissantExporterTest {
                     "source": {
                         "@id": "10",
                         "fileObject": {
-                            "@id": "stata13-auto.dta"
+                            "@id": "data/stata13-auto.dta"
                         }
                     }
                 }
@@ -730,7 +730,7 @@ public class CroissantExporterTest {
                     "source": {
                         "@id": "3",
                         "fileObject": {
-                            "@id": "stata13-auto.dta"
+                            "@id": "data/stata13-auto.dta"
                         }
                     }
                 }
@@ -747,7 +747,7 @@ public class CroissantExporterTest {
                     "source": {
                         "@id": "2",
                         "fileObject": {
-                            "@id": "stata13-auto.dta"
+                            "@id": "data/stata13-auto.dta"
                         }
                     }
                 }
@@ -764,7 +764,7 @@ public class CroissantExporterTest {
                     "source": {
                         "@id": "1",
                         "fileObject": {
-                            "@id": "stata13-auto.dta"
+                            "@id": "data/stata13-auto.dta"
                         }
                     }
                 }
@@ -781,7 +781,7 @@ public class CroissantExporterTest {
                     "source": {
                         "@id": "8",
                         "fileObject": {
-                            "@id": "stata13-auto.dta"
+                            "@id": "data/stata13-auto.dta"
                         }
                     }
                 }
@@ -798,7 +798,7 @@ public class CroissantExporterTest {
                     "source": {
                         "@id": "12",
                         "fileObject": {
-                            "@id": "stata13-auto.dta"
+                            "@id": "data/stata13-auto.dta"
                         }
                     }
                 }

@@ -261,23 +261,25 @@ public class CroissantExporter implements Exporter {
                 String contentUrl = oreFiles.getJsonObject(fileCounter).getString("schema:sameAs");
                 String description = fileDetails.getString("description", "");
                 /**
-                 * TODO: directoryLabel is unused right now because we're not
-                 * sure where to put it. The spec and examples show it in
-                 * contentUrl but we use this field already. We have asked for
-                 * clarification in
-                 * https://github.com/mlcommons/croissant/issues/639
+                 * See https://github.com/mlcommons/croissant/issues/639 for
+                 * discussion with the Croissant spec leads on what to put in
+                 * @id (path/to/file.txt).
                  *
                  * It's suboptimal that the directoryLabel isn't already
                  * included in dataProvider.getDatasetFileDetails(). If it gets
                  * added as part of the following issue, we can get it from
                  * there: https://github.com/IQSS/dataverse/issues/10523
                  */
-//                String directoryLabel = oreFiles.getJsonObject(fileCounter).getString("dvcore:directoryLabel");
+                String fileId = filename;
+                String directoryLabel = oreFiles.getJsonObject(fileCounter).getString("dvcore:directoryLabel");
+                if (directoryLabel != null) {
+                    fileId = directoryLabel + "/" + filename;
+                }
 
                 distribution.add(
                         Json.createObjectBuilder()
                                 .add("@type", "cr:FileObject")
-                                .add("@id", filename)
+                                .add("@id", fileId)
                                 .add("name", filename)
                                 .add("encodingFormat", fileFormat)
                                 .add(checksumType, checksumValue)
@@ -328,7 +330,7 @@ public class CroissantExporter implements Exporter {
                                         .add("source", Json.createObjectBuilder()
                                                 .add("@id", variableId.toString())
                                                 .add("fileObject", Json.createObjectBuilder()
-                                                        .add("@id", filename)
+                                                        .add("@id", fileId)
                                                 )
                                         )
                         );
