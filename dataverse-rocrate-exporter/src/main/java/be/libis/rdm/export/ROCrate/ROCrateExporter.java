@@ -587,7 +587,6 @@ public class ROCrateExporter implements Exporter {
         result.add("context", "https://w3id.org/ro/crate/1.1/context");
         for (String id : entityMap.keySet()) {
             jsonArrayBuilder.add((JsonObjectBuilder) entityMap.get(id));
-            System.out.println(id + ": ");
         }
 
         result.add("graph", jsonArrayBuilder);
