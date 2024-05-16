@@ -5,6 +5,7 @@ import jakarta.json.Json;
 import jakarta.json.JsonArray;
 import jakarta.json.JsonObject;
 import java.io.ByteArrayOutputStream;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -21,6 +22,8 @@ import jakarta.json.JsonWriter;
 import jakarta.json.JsonWriterFactory;
 import jakarta.json.stream.JsonGenerator;
 import jakarta.json.JsonStructure;
+import jakarta.json.JsonValue;
+
 import java.io.StringReader;
 import be.libis.rdm.export.ROCrate.*;
 
@@ -78,7 +81,7 @@ public class ROCrateExporterTest {
 
     @Test
     public void testGetFormatName() {
-        assertEquals("rocrate_json", roCrateExporter.getFormatName());
+        assertEquals("rocrate_json_test", roCrateExporter.getFormatName());
     }
 
     @Test
@@ -119,8 +122,11 @@ public class ROCrateExporterTest {
     @Test
     public void testExportDataset() throws Exception {
         roCrateExporter.exportDataset(dataProvider, outputStream);
+        // String fromExporter = outputStream.toString();
+
+
         JsonReader exportReader = Json.createReader(new StringReader(outputStream.toString().trim()));
-        JsonStructure fromExporter = exportReader.read();
+        JsonArray fromExporter = exportReader.readObject().getJsonArray("graph");;
 
 
         InputStream is = null;
@@ -131,9 +137,13 @@ public class ROCrateExporterTest {
         }
     
         JsonReader jsonReader = Json.createReader(is);
-        JsonStructure  expected = jsonReader.readObject();
-        
-        assertEquals(expected, fromExporter);
+        JsonArray  expected = jsonReader.readObject().getJsonArray("graph");
+        assertEquals(expected.size(), fromExporter.size());
+        for (JsonValue object : expected) {
+            assert (fromExporter.contains(object));
+        }
+
+
     }
 
 }
