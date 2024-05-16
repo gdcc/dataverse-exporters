@@ -43,7 +43,7 @@ public class ROCrateExporter implements Exporter {
      */
     @Override
     public String getFormatName() {
-        return "rocrate_json";
+        return "rocrate_json_test";
     }
 
     @Override
@@ -134,7 +134,7 @@ public class ROCrateExporter implements Exporter {
     }
 
     static public ArrayList<String> addReferredEntityAsContextual(CSV csv, String datasetJson,
-            String refersToValueString, JsonArrayBuilder jsonBuilder) throws Exception {
+            String refersToValueString, Map<String, Object> entityMap) throws Exception {
         /*
          * Referred entities are the contextual entities referred by another property in
          * the RO-Crate metadata.
@@ -151,13 +151,13 @@ public class ROCrateExporter implements Exporter {
             referredIds = new ArrayList<String>();
             referredIds.add(replaceQuotations(refersToValue));
         } else {
-            referredIds = addContextualEntity(csv, datasetJson, refersToValue, jsonBuilder);
+            referredIds = addContextualEntity(csv, datasetJson, refersToValue, entityMap);
         }
         return referredIds;
     }
 
-    static public ArrayList<String> getReferredEntityIds(CSV csv, LinkedHashMap propertyMap, String refersToValueString,
-            JsonArrayBuilder jsonBuilder) throws Exception {
+    static public ArrayList<String> getReferredEntityIds(CSV csv, LinkedHashMap propertyMap, String refersToValueString)
+            throws Exception {
         /*
          * Returns the ids of the entities referred by the parent entity.
          */
@@ -190,7 +190,7 @@ public class ROCrateExporter implements Exporter {
         return dataObject;
     }
 
-    static public void addRootEntity(CSV csv, String jsonString, String entityName, JsonArrayBuilder jsonBuilder)
+    static public void addRootEntity(CSV csv, String jsonString, String entityName, Map<String, Object> entityMap)
             throws Exception {
         /*
          * Adds the entities that are at the root level of the ro-crate-metadata.json
@@ -200,6 +200,7 @@ public class ROCrateExporter implements Exporter {
         JsonObjectBuilder entityToAdd = Json.createObjectBuilder();
 
         ArrayList<Map<String, String>> rows = csv.getRowsByEntity(entityName);
+        String id = null;
 
         for (Map<String, String> row : rows) {
             i++;
@@ -209,7 +210,7 @@ public class ROCrateExporter implements Exporter {
 
             String value = row.get("value");
             if (value.contains("refersTo:")) {
-                ArrayList<String> referredIds = addReferredEntityAsContextual(csv, jsonString, value, jsonBuilder);
+                ArrayList<String> referredIds = addReferredEntityAsContextual(csv, jsonString, value, entityMap);
                 JsonArrayBuilder arrayOfIdsToAdd = Json.createArrayBuilder();
                 if (referredIds.size() > 1) {
                     for (String referredId : referredIds) {
@@ -233,6 +234,7 @@ public class ROCrateExporter implements Exporter {
                     entityToAdd.add(row.get("targetPropertyName"), value.replace("\"", ""));
 
                     if (row.get("targetPropertyName").equals("@id")) {
+                        id = value.replace("\"", "");
                         ids.add(value);
                     }
                 } else {
@@ -304,21 +306,22 @@ public class ROCrateExporter implements Exporter {
             }
 
         }
-
-        jsonBuilder.add(entityToAdd);
+        if (id != null) {
+            entityMap.put(id, entityToAdd);
+        }
 
     }
 
     static public ArrayList<String> addContextualEntity(final CSV csv, String jsonString, String entityName,
-            JsonArrayBuilder jsonBuilder) throws Exception {
+            Map<String, Object> entityMap) throws Exception {
         /*
          * Adds remaining contextual entities.
          */
         ArrayList<String> ids = new ArrayList<>();
         ArrayList<Map<String, String>> rows = csv.getRowsByEntity(entityName);
-
+        String id = null;
         if (entityName.equals("Root") || entityName.equals("Metadata")) {
-            addRootEntity(csv, jsonString, entityName, jsonBuilder);
+            addRootEntity(csv, jsonString, entityName, entityMap);
             return ids;
         }
         int i = 0;
@@ -344,7 +347,7 @@ public class ROCrateExporter implements Exporter {
             }
             propertyNameValue.put(targetPropertyName, targetPropertyValues);
         }
-        
+
         if (dataObject instanceof LinkedHashMap) {
             LinkedHashMap mapObject = (LinkedHashMap) dataObject;
 
@@ -354,7 +357,7 @@ public class ROCrateExporter implements Exporter {
                     if (value.contains("refersTo:")) {
 
                         ArrayList<String> referredIds = addReferredEntityAsContextual(csv, dataObject.toString(), value,
-                                jsonBuilder);
+                                entityMap);
                         JsonArrayBuilder arrayOfIdsToAdd = Json.createArrayBuilder();
                         if (referredIds.size() > 1) {
                             for (String referredId : referredIds) {
@@ -373,36 +376,40 @@ public class ROCrateExporter implements Exporter {
                         entityToAdd.add(propertyName, (String) mapObject.get(value));
                         if (propertyName.equals("@id")) {
                             ids.add((String) mapObject.get(value));
+                            id = (String) mapObject.get(value);
                         }
 
                         break;
                     }
                 }
             }
-            jsonBuilder.add(entityToAdd);
+            if (id != null) {
+                entityMap.put(id, entityToAdd);
+            }
 
         } else if (dataObject instanceof String) {
-            
-                JsonObjectBuilder entityToAdd = Json.createObjectBuilder();
 
-                for (String propertyName : propertyNameValue.keySet()) {
-                    for (String value : propertyNameValue.get(propertyName)) {
-                                if (propertyName.isBlank()) {
-                                    continue;
-                                }
-                                entityToAdd.add(propertyName, (value.startsWith("\"")? value.replace("\"", ""): (String) dataObject));
-                                if (propertyName.equals("@id")) {
-                                    ids.add((String) dataObject);
-                            }
-                        
+            JsonObjectBuilder entityToAdd = Json.createObjectBuilder();
+
+            for (String propertyName : propertyNameValue.keySet()) {
+                for (String value : propertyNameValue.get(propertyName)) {
+                    if (propertyName.isBlank()) {
+                        continue;
+                    }
+                    entityToAdd.add(propertyName,
+                            (value.startsWith("\"") ? value.replace("\"", "") : (String) dataObject));
+                    if (propertyName.equals("@id")) {
+                        id = (String) dataObject;
+                        ids.add((String) dataObject);
                     }
 
                 }
-                jsonBuilder.add(entityToAdd);
 
-            
+            }
+            if (id != null) {
+                entityMap.put(id, entityToAdd);
+            }
 
-        
         } else if (dataObject instanceof ArrayList) {
 
             for (LinkedHashMap mapObject : (ArrayList<LinkedHashMap>) dataObject) {
@@ -411,7 +418,7 @@ public class ROCrateExporter implements Exporter {
                 for (String propertyName : propertyNameValue.keySet()) {
                     for (String value : propertyNameValue.get(propertyName)) {
                         if (value.contains("refersTo:")) {
-                            ArrayList<String> referredIds = getReferredEntityIds(csv, mapObject, value, jsonBuilder);
+                            ArrayList<String> referredIds = getReferredEntityIds(csv, mapObject, value);
 
                             JsonArrayBuilder arrayOfIdsToAdd = Json.createArrayBuilder();
                             if (referredIds.size() > 1) {
@@ -439,6 +446,7 @@ public class ROCrateExporter implements Exporter {
                                 entityToAdd.add(propertyName,
                                         (String) ((LinkedHashMap) mapObject.get(value)).get("value"));
                                 if (propertyName.equals("@id")) {
+                                    id = (String) ((LinkedHashMap) mapObject.get(value)).get("value");
                                     ids.add((String) ((LinkedHashMap) mapObject.get(value)).get("value"));
                                 }
                                 break;
@@ -447,7 +455,9 @@ public class ROCrateExporter implements Exporter {
                     }
 
                 }
-                jsonBuilder.add(entityToAdd);
+                if (id != null) {
+                    entityMap.put(id, entityToAdd);
+                }
 
             }
         }
@@ -456,7 +466,7 @@ public class ROCrateExporter implements Exporter {
 
     }
 
-    static public void addDataEntities(String datasetString, JsonArrayBuilder jsonBuilder) {
+    static public void addDataEntities(String datasetString, Map<String, Object> entityMap) {
         /*
          * Adds data entities such as files and folders.
          */
@@ -511,7 +521,14 @@ public class ROCrateExporter implements Exporter {
 
         }
         for (String fileEntityId : fileEntityMap.keySet()) {
-            JsonObjectBuilder dataEntity = Json.createObjectBuilder();
+            JsonObjectBuilder dataEntity;
+            if (entityMap.keySet().contains(fileEntityId)) {
+                dataEntity = (JsonObjectBuilder) entityMap.get(fileEntityId);
+            } else {
+                dataEntity = Json.createObjectBuilder();
+
+            }
+
             LinkedHashMap<String, Object> currentEntityProperties = fileEntityMap.get(fileEntityId);
             for (String propertyName : currentEntityProperties.keySet()) {
                 Object currentProperty = currentEntityProperties.get(propertyName);
@@ -529,13 +546,12 @@ public class ROCrateExporter implements Exporter {
                 }
 
             }
-            jsonBuilder.add(dataEntity);
-
+            entityMap.put(fileEntityId, dataEntity);
         }
     }
 
     static public ArrayList<String> addEntity(CSV csv, String jsonString, String entityName,
-            JsonArrayBuilder jsonBuilder) throws Exception {
+            Map<String, Object> entityMap) throws Exception {
         /*
          * Chooses from addRootEntity, addContextualEntity, addFileEntity depending on
          * the rules on the Csv
@@ -550,10 +566,10 @@ public class ROCrateExporter implements Exporter {
 
         if (entitySourcePath.isBlank() && entitySourceField.isBlank()) {
             // is Root?
-            addRootEntity(csv, jsonString, entityName, jsonBuilder);
+            addRootEntity(csv, jsonString, entityName, entityMap);
         } else {
             // contextual entity
-            addContextualEntity(csv, jsonString, entityName, jsonBuilder);
+            addContextualEntity(csv, jsonString, entityName, entityMap);
         }
         return ids;
     }
@@ -564,9 +580,16 @@ public class ROCrateExporter implements Exporter {
          */
         final JsonArrayBuilder jsonArrayBuilder = Json.createArrayBuilder();
         final JsonObjectBuilder result = Json.createObjectBuilder();
-        addEntity(csv, datasetJson.toString(), "Metadata", jsonArrayBuilder);
-        addDataEntities(datasetJson.toString(), jsonArrayBuilder);
+        final Map<String, Object> entityMap = new LinkedHashMap<String, Object>();
+
+        addEntity(csv, datasetJson.toString(), "Metadata", entityMap);
+        addDataEntities(datasetJson.toString(), entityMap);
         result.add("context", "https://w3id.org/ro/crate/1.1/context");
+        for (String id : entityMap.keySet()) {
+            jsonArrayBuilder.add((JsonObjectBuilder) entityMap.get(id));
+            System.out.println(id + ": ");
+        }
+
         result.add("graph", jsonArrayBuilder);
         return result.build();
     }
