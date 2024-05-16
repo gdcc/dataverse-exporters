@@ -5,17 +5,9 @@
 [Croissant]: https://github.com/mlcommons/croissant
 [Croissant writeup]: https://dataverse-guide--10533.org.readthedocs.build/en/10533/installation/advanced.html#croissant-croissant
 
-## Differences between Schema.org JSON-LD and Croissant
-
-- In Dataverse's implementation of Schema.org JSON-LD, we duplicated some fields. In Croissant, "author" has been dropped in favor of "creator" and "provider" has been dropped in favor of "publisher".
-
 ## Open questions
 
-Croissant is a new format and there are a number of open questions about it. (Developers may find additional open question in the code flagged with "TODO".)
-
-### Can file paths be included?
-
-We opened https://github.com/mlcommons/croissant/issues/639 about this. It's not clear where to put file paths (called `directoryLabel` in Dataverse code).
+Croissant is a new format and there are a number of open questions about it. (Developers may find additional open question in the code flagged with "TODO" or similar.)
 
 ### Can ingested files have multiple URLs to download various formats?
 
@@ -40,10 +32,6 @@ Google's [guidelines on structured data][] don't indicate any size limit but we 
 ### Can summary statistics go into Croissant?
 
 No, but we opened https://github.com/mlcommons/croissant/issues/640 about this. See also "potential areas of work" in the [Croissant Task Force Minutes] for 2024-04-01. 
-
-### FileObject is not a known valid target type for the distribution property?
-
-We are aware that you could see the error "http://mlcommons.org/croissant/FileObject is not a known valid target type for the distribution property" at https://validator.schema.org if you try to validate the Croissant export.
 
 ## Developer documentation
 
@@ -81,6 +69,8 @@ In short, we are trusting the output of `mlcroissant validate --jsonld` over the
 For additional validation you can use https://search.google.com/test/rich-results and https://validator.schema.org which are linked from https://developers.google.com/search/docs/appearance/structured-data
 
 [mlcroissant]: https://pypi.org/project/mlcroissant/
+
+Note that https://validator.schema.org cannot be used for validation because of the Croissant-specific extensions the spec uses. You should expect to see errors like "http://mlcommons.org/croissant/FileObject is not a known valid target type for the distribution property".
 
 ### To build the Croissant jar
 
