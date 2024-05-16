@@ -42,7 +42,6 @@ DatasetContactPoint,,datasetVersion/metadataBlocks/citation,datasetContact,
 ,__id,,,datasetContactEmail
 ,__type,,,"""Person"""
 ,email,,,refersTo:DatasetContact
-Funder ,,datasetVersion/metadataBlocks/citation,grantNumber,
+Funder,,datasetVersion/metadataBlocks/citation,grantNumber,
 ,__id,,,grantNumberValue
 ,__type,,,"""Organization"""
-,name,,,authorAffiliation
