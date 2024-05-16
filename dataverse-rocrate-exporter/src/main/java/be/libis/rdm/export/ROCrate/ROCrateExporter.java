@@ -43,7 +43,7 @@ public class ROCrateExporter implements Exporter {
      */
     @Override
     public String getFormatName() {
-        return "rocrate_json_test";
+        return "rocrate_json";
     }
 
     @Override

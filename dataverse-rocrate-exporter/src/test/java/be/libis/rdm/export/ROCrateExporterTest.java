@@ -81,7 +81,7 @@ public class ROCrateExporterTest {
 
     @Test
     public void testGetFormatName() {
-        assertEquals("rocrate_json_test", roCrateExporter.getFormatName());
+        assertEquals("rocrate_json", roCrateExporter.getFormatName());
     }
 
     @Test
