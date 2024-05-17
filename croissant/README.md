@@ -79,6 +79,10 @@ For additional validation you can use https://search.google.com/test/rich-result
 
 Note that https://validator.schema.org cannot be used for validation because of the Croissant-specific extensions the spec uses. You should expect to see errors like "http://mlcommons.org/croissant/FileObject is not a known valid target type for the distribution property".
 
+### To update expected JSON
+
+As a convenience, you can run `mvn test` and then `update-expected.sh` after making code changes to update the expected Croissant ouput in the tests with new output.
+
 ### To build the Croissant jar
 
 ```    
