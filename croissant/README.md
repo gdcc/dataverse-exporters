@@ -9,6 +9,13 @@
 
 Croissant is a new format and there are a number of open questions about it. (Developers may find additional open question in the code flagged with "TODO" or similar.)
 
+### The `version` field
+
+See the issues below, but in short, we are currently returning "1.0.0" but we would rather return "1.0" so that we can keep the field as a string if we ever switch to MAJOR.MINOR.PATCH as Croissant recommends.
+
+- 1.0 as a string should be a valid version for a dataset: https://github.com/mlcommons/croissant/issues/609
+- add flag to validator to ignore certain warnings: https://github.com/mlcommons/croissant/issues/643
+
 ### Can ingested files have multiple URLs to download various formats?
 
 We opened https://github.com/mlcommons/croissant/issues/641 about this. Perhaps there should be a FileObject for each format offered?
