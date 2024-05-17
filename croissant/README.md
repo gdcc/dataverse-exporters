@@ -171,7 +171,3 @@ Dataverse's Schema.org implementation does the following:
 
 - Append " B" to `contentSize` strings to clarify that the implied unit is bytes. The examples in the spec and on GitHub do this.
 - Switch `version` to "1.0" to reflect reality in Dataverse. Trying to use "1.0.0" with Dataverse APIs will not work.
-- instead of an empty array for `recordSet`, omit it
-- instead of an empty array for `spatialCoverage`, omit it
-- instead of an empty array for `temporalCoverage`, omit it
-

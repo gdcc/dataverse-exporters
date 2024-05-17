@@ -73,9 +73,5 @@
         "name": "Root"
     },
     "version": "1.0.0",
-    "citeAs": "@data{FK2/4C0JYC_2024,author = {Durbin, Philip},publisher = {Root},title = {Minimal},year = {2024},url = {https://doi.org/10.5072/FK2/4C0JYC}}",
-    "distribution": [
-    ],
-    "recordSet": [
-    ]
+    "citeAs": "@data{FK2/4C0JYC_2024,author = {Durbin, Philip},publisher = {Root},title = {Minimal},year = {2024},url = {https://doi.org/10.5072/FK2/4C0JYC}}"
 }

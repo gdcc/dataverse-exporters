@@ -363,8 +363,14 @@ public class CroissantExporter implements Exporter {
             if (temporalCoverage != null) {
                 job.add("temporalCoverage", temporalCoverage);
             }
-            job.add("distribution", distribution);
-            job.add("recordSet", recordSet);
+            JsonArray distributionArray = distribution.build();
+            if (!distributionArray.isEmpty()) {
+                job.add("distribution", distributionArray);
+            }
+            JsonArray recordSetArray = recordSet.build();
+            if (!recordSetArray.isEmpty()) {
+                job.add("recordSet", recordSetArray);
+            }
 
             // TODO: Do we need DataCite XML?
             String dataCiteXml = dataProvider.getDataCiteXml();

@@ -128,7 +128,5 @@
             "description": "Additional documentation.",
             "contentUrl": "https://beta.dataverse.org/api/access/datafile/26148"
         }
-    ],
-    "recordSet": [
     ]
 }
