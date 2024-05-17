@@ -271,7 +271,7 @@ public class CroissantExporter implements Exporter {
                  * there: https://github.com/IQSS/dataverse/issues/10523
                  */
                 String fileId = filename;
-                String directoryLabel = oreFiles.getJsonObject(fileCounter).getString("dvcore:directoryLabel");
+                String directoryLabel = oreFiles.getJsonObject(fileCounter).getString("dvcore:directoryLabel", null);
                 if (directoryLabel != null) {
                     fileId = directoryLabel + "/" + filename;
                 }
