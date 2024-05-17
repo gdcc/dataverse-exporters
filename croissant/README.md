@@ -148,7 +148,6 @@ A pyDataverse implementation is underway at https://github.com/Dans-labs/pyDatav
 - Missing: `spatialCoverage`. Expected is an array with something like `"Cambridge, MA, United States, Harvard Square"`.
 - Missing: `temportalCoverage`. Expected is an array with something like `"2023-01-01/2023-12-31"`.
 - `version` shows the version of Dataverse (`6.2 build develop-28a9d44.0`) rather than the version of the dataset.
-- `url` is present.
 - `dateCreated` is present.
 
 ### Difference from Schema.org JSON-LD
@@ -160,6 +159,7 @@ Dataverse's Schema.org implementation does the following:
 - No `conformsTo` (`"conformsTo": "http://mlcommons.org/croissant/1.0"` is Croissant-specific).
 - No `citeAs` (Croissant-specific).
 - No `recordSet` (Croissant-specific).
+- No `url`
 - For `version`, "1" is used instead of "1.0.0".
 - Under `distribution` the type is `DataDownload` instead of `cr:FileObject` (Croissant-specific).
 - Under `distribution` there is no `@id`.

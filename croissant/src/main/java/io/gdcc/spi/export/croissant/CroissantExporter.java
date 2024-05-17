@@ -151,6 +151,7 @@ public class CroissantExporter implements Exporter {
             job.add("name", describes
                     .getString("title")
             );
+            job.add("url", describes.getJsonString("@id"));
             JsonObject datasetSchemaDotOrg = dataProvider.getDatasetSchemaDotOrg();
             job.add("creator", datasetSchemaDotOrg.getJsonArray("creator"));
             job.add("description", datasetSchemaDotOrg.getJsonString("description"));

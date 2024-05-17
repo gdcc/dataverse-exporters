@@ -48,6 +48,7 @@
     "@type": "sc:Dataset",
     "conformsTo": "http://mlcommons.org/croissant/1.0",
     "name": "Cars",
+    "url": "https://doi.org/10.5072/FK2/6ZUDGC",
     "creator": [
         {
             "@type": "Person",
