@@ -233,6 +233,18 @@ public class CroissantExporter implements Exporter {
             for (JsonValue jsonValue : datasetFileDetails) {
 
                 JsonObject fileDetails = jsonValue.asJsonObject();
+                /**
+                 * When there is an originalFileName, it means that the file has
+                 * gone through ingest and that multiple files formats are
+                 * available: original, tab-separated, and RData. Currently we
+                 * are only showing the original file but we we could create
+                 * additional cr:FileObject entries for tab-separated and RData
+                 * as suggested in
+                 * https://github.com/mlcommons/croissant/issues/641 . Should
+                 * we? Is there interest in this? And would we duplicate all the
+                 * cr:RecordSet entries (columns) with each additional format?
+                 * Probably not as it would be the same.
+                 */
                 String filename = fileDetails.getString("originalFileName", null);
                 if (filename == null) {
                     filename = fileDetails.getString("filename");
@@ -263,6 +275,7 @@ public class CroissantExporter implements Exporter {
                 /**
                  * See https://github.com/mlcommons/croissant/issues/639 for
                  * discussion with the Croissant spec leads on what to put in
+                 *
                  * @id (path/to/file.txt).
                  *
                  * It's suboptimal that the directoryLabel isn't already
