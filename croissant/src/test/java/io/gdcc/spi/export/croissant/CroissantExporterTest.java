@@ -17,6 +17,7 @@ import java.io.StringReader;
 import java.io.StringWriter;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Map;
@@ -229,7 +230,7 @@ public class CroissantExporterTest {
     public void testExportDatasetMinimal() throws Exception {
         exporter.exportDataset(dataProviderMinimal, outputStreamMinimal);
         String actual = outputStreamMinimal.toString();
-        Files.writeString(Paths.get("src/test/resources/minimal/out/croissant.json"), prettyPrint(actual), StandardCharsets.UTF_8);
+        writeCroissantFile(actual, "minimal");
         String expected = Files.readString(Paths.get("src/test/resources/minimal/expected/minimal-croissant.json"), StandardCharsets.UTF_8);
         JSONAssert.assertEquals(expected, actual, true);
         assertEquals(prettyPrint(expected), prettyPrint(outputStreamMinimal.toString()));
@@ -240,7 +241,7 @@ public class CroissantExporterTest {
     public void testExportDatasetMax() throws Exception {
         exporter.exportDataset(dataProviderMax, outputStreamMax);
         String actual = outputStreamMax.toString();
-        Files.writeString(Paths.get("src/test/resources/max/out/croissant.json"), prettyPrint(actual), StandardCharsets.UTF_8);
+        writeCroissantFile(actual, "max");
         /*
         First, install pyDataverse from Dans-labs, the "croissant" branch:
         pip3 install --upgrade --no-cache-dir  git+https://github.com/Dans-labs/pyDataverse@croissant#egg=pyDataverse
@@ -270,11 +271,17 @@ public class CroissantExporterTest {
     public void testExportDatasetCars() throws Exception {
         exporter.exportDataset(dataProviderCars, outputStreamCars);
         String actual = outputStreamCars.toString();
-        Files.writeString(Paths.get("src/test/resources/cars/out/croissant.json"), prettyPrint(actual), StandardCharsets.UTF_8);
+        writeCroissantFile(actual, "cars");
         String expected = Files.readString(Paths.get("src/test/resources/cars/expected/cars-croissant.json"), StandardCharsets.UTF_8);
         JSONAssert.assertEquals(expected, actual, true);
         assertEquals(prettyPrint(expected), prettyPrint(outputStreamCars.toString()));
 
+    }
+
+    private void writeCroissantFile(String actual, String name) throws IOException {
+        Path dir = Files.createDirectories(Paths.get("src/test/resources/" + name + "/out"));
+        Path out = Paths.get(dir + "/croissant.json");
+        Files.writeString(out, prettyPrint(actual), StandardCharsets.UTF_8);
     }
 
     public static String prettyPrint(String jsonObject) {
