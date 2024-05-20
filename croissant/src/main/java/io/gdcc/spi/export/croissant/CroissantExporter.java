@@ -163,47 +163,16 @@ public class CroissantExporter implements Exporter {
             job.add("publisher", datasetSchemaDotOrg.getJsonObject("publisher"));
 
             /**
-             * We append ".0" to our version string to make the Croissant
-             * validator happy and to comply with the Croissant spec but we
-             * would rather not.
-             *
-             * Here's what the spec says:
-             *
-             * "The recommended versioning scheme to use for datasets is
-             * MAJOR.MINOR.PATCH, following Semantic Versioning 2.0.0." --
-             * https://mlcommons.github.io/croissant/docs/croissant-spec.html#version
-             *
-             * If a Dataverse user sees 1.0.0 they will hopefully know that they
-             * must remove the final ".0" to see the actual version of the
-             * dataset they want. Note that as of Dataverse 6.1, if you navigate
-             * to 1.0.0 you will be redirected to the latest published version,
-             * which is possibly quite different than version 1.0 of the
-             * dataset! For example you will be redirected to version 4.0 (as of
-             * this writing) if you try to navigate to
-             * https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/TJCLKP&version=1.0.0
-             *
-             * This is suboptimal, of course. The API will simply show the error
-             * "Illegal version identifier '1.0.0'" if you try to access version
-             * 1.0.0 of a dataset via API. Here's an example
-             * https://dataverse.harvard.edu/api/datasets/:persistentId/versions/1.0.0?persistentId=doi:10.7910/DVN/TJCLKP
-             *
-             * Either way, a version of 1.0.0 is not helpful to a Dataverse
-             * user. The GUI may send you to an old version. The API will bark
-             * at you that version is illegal.
-             *
-             * We opened https://github.com/mlcommons/croissant/issues/609 to
-             * argue that 1.0 is a perfect valid version for a dataset.
-             * Hopefully in the future we can stop appending ".0"!
-             *
-             * By the way, it's technically possible to make the Croissant
-             * validator happy by passing 1.0 as a float. However, this is not
-             * compliant with the Croissant spec which (again) wants 1.0.0. We
-             * are sticking with strings because they are a more sane way to
-             * represent a version and they're what SemVer uses, even allowing
-             * "-alpha", etc.
+             * For "version", we are knowingly sending "1.0" rather than
+             * "1.0.0", even though MAJOR.MINOR.PATCH is recommended by the
+             * Croissant spec. We are aware that the Croissant validator throws
+             * a warning for anything other than MAJOR.MINOR.PATCH. See the
+             * README for a detailed explanation and the following issues:
+             * https://github.com/mlcommons/croissant/issues/609
+             * https://github.com/mlcommons/croissant/issues/643
              */
             job.add("version", describes
-                    .getString("schema:version") + ".0"
+                    .getString("schema:version")
             );
             /**
              * We have been told that it's fine and appropriate to put the

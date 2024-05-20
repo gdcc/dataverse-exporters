@@ -77,7 +77,7 @@
         "@type": "Organization",
         "name": "Root"
     },
-    "version": "1.0.0",
+    "version": "1.0",
     "citeAs": "@data{FK2/6ZUDGC_2024,author = {Durbin, Philip},publisher = {Root},title = {Cars},year = {2024},url = {https://doi.org/10.5072/FK2/6ZUDGC}}",
     "distribution": [
         {
