@@ -99,6 +99,12 @@ Note that https://validator.schema.org cannot be used for validation because of 
 
 As a convenience, you can run `mvn test` and then `update-expected.sh` after making code changes to update the expected Croissant ouput in the tests with new output.
 
+### To format code
+
+```
+spotless::apply
+```
+
 ### To build the Croissant jar
 
 ```    
