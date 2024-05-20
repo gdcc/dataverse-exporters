@@ -1,11 +1,10 @@
 package io.gdcc.spi.export.croissant;
 
 import com.google.auto.service.AutoService;
+
 import io.gdcc.spi.export.ExportDataProvider;
 import io.gdcc.spi.export.ExportException;
 import io.gdcc.spi.export.Exporter;
-import java.io.OutputStream;
-import java.util.Locale;
 
 import jakarta.json.Json;
 import jakarta.json.JsonArray;
@@ -16,13 +15,14 @@ import jakarta.json.JsonObjectBuilder;
 import jakarta.json.JsonReader;
 import jakarta.json.JsonValue;
 import jakarta.ws.rs.core.MediaType;
+
+import java.io.OutputStream;
 import java.io.StringReader;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
-/**
- * https://github.com/mlcommons/croissant
- */
+/** https://github.com/mlcommons/croissant */
 @AutoService(Exporter.class)
 public class CroissantExporter implements Exporter {
 
@@ -50,27 +50,21 @@ public class CroissantExporter implements Exporter {
         return "Croissant";
     }
 
-    /**
-     * Whether the exported format should be available as an option for
-     * Harvesting
-     */
+    /** Whether the exported format should be available as an option for Harvesting */
     @Override
     public Boolean isHarvestable() {
         return false;
     }
 
-    /**
-     * Whether the exported format should be available for download in the UI
-     * and API
-     */
+    /** Whether the exported format should be available for download in the UI and API */
     @Override
     public Boolean isAvailableToUsers() {
         return true;
     }
 
     /**
-     * Defines the mime type of the exported format - used when metadata is
-     * downloaded, i.e. to trigger an appropriate viewer in the user's browser.
+     * Defines the mime type of the exported format - used when metadata is downloaded, i.e. to
+     * trigger an appropriate viewer in the user's browser.
      */
     @Override
     public String getMediaType() {
@@ -78,15 +72,17 @@ public class CroissantExporter implements Exporter {
     }
 
     /**
-     * This method is called by Dataverse when metadata for a given dataset in
-     * this format is requested.
+     * This method is called by Dataverse when metadata for a given dataset in this format is
+     * requested.
      */
     @Override
-    public void exportDataset(ExportDataProvider dataProvider, OutputStream outputStream) throws ExportException {
+    public void exportDataset(ExportDataProvider dataProvider, OutputStream outputStream)
+            throws ExportException {
         try {
             // Start building the output format.
             JsonObjectBuilder job = Json.createObjectBuilder();
-            String contextString = """
+            String contextString =
+                    """
             {
                 "@context": {
                     "@language": "en",
@@ -148,9 +144,7 @@ public class CroissantExporter implements Exporter {
 
             JsonObject datasetORE = dataProvider.getDatasetORE();
             JsonObject describes = datasetORE.getJsonObject("ore:describes");
-            job.add("name", describes
-                    .getString("title")
-            );
+            job.add("name", describes.getString("title"));
             job.add("url", describes.getJsonString("@id"));
             JsonObject datasetSchemaDotOrg = dataProvider.getDatasetSchemaDotOrg();
             job.add("creator", datasetSchemaDotOrg.getJsonArray("creator"));
@@ -159,26 +153,24 @@ public class CroissantExporter implements Exporter {
             job.add("license", datasetSchemaDotOrg.getString("license"));
             job.add("datePublished", datasetSchemaDotOrg.getString("datePublished"));
             job.add("dateModified", datasetSchemaDotOrg.getString("dateModified"));
-            job.add("includedInDataCatalog", datasetSchemaDotOrg.getJsonObject("includedInDataCatalog"));
+            job.add(
+                    "includedInDataCatalog",
+                    datasetSchemaDotOrg.getJsonObject("includedInDataCatalog"));
             job.add("publisher", datasetSchemaDotOrg.getJsonObject("publisher"));
 
             /**
-             * For "version", we are knowingly sending "1.0" rather than
-             * "1.0.0", even though MAJOR.MINOR.PATCH is recommended by the
-             * Croissant spec. We are aware that the Croissant validator throws
-             * a warning for anything other than MAJOR.MINOR.PATCH. See the
-             * README for a detailed explanation and the following issues:
+             * For "version", we are knowingly sending "1.0" rather than "1.0.0", even though
+             * MAJOR.MINOR.PATCH is recommended by the Croissant spec. We are aware that the
+             * Croissant validator throws a warning for anything other than MAJOR.MINOR.PATCH. See
+             * the README for a detailed explanation and the following issues:
              * https://github.com/mlcommons/croissant/issues/609
              * https://github.com/mlcommons/croissant/issues/643
              */
-            job.add("version", describes
-                    .getString("schema:version")
-            );
+            job.add("version", describes.getString("schema:version"));
             /**
-             * We have been told that it's fine and appropriate to put the
-             * citation to the dataset itself into "citeAs". However, the spec
-             * says "citeAs" is "A citation for a publication that describes the
-             * dataset" so we have asked for clarification here:
+             * We have been told that it's fine and appropriate to put the citation to the dataset
+             * itself into "citeAs". However, the spec says "citeAs" is "A citation for a
+             * publication that describes the dataset" so we have asked for clarification here:
              * https://github.com/mlcommons/croissant/issues/638
              */
             job.add("citeAs", getBibtex(datasetORE, datasetJson, datasetSchemaDotOrg));
@@ -193,8 +185,7 @@ public class CroissantExporter implements Exporter {
                 job.add("spatialCoverage", spatialCoverage);
             }
 
-            JsonArray oreFiles = describes
-                    .getJsonArray("ore:aggregates");
+            JsonArray oreFiles = describes.getJsonArray("ore:aggregates");
 
             JsonArrayBuilder distribution = Json.createArrayBuilder();
             JsonArrayBuilder recordSet = Json.createArrayBuilder();
@@ -204,16 +195,13 @@ public class CroissantExporter implements Exporter {
 
                 JsonObject fileDetails = jsonValue.asJsonObject();
                 /**
-                 * When there is an originalFileName, it means that the file has
-                 * gone through ingest and that multiple files formats are
-                 * available: original, tab-separated, and RData. Currently we
-                 * are only showing the original file but we we could create
-                 * additional cr:FileObject entries for tab-separated and RData
-                 * as suggested in
-                 * https://github.com/mlcommons/croissant/issues/641 . Should
-                 * we? Is there interest in this? And would we duplicate all the
-                 * cr:RecordSet entries (columns) with each additional format?
-                 * Probably not as it would be the same.
+                 * When there is an originalFileName, it means that the file has gone through ingest
+                 * and that multiple files formats are available: original, tab-separated, and
+                 * RData. Currently we are only showing the original file but we we could create
+                 * additional cr:FileObject entries for tab-separated and RData as suggested in
+                 * https://github.com/mlcommons/croissant/issues/641 . Should we? Is there interest
+                 * in this? And would we duplicate all the cr:RecordSet entries (columns) with each
+                 * additional format? Probably not as it would be the same.
                  */
                 String filename = fileDetails.getString("originalFileName", null);
                 if (filename == null) {
@@ -229,10 +217,9 @@ public class CroissantExporter implements Exporter {
                 }
 
                 /**
-                 * We make contentSize a String ( https://schema.org/Text )
-                 * rather than a number (JsonNumber) to pass the Croissant
-                 * validator and comply with the spec. We don't include a unit
-                 * because the spec says "Defaults to bytes if a unit is not
+                 * We make contentSize a String ( https://schema.org/Text ) rather than a number
+                 * (JsonNumber) to pass the Croissant validator and comply with the spec. We don't
+                 * include a unit because the spec says "Defaults to bytes if a unit is not
                  * specified."
                  */
                 String fileSizeInBytes = fileSize.toString();
@@ -243,18 +230,19 @@ public class CroissantExporter implements Exporter {
                 String contentUrl = oreFiles.getJsonObject(fileCounter).getString("schema:sameAs");
                 String description = fileDetails.getString("description", "");
                 /**
-                 * See https://github.com/mlcommons/croissant/issues/639 for
-                 * discussion with the Croissant spec leads on what to put in
+                 * See https://github.com/mlcommons/croissant/issues/639 for discussion with the
+                 * Croissant spec leads on what to put in
                  *
                  * @id (path/to/file.txt).
-                 *
-                 * It's suboptimal that the directoryLabel isn't already
-                 * included in dataProvider.getDatasetFileDetails(). If it gets
-                 * added as part of the following issue, we can get it from
-                 * there: https://github.com/IQSS/dataverse/issues/10523
+                 *     <p>It's suboptimal that the directoryLabel isn't already included in
+                 *     dataProvider.getDatasetFileDetails(). If it gets added as part of the
+                 *     following issue, we can get it from there:
+                 *     https://github.com/IQSS/dataverse/issues/10523
                  */
                 String fileId = filename;
-                String directoryLabel = oreFiles.getJsonObject(fileCounter).getString("dvcore:directoryLabel", null);
+                String directoryLabel =
+                        oreFiles.getJsonObject(fileCounter)
+                                .getString("dvcore:directoryLabel", null);
                 if (directoryLabel != null) {
                     fileId = directoryLabel + "/" + filename;
                 }
@@ -268,8 +256,7 @@ public class CroissantExporter implements Exporter {
                                 .add(checksumType, checksumValue)
                                 .add("contentSize", fileSizeInBytes)
                                 .add("description", description)
-                                .add("contentUrl", contentUrl)
-                );
+                                .add("contentUrl", contentUrl));
                 int fileIndex = 0;
                 JsonArray dataTables = fileDetails.getJsonArray("dataTables");
                 if (dataTables == null) {
@@ -291,7 +278,8 @@ public class CroissantExporter implements Exporter {
                         Integer variableId = dataVariableObject.getInt("id");
                         String variableName = dataVariableObject.getString("name");
                         String variableDescription = dataVariableObject.getString("label", "");
-                        String variableFormatType = dataVariableObject.getString("variableFormatType");
+                        String variableFormatType =
+                                dataVariableObject.getString("variableFormatType");
                         String dataType = null;
                         switch (variableFormatType) {
                             case "CHARACTER":
@@ -310,13 +298,14 @@ public class CroissantExporter implements Exporter {
                                         .add("name", variableName)
                                         .add("description", variableDescription)
                                         .add("dataType", dataType)
-                                        .add("source", Json.createObjectBuilder()
-                                                .add("@id", variableId.toString())
-                                                .add("fileObject", Json.createObjectBuilder()
-                                                        .add("@id", fileId)
-                                                )
-                                        )
-                        );
+                                        .add(
+                                                "source",
+                                                Json.createObjectBuilder()
+                                                        .add("@id", variableId.toString())
+                                                        .add(
+                                                                "fileObject",
+                                                                Json.createObjectBuilder()
+                                                                        .add("@id", fileId))));
                         fieldSetObject.add("field", fieldSetArray);
                         recordSet.add(fieldSetObject);
                     }
@@ -372,17 +361,16 @@ public class CroissantExporter implements Exporter {
     }
      */
     /**
+     * The code is inspired by DataCitation.java upstream. However, Croissant does not want
+     * newlines, so we omit them. Some notes about this example:
      *
-     * The code is inspired by DataCitation.java upstream. However, Croissant
-     * does not want newlines, so we omit them. Some notes about this example:
+     * <p>- DVN/TJCLKP_2017 seems strange as an identifier. This is probably a bug upstream.
      *
-     * - DVN/TJCLKP_2017 seems strange as an identifier. This is probably a bug
-     * upstream.
-     *
-     * - "DRAFT VERSION" is an artifact from a bug that was probably fixed in
+     * <p>- "DRAFT VERSION" is an artifact from a bug that was probably fixed in
      * https://github.com/IQSS/dataverse/pull/9705
      */
-    private String getBibtex(JsonObject datasetORE, JsonObject datasetJson, JsonObject datasetSchemaDotOrg) {
+    private String getBibtex(
+            JsonObject datasetORE, JsonObject datasetJson, JsonObject datasetSchemaDotOrg) {
         String identifier = datasetJson.getString("identifier");
 
         JsonObject oreDescribes = datasetORE.getJsonObject("ore:describes");
@@ -410,5 +398,4 @@ public class CroissantExporter implements Exporter {
         sb.append("}");
         return sb.toString();
     }
-
 }
