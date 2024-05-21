@@ -6,6 +6,25 @@
   <artifactId>croissant</artifactId>
   <version>0.0.2-SNAPSHOT</version>
   <packaging>jar</packaging>
+  <name>Croissant Exporter for Dataverse</name>
+  <description>Croissant is a high-level format for machine learning datasets.</description>
+
+  <url>https://github.com/gdcc/dataverse-exporters/tree/croissant/croissant</url>
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>pdurbin</id>
+      <name>Philip Durbin</name>
+      <email>philip_durbin@harvard.edu</email>
+      <timezone>-4</timezone>
+    </developer>
+  </developers>
 
   <scm>
     <connection>scm:git:https://github.com/gdcc/dataverse-exporters.git</connection>
