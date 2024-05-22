@@ -196,3 +196,4 @@ Dataverse's Schema.org implementation does the following:
 ### Changes under consideration
 
 - Append " B" to `contentSize` strings to clarify that the implied unit is bytes. The examples in the spec and on GitHub do this.
+
