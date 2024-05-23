@@ -10,6 +10,13 @@ on:
             - main
         paths:
             - "croissant/**"
+    workflow_dispatch:
+        inputs:
+            debug_enabled:
+                type: boolean
+                description: 'Run the build with tmate debugging enabled (https://github.com/marketplace/actions/debugging-with-tmate)'
+                required: false
+                default: false
 jobs:
     publish:
         runs-on: ubuntu-latest
@@ -35,6 +42,10 @@ jobs:
                   restore-keys: ${{ runner.os }}-m2
             - name: Build, test, verify and publish snapshot
               run: mvn -f croissant -B verify -Djdk.version=${{ matrix.java }}
+              # Enable tmate debugging of manually-triggered workflows if the input option was provided
+            - name: Setup tmate session
+              uses: mxschmitt/action-tmate@v3
+              if: ${{ github.event_name == 'workflow_dispatch' && inputs.debug_enabled }}
             - name: Publish snapshot
               if: ${{ matrix.java == '17' }}
               run: mvn -e -X -f croissant deploy -DskipAnalysis -DskipUT -DskipIT -Djdk.version=${{ matrix.java }}
