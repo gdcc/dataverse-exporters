@@ -37,7 +37,8 @@ jobs:
               # Enable tmate debugging of manually-triggered workflows if the input option was provided
             - name: Setup tmate session
               uses: mxschmitt/action-tmate@v3
-              if: ${{ github.event_name == 'workflow_dispatch' && inputs.debug_enabled }}
+              # uncomment the "if" below to prevent tmate debugging always being on
+              #if: ${{ github.event_name == 'workflow_dispatch' && inputs.debug_enabled }}
             - name: Cache Maven packages
               uses: actions/cache@v4
               with:
