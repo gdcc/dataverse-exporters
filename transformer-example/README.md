@@ -5,7 +5,7 @@ Example exporter using the [JSON Transformer](https://github.com/erykKul/json-tr
 - [transformer.json](/transformer-example/src/main/resources/transformer.json): copies the metadata fields from the pre-transformed format into OAI ORE format in the `example` field. It also copies the available for transformations metadata formats into the corresponding fields for demo purposes: `datasetJson`, `datasetORE`, `datasetSchemaDotOrg`, `datasetFileDetails`, `dataCiteXml` and `preTransformed`.This transformer uses the [flatten.js](/transformer-example/src/main/resources/js/flatten.js) JavaScript that (at the end of the transformation) eliminates the empty arrays, replaces arrays having only one element with JSON objects, and filters out the `NULL` values in the `example` field.
 
 This example exporter also contains [config](/transformer-example/src/main/resources/config.json) file with the following fields:
-- `formatName`: The name of the format it creates. If this format is already provided by a built-in exporter, this Exporter will override the built-in one. (Note that exports are cached, so existing metadata  immediately.)
+- `formatName`: The name of the format it creates. If this format is already provided by a built-in exporter, this Exporter will override the built-in one. (Note thatexports are cached, so existing metadata export files are not updated immediately.)
 - `displayName`: The display name shown in the UI. This field can be localized as shown in the example config by adding the localization suffix, e.g., `_en`, `_fr`, `_fr-CA`, etc.
 - `harvestable`: Whether the exported format should be available as an option for Harvesting
 - `availableToUsers`: Whether the exported format should be available for download in the UI and API
