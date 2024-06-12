@@ -6,6 +6,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.OutputStream;
+import java.io.StringReader;
 import java.net.URISyntaxException;
 import java.util.Locale;
 
@@ -64,7 +65,7 @@ public class TransformerExporterTest {
 
             @Override
             public String getDataCiteXml() {
-                return null;
+                return "";
             }
         };
     }
@@ -80,7 +81,10 @@ public class TransformerExporterTest {
 
     @Test
     public void testGetDisplayName() {
-        assertEquals("Transformer example", transformerExporter.getDisplayName(new Locale("en", "US")));
+        assertEquals("Transformer example", transformerExporter.getDisplayName(Locale.US));
+        assertEquals("Exemple de transformer", transformerExporter.getDisplayName(Locale.FRANCE));
+        assertEquals("Exemple de transformateur", transformerExporter.getDisplayName(Locale.CANADA_FRENCH));
+        assertEquals("Default transformer example", transformerExporter.getDisplayName(Locale.GERMAN));
     }
 
     @Test
@@ -102,7 +106,10 @@ public class TransformerExporterTest {
     public void testExportDataset() throws Exception {
         transformerExporter.exportDataset(dataProvider, outputStream);
         final String expected = parse("result.json").toString();
-        assertEquals(expected.trim(), outputStream.toString().trim());
+        final JsonReader jsonReader = Json.createReader(new StringReader(outputStream.toString()));
+        final JsonObject actual = jsonReader.readObject();
+        jsonReader.close();
+        assertEquals(expected.trim(), actual.get("example").toString().trim());
     }
 
 }
