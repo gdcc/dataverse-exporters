@@ -1,5 +1,5 @@
 
-package io.gdcc.spi.export.examples;
+package io.gdcc.export.helloworld;
 
 import com.google.auto.service.AutoService;
 import io.gdcc.spi.export.ExportDataProvider;
@@ -24,7 +24,7 @@ import jakarta.ws.rs.core.MediaType;
 //This annotation makes the Exporter visible to Dataverse. How it works is well documented on the Internet.
 @AutoService(Exporter.class)
 //All Exporter implementations must implement this interface or the XMLExporter interface that extends it.
-public class MyJSONExporter implements Exporter {
+public class HelloWorldExporter implements Exporter {
 
     // These methods provide information about the Exporter to Dataverse
 
