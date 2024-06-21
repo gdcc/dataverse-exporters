@@ -39,7 +39,18 @@ If you have an exporter plugin that cannot or shall not be transferred to GDCC, 
 
 ## Creating new exporters
 
-Documentation of the exporter SPI is available under [Advanced Installation](https://guides.dataverse.org/en/latest/installation/advanced.html#installing-external-metadata-exporters) and [Metadata Export](https://guides.dataverse.org/en/latest/developers/metadataexport.html). Note: [Dataverse SPI](https://central.sonatype.com/artifact/io.gdcc/dataverse-spi) 1.0.0 was first released with Dataverse 5.14, 2.0.0 was released with Dataverse v6.0.
+Documentation of the exporter SPI is available under [Advanced Installation](https://guides.dataverse.org/en/latest/installation/advanced.html#installing-external-metadata-exporters) and [Metadata Export](https://guides.dataverse.org/en/latest/developers/metadataexport.html). 
+
+### What are GDCC supported combinations of libraries and Dataverse?
+
+Version support matrix:
+
+| Supported | Exporter Parent POM | Dataverse SPI | Dataverse Software |
+|-----------|---------------------|---------------|--------------------|
+| ❌         | ❌                   | 1.0.0         | 5.14               |
+| ✅         | 2.0.0               | 2.0.0         | 6.0 - recent       |
+
+Other combinations might work. Your mileage may vary.
 
 ### How to contribute an exporter to the GDCC
 
@@ -60,3 +71,5 @@ Please note that abandoned projects can and will be archived to ensure smooth op
 
 Once you received your exporter repository under https://github.com/gdcc, you can enable release workflows.
 Simply copy these files to your repository and ... (To Be Done)
+
+Link to [Dataverse SPI](https://central.sonatype.com/artifact/io.gdcc/dataverse-spi)
