@@ -17,7 +17,7 @@
     
     <name>Dataverse Metadata Exporter Plugins Parent POM</name>
     <url>https://github.com/gdcc/dataverse-exporters</url>
-    <description>This Parent POM is used for easy coordination of all metadata export plugin POMs</description>
+    <description>Parent POM for easy coordination of all metadata export plugin POMs</description>
     
     <licenses>
         <license>
