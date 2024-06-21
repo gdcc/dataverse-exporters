@@ -1,4 +1,4 @@
-package io.gdcc.spi.export.examples;
+package io.gdcc.export.helloworld;
 
 import io.gdcc.spi.export.ExportDataProvider;
 import jakarta.json.Json;
@@ -12,15 +12,15 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-public class MyJSONExporterTest {
+class HelloWorldExporterTest {
 
-    static MyJSONExporter myJsonExporter;
+    static HelloWorldExporter helloWorldExporter;
     static OutputStream outputStream;
     static ExportDataProvider dataProvider;
 
     @BeforeAll
     public static void setUp() {
-        myJsonExporter = new MyJSONExporter();
+        helloWorldExporter = new HelloWorldExporter();
         outputStream = new ByteArrayOutputStream();
         dataProvider = new ExportDataProvider() {
             @Override
@@ -58,32 +58,32 @@ public class MyJSONExporterTest {
 
     @Test
     public void testGetFormatName() {
-        assertEquals("dataverse_json", myJsonExporter.getFormatName());
+        assertEquals("dataverse_json", helloWorldExporter.getFormatName());
     }
 
     @Test
     public void testGetDisplayName() {
-        assertEquals("My JSON in en", myJsonExporter.getDisplayName(new Locale("en", "US")));
+        assertEquals("My JSON in en", helloWorldExporter.getDisplayName(new Locale("en", "US")));
     }
 
     @Test
     public void testIsHarvestable() {
-        assertEquals(false, myJsonExporter.isHarvestable());
+        assertEquals(false, helloWorldExporter.isHarvestable());
     }
 
     @Test
     public void testIsAvailableToUsers() {
-        assertEquals(true, myJsonExporter.isAvailableToUsers());
+        assertEquals(true, helloWorldExporter.isAvailableToUsers());
     }
 
     @Test
     public void testGetMediaType() {
-        assertEquals("application/json", myJsonExporter.getMediaType());
+        assertEquals("application/json", helloWorldExporter.getMediaType());
     }
 
     @Test
     public void testExportDataset() throws Exception {
-        myJsonExporter.exportDataset(dataProvider, outputStream);
+        helloWorldExporter.exportDataset(dataProvider, outputStream);
         String expected = """
 {"name":"dataverse_json","inputJson":{"foo":"bar"}}
 """;
