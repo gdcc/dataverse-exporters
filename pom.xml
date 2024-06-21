@@ -90,6 +90,7 @@
         <slf4j.version>2.0.13</slf4j.version>
         <jakarta.json-api.version>2.1.0</jakarta.json-api.version>
         <eclipse.parsson.version>1.1.6</eclipse.parsson.version>
+        <jakarta.ws.rs.version>3.1.0</jakarta.ws.rs.version>
         
         <!-- Testing dependencies -->
         <junit.jupiter.version>5.10.2</junit.jupiter.version>
@@ -425,6 +426,11 @@
                 <artifactId>parsson</artifactId>
                 <version>${eclipse.parsson.version}</version>
             </dependency>
+            <dependency>
+                <groupId>jakarta.ws.rs</groupId>
+                <artifactId>jakarta.ws.rs-api</artifactId>
+                <version>${jakarta.ws.rs.version}</version>
+            </dependency>
             
             <!-- TESTING DEPENDENCIES -->
             <dependency>
@@ -478,6 +484,18 @@
             <artifactId>auto-service</artifactId>
         </dependency>
         
+        <!-- These are here for convenience, as most exporters will use them one way or another -->
+        <dependency>
+            <groupId>jakarta.json</groupId>
+            <artifactId>jakarta.json-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>jakarta.ws.rs</groupId>
+            <artifactId>jakarta.ws.rs-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        
         <!-- All exporters should use SLF4J for logging! -->
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -494,6 +512,12 @@
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <!-- This is here for convenience, providing a sane default JSON-P implementation (as used in Payara) -->
+        <dependency>
+            <groupId>org.eclipse.parsson</groupId>
+            <artifactId>parsson</artifactId>
             <scope>test</scope>
         </dependency>
     </dependencies>
