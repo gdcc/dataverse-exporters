@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>io.gdcc.export</groupId>
+    <artifactId>helloworld</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    
+    <name>Hello World Exporter</name>
+    
+    <parent>
+        <groupId>io.gdcc.export</groupId>
+        <artifactId>parent</artifactId>
+        <!-- In a real application, you should use a released version -->
+        <version>1.0.0-M1-SNAPSHOT</version>
+        <!-- In a real application, you would omit this -->
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+    
+    <!-- There is no <build> or <dependencies> section here because the Parent POM takes care of it for this rather simple example! -->
+</project>
