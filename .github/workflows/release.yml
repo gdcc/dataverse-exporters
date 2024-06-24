@@ -15,7 +15,7 @@ jobs:
     steps:
       - if: ${{ github.event_name == 'push' }}
         uses: actions/checkout@v4
-      - if: ${{ github.event_name == 'workflow_call' }}
+      - if: ${{ inputs.version }}
         uses: actions/checkout@v4
         with:
           ref: "${{ inputs.version }}"
