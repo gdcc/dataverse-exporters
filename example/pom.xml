@@ -6,7 +6,7 @@
 
     <groupId>io.gdcc.export</groupId>
     <artifactId>helloworld</artifactId>
-    <version>2.0.0-M1-SNAPSHOT</version>
+    <version>2.0.0-M1</version>
     <packaging>jar</packaging>
     
     <name>Hello World Exporter</name>
@@ -16,7 +16,7 @@
         <groupId>io.gdcc.export</groupId>
         <artifactId>parent</artifactId>
         <!-- In a real application, you should use a released version -->
-        <version>2.0.0-M1-SNAPSHOT</version>
+        <version>2.0.0-M1</version>
         <!-- In a real application, you would omit this -->
         <relativePath>../pom.xml</relativePath>
     </parent>
