@@ -42,4 +42,4 @@ jobs:
           mvn -B versions:set -DnextSnapshot -DnextSnapshotIndexToIncrement=2 -DgenerateBackupPoms=false
           git add pom.xml */pom.xml
           git commit -m "[github-action] Increment version after release of ${{ inputs.version }}"
-          git push
+          git push --tags origin main
