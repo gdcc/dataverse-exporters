@@ -3,12 +3,22 @@ on:
   push:
     tags:
       - '*'
+  workflow_call:
+    inputs:
+      version:
+        type: string
+        required: true
 
 jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - if: ${{ github.event_name == 'push' }}
+        uses: actions/checkout@v4
+      - if: ${{ github.event_name == 'workflow_call' }}
+        uses: actions/checkout@v4
+        with:
+          ref: "${{ inputs.version }}"
       - name: Determine Java version from POM
         run: |
           echo "JAVA_VERSION=$(grep '<jdk.version>' pom.xml | cut -f2 -d'>' | cut -f1 -d'<')" >> ${GITHUB_ENV}
