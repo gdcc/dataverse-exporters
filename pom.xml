@@ -96,7 +96,7 @@
         <junit.jupiter.version>5.10.2</junit.jupiter.version>
         <xmlunit.version>2.10.0</xmlunit.version>
         <hamcrest.version>2.2</hamcrest.version>
-        <jsonassert.version>1.5.1</jsonassert.version>
+        <jsonassert.version>1.5.2</jsonassert.version>
         
         <!-- Official Maven Plugins -->
         <maven-plugin-api.version>3.8.2</maven-plugin-api.version>
@@ -124,7 +124,7 @@
         <spotbugs-maven-plugin.version>4.8.5.0</spotbugs-maven-plugin.version>
         <dependency-check-maven.version>8.4.3</dependency-check-maven.version>
         <jacoco.version>0.8.12</jacoco.version>
-        <sonar.version>3.11.0.3922</sonar.version>
+        <sonar.version>4.0.0.4121</sonar.version>
         <spotless.version>2.43.0</spotless.version>
     </properties>
     
