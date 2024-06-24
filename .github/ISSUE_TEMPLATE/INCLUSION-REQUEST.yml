@@ -1,6 +1,6 @@
-name: Project Inclusion
-description: Request including a metadata exporter plugin.
-title: "[Include]: "
+name: "💫 Project Inclusion"
+description: "Request including a metadata exporter plugin."
+title: "💫 [INCLUSION] - <title>"
 labels: ["inclusion"]
 assignees:
   - poikilotherm
@@ -51,8 +51,8 @@ body:
       label: Move to GDCC
       description: Would you like to request a transfer to the https://github.com/gdcc umbrella?
       options:
-        - No
-        - Yes
+        - "No"
+        - "Yes"
       default: 0
     validations:
       required: true
