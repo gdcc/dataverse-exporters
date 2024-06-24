@@ -11,6 +11,7 @@
     
     <name>Hello World Exporter</name>
     <description>This is a very minimal example how to write an exporter plugin. Also used for testing.</description>
+    <url>https://github.com/gdcc/dataverse-exporters</url>
     
     <parent>
         <groupId>io.gdcc.export</groupId>
