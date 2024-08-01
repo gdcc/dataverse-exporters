@@ -95,7 +95,7 @@
         <!-- Testing dependencies -->
         <junit.jupiter.version>5.10.3</junit.jupiter.version>
         <xmlunit.version>2.10.0</xmlunit.version>
-        <hamcrest.version>2.2</hamcrest.version>
+        <hamcrest.version>3.0</hamcrest.version>
         <jsonassert.version>1.5.3</jsonassert.version>
         
         <!-- Official Maven Plugins -->
